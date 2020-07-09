@@ -1,183 +1,295 @@
 "","geoid","datawrapper_id","geography","name","short_name","category","percent"
-"1","1","1","us","United States","United States","white",60.2
-"2","1","1","us","United States","United States","black",12.3
-"3","1","1","us","United States","United States","nhpi",0.8
-"4","1","1","us","United States","United States","asian",5.6
-"5","1","1","us","United States","United States","other",0.3
-"6","1","1","us","United States","United States","twoplus",2.4
-"7","1","1","us","United States","United States","hispanic",18.3
-"8","50","50","state","Vermont","Vermont","white",92.6
-"9","50","50","state","Vermont","Vermont","black",1.2
-"10","50","50","state","Vermont","Vermont","nhpi",0.3
-"11","50","50","state","Vermont","Vermont","asian",1.9
-"12","50","50","state","Vermont","Vermont","other",0.2
-"13","50","50","state","Vermont","Vermont","twoplus",1.9
-"14","50","50","state","Vermont","Vermont","hispanic",2
-"15","50001","001","county","Addison County, Vermont","Addison","white",92.7
-"16","50001","001","county","Addison County, Vermont","Addison","black",1.2
-"17","50001","001","county","Addison County, Vermont","Addison","nhpi",0.3
-"18","50001","001","county","Addison County, Vermont","Addison","asian",1.9
-"19","50001","001","county","Addison County, Vermont","Addison","other",0.1
-"20","50001","001","county","Addison County, Vermont","Addison","twoplus",1.5
-"21","50001","001","county","Addison County, Vermont","Addison","hispanic",2.3
-"22","50003","003","county","Bennington County, Vermont","Bennington","white",94.4
-"23","50003","003","county","Bennington County, Vermont","Bennington","black",0.4
-"24","50003","003","county","Bennington County, Vermont","Bennington","nhpi",0.2
-"25","50003","003","county","Bennington County, Vermont","Bennington","asian",1.1
-"26","50003","003","county","Bennington County, Vermont","Bennington","other",0.1
-"27","50003","003","county","Bennington County, Vermont","Bennington","twoplus",1.9
-"28","50003","003","county","Bennington County, Vermont","Bennington","hispanic",1.9
-"29","50005","005","county","Caledonia County, Vermont","Caledonia","white",94.9
-"30","50005","005","county","Caledonia County, Vermont","Caledonia","black",0.9
-"31","50005","005","county","Caledonia County, Vermont","Caledonia","nhpi",0.2
-"32","50005","005","county","Caledonia County, Vermont","Caledonia","asian",0.6
-"33","50005","005","county","Caledonia County, Vermont","Caledonia","other",0.1
-"34","50005","005","county","Caledonia County, Vermont","Caledonia","twoplus",1.7
-"35","50005","005","county","Caledonia County, Vermont","Caledonia","hispanic",1.6
-"36","50007","007","county","Chittenden County, Vermont","Chittenden","white",88.8
-"37","50007","007","county","Chittenden County, Vermont","Chittenden","black",2.5
-"38","50007","007","county","Chittenden County, Vermont","Chittenden","nhpi",0.2
-"39","50007","007","county","Chittenden County, Vermont","Chittenden","asian",4.2
-"40","50007","007","county","Chittenden County, Vermont","Chittenden","other",0.2
-"41","50007","007","county","Chittenden County, Vermont","Chittenden","twoplus",1.8
-"42","50007","007","county","Chittenden County, Vermont","Chittenden","hispanic",2.3
-"43","50009","009","county","Essex County, Vermont","Essex","white",95.4
-"44","50009","009","county","Essex County, Vermont","Essex","black",1
-"45","50009","009","county","Essex County, Vermont","Essex","nhpi",0.3
-"46","50009","009","county","Essex County, Vermont","Essex","asian",0.6
-"47","50009","009","county","Essex County, Vermont","Essex","other",0.1
-"48","50009","009","county","Essex County, Vermont","Essex","twoplus",1.3
-"49","50009","009","county","Essex County, Vermont","Essex","hispanic",1.3
-"50","50011","011","county","Franklin County, Vermont","Franklin","white",93.9
-"51","50011","011","county","Franklin County, Vermont","Franklin","black",0.6
-"52","50011","011","county","Franklin County, Vermont","Franklin","nhpi",0.5
-"53","50011","011","county","Franklin County, Vermont","Franklin","asian",0.4
-"54","50011","011","county","Franklin County, Vermont","Franklin","other",0.5
-"55","50011","011","county","Franklin County, Vermont","Franklin","twoplus",2.6
-"56","50011","011","county","Franklin County, Vermont","Franklin","hispanic",1.5
-"57","50013","013","county","Grand Isle County, Vermont","Grand Isle","white",92.9
-"58","50013","013","county","Grand Isle County, Vermont","Grand Isle","black",0.8
-"59","50013","013","county","Grand Isle County, Vermont","Grand Isle","nhpi",0.4
-"60","50013","013","county","Grand Isle County, Vermont","Grand Isle","asian",0.5
-"61","50013","013","county","Grand Isle County, Vermont","Grand Isle","other",0.1
-"62","50013","013","county","Grand Isle County, Vermont","Grand Isle","twoplus",3.3
-"63","50013","013","county","Grand Isle County, Vermont","Grand Isle","hispanic",1.9
-"64","50015","015","county","Lamoille County, Vermont","Lamoille","white",94.7
-"65","50015","015","county","Lamoille County, Vermont","Lamoille","black",0.9
-"66","50015","015","county","Lamoille County, Vermont","Lamoille","nhpi",0.8
-"67","50015","015","county","Lamoille County, Vermont","Lamoille","asian",0.6
-"68","50015","015","county","Lamoille County, Vermont","Lamoille","other",0
-"69","50015","015","county","Lamoille County, Vermont","Lamoille","twoplus",1.2
-"70","50015","015","county","Lamoille County, Vermont","Lamoille","hispanic",1.8
-"71","50017","017","county","Orange County, Vermont","Orange","white",95.5
-"72","50017","017","county","Orange County, Vermont","Orange","black",0.6
-"73","50017","017","county","Orange County, Vermont","Orange","nhpi",0.4
-"74","50017","017","county","Orange County, Vermont","Orange","asian",0.2
-"75","50017","017","county","Orange County, Vermont","Orange","other",0.2
-"76","50017","017","county","Orange County, Vermont","Orange","twoplus",1.6
-"77","50017","017","county","Orange County, Vermont","Orange","hispanic",1.4
-"78","50019","019","county","Orleans County, Vermont","Orleans","white",95.3
-"79","50019","019","county","Orleans County, Vermont","Orleans","black",0.4
-"80","50019","019","county","Orleans County, Vermont","Orleans","nhpi",0.5
-"81","50019","019","county","Orleans County, Vermont","Orleans","asian",0.2
-"82","50019","019","county","Orleans County, Vermont","Orleans","other",0.1
-"83","50019","019","county","Orleans County, Vermont","Orleans","twoplus",2
-"84","50019","019","county","Orleans County, Vermont","Orleans","hispanic",1.4
-"85","50021","021","county","Rutland County, Vermont","Rutland","white",95.4
-"86","50021","021","county","Rutland County, Vermont","Rutland","black",0.8
-"87","50021","021","county","Rutland County, Vermont","Rutland","nhpi",0.4
-"88","50021","021","county","Rutland County, Vermont","Rutland","asian",1
-"89","50021","021","county","Rutland County, Vermont","Rutland","other",0.1
-"90","50021","021","county","Rutland County, Vermont","Rutland","twoplus",0.8
-"91","50021","021","county","Rutland County, Vermont","Rutland","hispanic",1.4
-"92","50023","023","county","Washington County, Vermont","Washington","white",94.3
-"93","50023","023","county","Washington County, Vermont","Washington","black",0.8
-"94","50023","023","county","Washington County, Vermont","Washington","nhpi",0.3
-"95","50023","023","county","Washington County, Vermont","Washington","asian",0.8
-"96","50023","023","county","Washington County, Vermont","Washington","other",0.1
-"97","50023","023","county","Washington County, Vermont","Washington","twoplus",1.9
-"98","50023","023","county","Washington County, Vermont","Washington","hispanic",1.9
-"99","50025","025","county","Windham County, Vermont","Windham","white",93.2
-"100","50025","025","county","Windham County, Vermont","Windham","black",1.1
-"101","50025","025","county","Windham County, Vermont","Windham","nhpi",0.2
-"102","50025","025","county","Windham County, Vermont","Windham","asian",1.1
-"103","50025","025","county","Windham County, Vermont","Windham","other",0
-"104","50025","025","county","Windham County, Vermont","Windham","twoplus",2
-"105","50025","025","county","Windham County, Vermont","Windham","hispanic",2.3
-"106","50027","027","county","Windsor County, Vermont","Windsor","white",94.7
-"107","50027","027","county","Windsor County, Vermont","Windsor","black",0.7
-"108","50027","027","county","Windsor County, Vermont","Windsor","nhpi",0.2
-"109","50027","027","county","Windsor County, Vermont","Windsor","asian",0.8
-"110","50027","027","county","Windsor County, Vermont","Windsor","other",0.2
-"111","50027","027","county","Windsor County, Vermont","Windsor","twoplus",1.8
-"112","50027","027","county","Windsor County, Vermont","Windsor","hispanic",1.6
-"113","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","white",95
-"114","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","black",0.2
-"115","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","nhpi",0
-"116","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","asian",0.9
-"117","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","other",0.5
-"118","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","twoplus",2.1
-"119","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","hispanic",1.3
-"120","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","white",97.6
-"121","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","black",0
-"122","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","nhpi",0
-"123","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","asian",0
-"124","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","other",0
-"125","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","twoplus",1.1
-"126","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","hispanic",1.3
-"127","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","white",98.1
-"128","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","black",0.2
-"129","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","nhpi",0
-"130","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","asian",0
-"131","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","other",0
-"132","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","twoplus",0
-"133","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","hispanic",1.7
-"134","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","white",96.4
-"135","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","black",0.2
-"136","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","nhpi",0.4
-"137","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","asian",0.6
-"138","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","other",0
-"139","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","twoplus",1
-"140","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","hispanic",1.4
-"141","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","white",95
-"142","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","black",2.1
-"143","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","nhpi",0
-"144","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","asian",2
-"145","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","other",0
-"146","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","twoplus",0
-"147","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","hispanic",0.9
-"148","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","white",94.3
-"149","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","black",0
-"150","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","nhpi",0.8
-"151","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","asian",0.7
-"152","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","other",0.5
-"153","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","twoplus",2.4
-"154","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","hispanic",1.3
-"155","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","white",88.5
-"156","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","black",3.5
-"157","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","nhpi",0
-"158","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","asian",3
-"159","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","other",0
-"160","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","twoplus",2.1
-"161","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","hispanic",2.9
-"162","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","white",80.2
-"163","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","black",2.7
-"164","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","nhpi",0.2
-"165","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","asian",7.8
-"166","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","other",0
-"167","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","twoplus",2.8
-"168","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","hispanic",6.3
-"169","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","white",92.5
-"170","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","black",1.2
-"171","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","nhpi",0.7
-"172","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","asian",1
-"173","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","other",0.3
-"174","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","twoplus",1.6
-"175","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","hispanic",2.7
-"176","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","white",96.4
-"177","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","black",0.4
-"178","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","nhpi",0.6
-"179","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","asian",0.4
-"180","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","other",0
-"181","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","twoplus",1
-"182","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","hispanic",1.2
+"1","      05443","    05443","zipcode","ZCTA5 05443","Bristol","white",95.4
+"2","      05443","    05443","zipcode","ZCTA5 05443","Bristol","black",1.2
+"3","      05443","    05443","zipcode","ZCTA5 05443","Bristol","nhpi",0
+"4","      05443","    05443","zipcode","ZCTA5 05443","Bristol","asian",1.4
+"5","      05443","    05443","zipcode","ZCTA5 05443","Bristol","other",0
+"6","      05443","    05443","zipcode","ZCTA5 05443","Bristol","twoplus",1.2
+"7","      05443","    05443","zipcode","ZCTA5 05443","Bristol","hispanic",0.8
+"8","      05456","    05456","zipcode","ZCTA5 05456","Ferrisburgh","white",96.9
+"9","      05456","    05456","zipcode","ZCTA5 05456","Ferrisburgh","black",0
+"10","      05456","    05456","zipcode","ZCTA5 05456","Ferrisburgh","nhpi",0
+"11","      05456","    05456","zipcode","ZCTA5 05456","Ferrisburgh","asian",0
+"12","      05456","    05456","zipcode","ZCTA5 05456","Ferrisburgh","other",0
+"13","      05456","    05456","zipcode","ZCTA5 05456","Ferrisburgh","twoplus",1.9
+"14","      05456","    05456","zipcode","ZCTA5 05456","Ferrisburgh","hispanic",1.2
+"15","      05472","    05472","zipcode","ZCTA5 05472","New Haven","white",97.2
+"16","      05472","    05472","zipcode","ZCTA5 05472","New Haven","black",0
+"17","      05472","    05472","zipcode","ZCTA5 05472","New Haven","nhpi",0
+"18","      05472","    05472","zipcode","ZCTA5 05472","New Haven","asian",1.4
+"19","      05472","    05472","zipcode","ZCTA5 05472","New Haven","other",0
+"20","      05472","    05472","zipcode","ZCTA5 05472","New Haven","twoplus",1.1
+"21","      05472","    05472","zipcode","ZCTA5 05472","New Haven","hispanic",0.4
+"22","      05473","    05473","zipcode","ZCTA5 05473","North Ferrisburgh","white",98.7
+"23","      05473","    05473","zipcode","ZCTA5 05473","North Ferrisburgh","black",0
+"24","      05473","    05473","zipcode","ZCTA5 05473","North Ferrisburgh","nhpi",0
+"25","      05473","    05473","zipcode","ZCTA5 05473","North Ferrisburgh","asian",0
+"26","      05473","    05473","zipcode","ZCTA5 05473","North Ferrisburgh","other",0
+"27","      05473","    05473","zipcode","ZCTA5 05473","North Ferrisburgh","twoplus",0.3
+"28","      05473","    05473","zipcode","ZCTA5 05473","North Ferrisburgh","hispanic",1
+"29","      05487","    05487","zipcode","ZCTA5 05487","Starksboro","white",92.6
+"30","      05487","    05487","zipcode","ZCTA5 05487","Starksboro","black",0.5
+"31","      05487","    05487","zipcode","ZCTA5 05487","Starksboro","nhpi",0
+"32","      05487","    05487","zipcode","ZCTA5 05487","Starksboro","asian",1.3
+"33","      05487","    05487","zipcode","ZCTA5 05487","Starksboro","other",1.3
+"34","      05487","    05487","zipcode","ZCTA5 05487","Starksboro","twoplus",2.3
+"35","      05487","    05487","zipcode","ZCTA5 05487","Starksboro","hispanic",2
+"36","      05491","    05491","zipcode","ZCTA5 05491","Vergennes","white",97.4
+"37","      05491","    05491","zipcode","ZCTA5 05491","Vergennes","black",0.1
+"38","      05491","    05491","zipcode","ZCTA5 05491","Vergennes","nhpi",0
+"39","      05491","    05491","zipcode","ZCTA5 05491","Vergennes","asian",0
+"40","      05491","    05491","zipcode","ZCTA5 05491","Vergennes","other",0
+"41","      05491","    05491","zipcode","ZCTA5 05491","Vergennes","twoplus",0.5
+"42","      05491","    05491","zipcode","ZCTA5 05491","Vergennes","hispanic",1.9
+"43","      05669","    05669","zipcode","ZCTA5 05669","Roxbury","white",97.5
+"44","      05669","    05669","zipcode","ZCTA5 05669","Roxbury","black",0
+"45","      05669","    05669","zipcode","ZCTA5 05669","Roxbury","nhpi",0.3
+"46","      05669","    05669","zipcode","ZCTA5 05669","Roxbury","asian",0.4
+"47","      05669","    05669","zipcode","ZCTA5 05669","Roxbury","other",0
+"48","      05669","    05669","zipcode","ZCTA5 05669","Roxbury","twoplus",0
+"49","      05669","    05669","zipcode","ZCTA5 05669","Roxbury","hispanic",1.8
+"50","      05734","    05734","zipcode","ZCTA5 05734","Bridport","white",92.1
+"51","      05734","    05734","zipcode","ZCTA5 05734","Bridport","black",3
+"52","      05734","    05734","zipcode","ZCTA5 05734","Bridport","nhpi",0.5
+"53","      05734","    05734","zipcode","ZCTA5 05734","Bridport","asian",1.4
+"54","      05734","    05734","zipcode","ZCTA5 05734","Bridport","other",0
+"55","      05734","    05734","zipcode","ZCTA5 05734","Bridport","twoplus",1.5
+"56","      05734","    05734","zipcode","ZCTA5 05734","Bridport","hispanic",1.5
+"57","      05747","    05747","zipcode","ZCTA5 05747","Granville","white",94.4
+"58","      05747","    05747","zipcode","ZCTA5 05747","Granville","black",0
+"59","      05747","    05747","zipcode","ZCTA5 05747","Granville","nhpi",0.9
+"60","      05747","    05747","zipcode","ZCTA5 05747","Granville","asian",1.5
+"61","      05747","    05747","zipcode","ZCTA5 05747","Granville","other",0
+"62","      05747","    05747","zipcode","ZCTA5 05747","Granville","twoplus",1.5
+"63","      05747","    05747","zipcode","ZCTA5 05747","Granville","hispanic",1.5
+"64","      05748","    05748","zipcode","ZCTA5 05748","Hancock","white",91.6
+"65","      05748","    05748","zipcode","ZCTA5 05748","Hancock","black",0
+"66","      05748","    05748","zipcode","ZCTA5 05748","Hancock","nhpi",0
+"67","      05748","    05748","zipcode","ZCTA5 05748","Hancock","asian",0.9
+"68","      05748","    05748","zipcode","ZCTA5 05748","Hancock","other",4.6
+"69","      05748","    05748","zipcode","ZCTA5 05748","Hancock","twoplus",1.9
+"70","      05748","    05748","zipcode","ZCTA5 05748","Hancock","hispanic",0.9
+"71","      05753","    05753","zipcode","ZCTA5 05753","Middlebury","white",85.4
+"72","      05753","    05753","zipcode","ZCTA5 05753","Middlebury","black",2.6
+"73","      05753","    05753","zipcode","ZCTA5 05753","Middlebury","nhpi",0.3
+"74","      05753","    05753","zipcode","ZCTA5 05753","Middlebury","asian",4.9
+"75","      05753","    05753","zipcode","ZCTA5 05753","Middlebury","other",0
+"76","      05753","    05753","zipcode","ZCTA5 05753","Middlebury","twoplus",2.5
+"77","      05753","    05753","zipcode","ZCTA5 05753","Middlebury","hispanic",4.2
+"78","      05760","    05760","zipcode","ZCTA5 05760","Orwell","white",96.9
+"79","      05760","    05760","zipcode","ZCTA5 05760","Orwell","black",0.3
+"80","      05760","    05760","zipcode","ZCTA5 05760","Orwell","nhpi",0
+"81","      05760","    05760","zipcode","ZCTA5 05760","Orwell","asian",1.3
+"82","      05760","    05760","zipcode","ZCTA5 05760","Orwell","other",1.4
+"83","      05760","    05760","zipcode","ZCTA5 05760","Orwell","twoplus",0
+"84","      05760","    05760","zipcode","ZCTA5 05760","Orwell","hispanic",0
+"85","      05766","    05766","zipcode","ZCTA5 05766","Ripton","white",90.1
+"86","      05766","    05766","zipcode","ZCTA5 05766","Ripton","black",0
+"87","      05766","    05766","zipcode","ZCTA5 05766","Ripton","nhpi",3.6
+"88","      05766","    05766","zipcode","ZCTA5 05766","Ripton","asian",0
+"89","      05766","    05766","zipcode","ZCTA5 05766","Ripton","other",0
+"90","      05766","    05766","zipcode","ZCTA5 05766","Ripton","twoplus",1.9
+"91","      05766","    05766","zipcode","ZCTA5 05766","Ripton","hispanic",4.5
+"92","      05769","    05769","zipcode","ZCTA5 05769","Salisbury","white",96.1
+"93","      05769","    05769","zipcode","ZCTA5 05769","Salisbury","black",0.4
+"94","      05769","    05769","zipcode","ZCTA5 05769","Salisbury","nhpi",0.7
+"95","      05769","    05769","zipcode","ZCTA5 05769","Salisbury","asian",0.9
+"96","      05769","    05769","zipcode","ZCTA5 05769","Salisbury","other",0
+"97","      05769","    05769","zipcode","ZCTA5 05769","Salisbury","twoplus",1.1
+"98","      05769","    05769","zipcode","ZCTA5 05769","Salisbury","hispanic",0.8
+"99","      05770","    05770","zipcode","ZCTA5 05770","Shoreham","white",85.4
+"100","      05770","    05770","zipcode","ZCTA5 05770","Shoreham","black",0.3
+"101","      05770","    05770","zipcode","ZCTA5 05770","Shoreham","nhpi",2.1
+"102","      05770","    05770","zipcode","ZCTA5 05770","Shoreham","asian",0
+"103","      05770","    05770","zipcode","ZCTA5 05770","Shoreham","other",0
+"104","      05770","    05770","zipcode","ZCTA5 05770","Shoreham","twoplus",2.2
+"105","      05770","    05770","zipcode","ZCTA5 05770","Shoreham","hispanic",10
+"106","      05778","    05778","zipcode","ZCTA5 05778","Whiting","white",97.7
+"107","      05778","    05778","zipcode","ZCTA5 05778","Whiting","black",0.8
+"108","      05778","    05778","zipcode","ZCTA5 05778","Whiting","nhpi",0.3
+"109","      05778","    05778","zipcode","ZCTA5 05778","Whiting","asian",0.5
+"110","      05778","    05778","zipcode","ZCTA5 05778","Whiting","other",0
+"111","      05778","    05778","zipcode","ZCTA5 05778","Whiting","twoplus",0.3
+"112","      05778","    05778","zipcode","ZCTA5 05778","Whiting","hispanic",0.3
+"113","          1","        1","us","United States","United States","white",60.2
+"114","          1","        1","us","United States","United States","black",12.3
+"115","          1","        1","us","United States","United States","nhpi",0.8
+"116","          1","        1","us","United States","United States","asian",5.6
+"117","          1","        1","us","United States","United States","other",0.3
+"118","          1","        1","us","United States","United States","twoplus",2.4
+"119","          1","        1","us","United States","United States","hispanic",18.3
+"120","         50","       50","state","Vermont","Vermont","white",92.6
+"121","         50","       50","state","Vermont","Vermont","black",1.2
+"122","         50","       50","state","Vermont","Vermont","nhpi",0.3
+"123","         50","       50","state","Vermont","Vermont","asian",1.9
+"124","         50","       50","state","Vermont","Vermont","other",0.2
+"125","         50","       50","state","Vermont","Vermont","twoplus",1.9
+"126","         50","       50","state","Vermont","Vermont","hispanic",2
+"127","      50001","      001","county","Addison County, Vermont","Addison","white",92.7
+"128","      50001","      001","county","Addison County, Vermont","Addison","black",1.2
+"129","      50001","      001","county","Addison County, Vermont","Addison","nhpi",0.3
+"130","      50001","      001","county","Addison County, Vermont","Addison","asian",1.9
+"131","      50001","      001","county","Addison County, Vermont","Addison","other",0.1
+"132","      50001","      001","county","Addison County, Vermont","Addison","twoplus",1.5
+"133","      50001","      001","county","Addison County, Vermont","Addison","hispanic",2.3
+"134","      50003","      003","county","Bennington County, Vermont","Bennington","white",94.4
+"135","      50003","      003","county","Bennington County, Vermont","Bennington","black",0.4
+"136","      50003","      003","county","Bennington County, Vermont","Bennington","nhpi",0.2
+"137","      50003","      003","county","Bennington County, Vermont","Bennington","asian",1.1
+"138","      50003","      003","county","Bennington County, Vermont","Bennington","other",0.1
+"139","      50003","      003","county","Bennington County, Vermont","Bennington","twoplus",1.9
+"140","      50003","      003","county","Bennington County, Vermont","Bennington","hispanic",1.9
+"141","      50005","      005","county","Caledonia County, Vermont","Caledonia","white",94.9
+"142","      50005","      005","county","Caledonia County, Vermont","Caledonia","black",0.9
+"143","      50005","      005","county","Caledonia County, Vermont","Caledonia","nhpi",0.2
+"144","      50005","      005","county","Caledonia County, Vermont","Caledonia","asian",0.6
+"145","      50005","      005","county","Caledonia County, Vermont","Caledonia","other",0.1
+"146","      50005","      005","county","Caledonia County, Vermont","Caledonia","twoplus",1.7
+"147","      50005","      005","county","Caledonia County, Vermont","Caledonia","hispanic",1.6
+"148","      50007","      007","county","Chittenden County, Vermont","Chittenden","white",88.8
+"149","      50007","      007","county","Chittenden County, Vermont","Chittenden","black",2.5
+"150","      50007","      007","county","Chittenden County, Vermont","Chittenden","nhpi",0.2
+"151","      50007","      007","county","Chittenden County, Vermont","Chittenden","asian",4.2
+"152","      50007","      007","county","Chittenden County, Vermont","Chittenden","other",0.2
+"153","      50007","      007","county","Chittenden County, Vermont","Chittenden","twoplus",1.8
+"154","      50007","      007","county","Chittenden County, Vermont","Chittenden","hispanic",2.3
+"155","      50009","      009","county","Essex County, Vermont","Essex","white",95.4
+"156","      50009","      009","county","Essex County, Vermont","Essex","black",1
+"157","      50009","      009","county","Essex County, Vermont","Essex","nhpi",0.3
+"158","      50009","      009","county","Essex County, Vermont","Essex","asian",0.6
+"159","      50009","      009","county","Essex County, Vermont","Essex","other",0.1
+"160","      50009","      009","county","Essex County, Vermont","Essex","twoplus",1.3
+"161","      50009","      009","county","Essex County, Vermont","Essex","hispanic",1.3
+"162","      50011","      011","county","Franklin County, Vermont","Franklin","white",93.9
+"163","      50011","      011","county","Franklin County, Vermont","Franklin","black",0.6
+"164","      50011","      011","county","Franklin County, Vermont","Franklin","nhpi",0.5
+"165","      50011","      011","county","Franklin County, Vermont","Franklin","asian",0.4
+"166","      50011","      011","county","Franklin County, Vermont","Franklin","other",0.5
+"167","      50011","      011","county","Franklin County, Vermont","Franklin","twoplus",2.6
+"168","      50011","      011","county","Franklin County, Vermont","Franklin","hispanic",1.5
+"169","      50013","      013","county","Grand Isle County, Vermont","Grand Isle","white",92.9
+"170","      50013","      013","county","Grand Isle County, Vermont","Grand Isle","black",0.8
+"171","      50013","      013","county","Grand Isle County, Vermont","Grand Isle","nhpi",0.4
+"172","      50013","      013","county","Grand Isle County, Vermont","Grand Isle","asian",0.5
+"173","      50013","      013","county","Grand Isle County, Vermont","Grand Isle","other",0.1
+"174","      50013","      013","county","Grand Isle County, Vermont","Grand Isle","twoplus",3.3
+"175","      50013","      013","county","Grand Isle County, Vermont","Grand Isle","hispanic",1.9
+"176","      50015","      015","county","Lamoille County, Vermont","Lamoille","white",94.7
+"177","      50015","      015","county","Lamoille County, Vermont","Lamoille","black",0.9
+"178","      50015","      015","county","Lamoille County, Vermont","Lamoille","nhpi",0.8
+"179","      50015","      015","county","Lamoille County, Vermont","Lamoille","asian",0.6
+"180","      50015","      015","county","Lamoille County, Vermont","Lamoille","other",0
+"181","      50015","      015","county","Lamoille County, Vermont","Lamoille","twoplus",1.2
+"182","      50015","      015","county","Lamoille County, Vermont","Lamoille","hispanic",1.8
+"183","      50017","      017","county","Orange County, Vermont","Orange","white",95.5
+"184","      50017","      017","county","Orange County, Vermont","Orange","black",0.6
+"185","      50017","      017","county","Orange County, Vermont","Orange","nhpi",0.4
+"186","      50017","      017","county","Orange County, Vermont","Orange","asian",0.2
+"187","      50017","      017","county","Orange County, Vermont","Orange","other",0.2
+"188","      50017","      017","county","Orange County, Vermont","Orange","twoplus",1.6
+"189","      50017","      017","county","Orange County, Vermont","Orange","hispanic",1.4
+"190","      50019","      019","county","Orleans County, Vermont","Orleans","white",95.3
+"191","      50019","      019","county","Orleans County, Vermont","Orleans","black",0.4
+"192","      50019","      019","county","Orleans County, Vermont","Orleans","nhpi",0.5
+"193","      50019","      019","county","Orleans County, Vermont","Orleans","asian",0.2
+"194","      50019","      019","county","Orleans County, Vermont","Orleans","other",0.1
+"195","      50019","      019","county","Orleans County, Vermont","Orleans","twoplus",2
+"196","      50019","      019","county","Orleans County, Vermont","Orleans","hispanic",1.4
+"197","      50021","      021","county","Rutland County, Vermont","Rutland","white",95.4
+"198","      50021","      021","county","Rutland County, Vermont","Rutland","black",0.8
+"199","      50021","      021","county","Rutland County, Vermont","Rutland","nhpi",0.4
+"200","      50021","      021","county","Rutland County, Vermont","Rutland","asian",1
+"201","      50021","      021","county","Rutland County, Vermont","Rutland","other",0.1
+"202","      50021","      021","county","Rutland County, Vermont","Rutland","twoplus",0.8
+"203","      50021","      021","county","Rutland County, Vermont","Rutland","hispanic",1.4
+"204","      50023","      023","county","Washington County, Vermont","Washington","white",94.3
+"205","      50023","      023","county","Washington County, Vermont","Washington","black",0.8
+"206","      50023","      023","county","Washington County, Vermont","Washington","nhpi",0.3
+"207","      50023","      023","county","Washington County, Vermont","Washington","asian",0.8
+"208","      50023","      023","county","Washington County, Vermont","Washington","other",0.1
+"209","      50023","      023","county","Washington County, Vermont","Washington","twoplus",1.9
+"210","      50023","      023","county","Washington County, Vermont","Washington","hispanic",1.9
+"211","      50025","      025","county","Windham County, Vermont","Windham","white",93.2
+"212","      50025","      025","county","Windham County, Vermont","Windham","black",1.1
+"213","      50025","      025","county","Windham County, Vermont","Windham","nhpi",0.2
+"214","      50025","      025","county","Windham County, Vermont","Windham","asian",1.1
+"215","      50025","      025","county","Windham County, Vermont","Windham","other",0
+"216","      50025","      025","county","Windham County, Vermont","Windham","twoplus",2
+"217","      50025","      025","county","Windham County, Vermont","Windham","hispanic",2.3
+"218","      50027","      027","county","Windsor County, Vermont","Windsor","white",94.7
+"219","      50027","      027","county","Windsor County, Vermont","Windsor","black",0.7
+"220","      50027","      027","county","Windsor County, Vermont","Windsor","nhpi",0.2
+"221","      50027","      027","county","Windsor County, Vermont","Windsor","asian",0.8
+"222","      50027","      027","county","Windsor County, Vermont","Windsor","other",0.2
+"223","      50027","      027","county","Windsor County, Vermont","Windsor","twoplus",1.8
+"224","      50027","      027","county","Windsor County, Vermont","Windsor","hispanic",1.6
+"225","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","white",95
+"226","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","black",0.2
+"227","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","nhpi",0
+"228","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","asian",0.9
+"229","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","other",0.5
+"230","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","twoplus",2.1
+"231","50001960100","001960100","census tract","Census Tract 9601, Addison County, Vermont","Starksboro","hispanic",1.3
+"232","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","white",97.6
+"233","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","black",0
+"234","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","nhpi",0
+"235","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","asian",0
+"236","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","other",0
+"237","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","twoplus",1.1
+"238","50001960200","001960200","census tract","Census Tract 9602, Addison County, Vermont","Ferrisburgh","hispanic",1.3
+"239","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","white",98.1
+"240","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","black",0.2
+"241","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","nhpi",0
+"242","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","asian",0
+"243","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","other",0
+"244","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","twoplus",0
+"245","50001960300","001960300","census tract","Census Tract 9603, Addison County, Vermont","Vergennes","hispanic",1.7
+"246","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","white",96.4
+"247","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","black",0.2
+"248","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","nhpi",0.4
+"249","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","asian",0.6
+"250","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","other",0
+"251","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","twoplus",1
+"252","50001960400","001960400","census tract","Census Tract 9604, Addison County, Vermont","Panton, Addison, Weybridge, New Haven","hispanic",1.4
+"253","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","white",95
+"254","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","black",2.1
+"255","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","nhpi",0
+"256","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","asian",2
+"257","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","other",0
+"258","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","twoplus",0
+"259","50001960500","001960500","census tract","Census Tract 9605, Addison County, Vermont","Bristol","hispanic",0.9
+"260","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","white",94.3
+"261","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","black",0
+"262","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","nhpi",0.8
+"263","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","asian",0.7
+"264","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","other",0.5
+"265","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","twoplus",2.4
+"266","50001960600","001960600","census tract","Census Tract 9606, Addison County, Vermont","Lincoln, Ripton, Granville, Hancock, Goshen","hispanic",1.3
+"267","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","white",88.5
+"268","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","black",3.5
+"269","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","nhpi",0
+"270","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","asian",3
+"271","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","other",0
+"272","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","twoplus",2.1
+"273","50001960700","001960700","census tract","Census Tract 9607, Addison County, Vermont","Middlebury 1","hispanic",2.9
+"274","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","white",80.2
+"275","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","black",2.7
+"276","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","nhpi",0.2
+"277","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","asian",7.8
+"278","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","other",0
+"279","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","twoplus",2.8
+"280","50001960800","001960800","census tract","Census Tract 9608, Addison County, Vermont","Middlebury 2","hispanic",6.3
+"281","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","white",92.5
+"282","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","black",1.2
+"283","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","nhpi",0.7
+"284","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","asian",1
+"285","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","other",0.3
+"286","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","twoplus",1.6
+"287","50001960900","001960900","census tract","Census Tract 9609, Addison County, Vermont","Cornwall, Shoreham, Whiting","hispanic",2.7
+"288","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","white",96.4
+"289","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","black",0.4
+"290","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","nhpi",0.6
+"291","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","asian",0.4
+"292","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","other",0
+"293","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","twoplus",1
+"294","50001961000","001961000","census tract","Census Tract 9610, Addison County, Vermont","Salisbury, Leicster","hispanic",1.2
