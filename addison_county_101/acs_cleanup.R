@@ -198,3 +198,14 @@ vermont_us_nomoe <- vermont_us %>%
 names(vermont_us_nomoe) <- tolower(names(vermont_us_nomoe))
 
 write.csv(vermont_us_nomoe, "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/acs_stats.csv")
+
+vermont_us_race <- vermont_us_nomoe %>%
+  select(geoid, datawrapper_id, geography, name, short_name, race_white:race_hispanic) %>%
+  gather(race, percent, race_white:race_hispanic) %>%
+  separate(race, c("race", "category", sep = "race_")) %>%
+  select(-c("race", "race_")) %>%
+  arrange(desc(geography), datawrapper_id)
+
+write.csv(vermont_us_race, "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/acs_stats_race_long.csv")
+
+
