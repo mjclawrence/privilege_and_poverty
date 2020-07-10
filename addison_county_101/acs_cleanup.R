@@ -1,6 +1,13 @@
 library(tidyverse)
 library(tidycensus)
 
+# Add homeless data from here: https://www.housingdata.org/profile/population-household/homelessness
+county_homeless <- read.csv("https://raw.githubusercontent.com/mjclawrence/privilege_and_poverty/master/addison_county_101/homeless_data_2020.csv",
+                            header = TRUE)
+county_homeless$NAME <- as.character(county_homeless$NAME)
+names_county_homeless <- names(county_homeless[,2:23])
+
+
 acs_vars <- load_variables(year = 2018,
                            dataset = "ACS5",
                            cache = TRUE)
@@ -22,6 +29,11 @@ country_total <- get_acs(geography = "us",
                                        "housing_owned" = "B25003_002",
                                        "housing_rented" = "B25003_003",
                                        "educ_total" = "B15003_001",
+                                       "educ_hs" = "B15003_017",
+                                       "educ_ged" = "B15003_018",
+                                       "educ_somecoll_less1" = "B15003_019",
+                                       "educ_somecoll_more1" = "B15003_020",
+                                       "educ_associates" = "B15003_021",
                                        "educ_bachelors" = "B15003_022",
                                        "educ_masters" = "B15003_023",
                                        "educ_professional" = "B15003_024",
@@ -98,6 +110,11 @@ vt_state <- get_acs(geography = "state",
                                   "housing_owned" = "B25003_002",
                                   "housing_rented" = "B25003_003",
                                   "educ_total" = "B15003_001",
+                                  "educ_hs" = "B15003_017",
+                                  "educ_ged" = "B15003_018",
+                                  "educ_somecoll_less1" = "B15003_019",
+                                  "educ_somecoll_more1" = "B15003_020",
+                                  "educ_associates" = "B15003_021",
                                   "educ_bachelors" = "B15003_022",
                                   "educ_masters" = "B15003_023",
                                   "educ_professional" = "B15003_024",
@@ -174,6 +191,11 @@ vt_county <- get_acs(geography = "county",
                                    "housing_owned" = "B25003_002",
                                    "housing_rented" = "B25003_003",
                                    "educ_total" = "B15003_001",
+                                   "educ_hs" = "B15003_017",
+                                   "educ_ged" = "B15003_018",
+                                   "educ_somecoll_less1" = "B15003_019",
+                                   "educ_somecoll_more1" = "B15003_020",
+                                   "educ_associates" = "B15003_021",
                                    "educ_bachelors" = "B15003_022",
                                    "educ_masters" = "B15003_023",
                                    "educ_professional" = "B15003_024",
@@ -231,7 +253,6 @@ vt_county <- get_acs(geography = "county",
                            output = "wide") %>%
   mutate(geography = "county")
 
-
 vt_county_subdivisions <- get_acs(geography = "county subdivision",
                      state = "VT",
                      county = "Addison",
@@ -250,6 +271,11 @@ vt_county_subdivisions <- get_acs(geography = "county subdivision",
                                    "housing_owned" = "B25003_002",
                                    "housing_rented" = "B25003_003",
                                    "educ_total" = "B15003_001",
+                                   "educ_hs" = "B15003_017",
+                                   "educ_ged" = "B15003_018",
+                                   "educ_somecoll_less1" = "B15003_019",
+                                   "educ_somecoll_more1" = "B15003_020",
+                                   "educ_associates" = "B15003_021",
                                    "educ_bachelors" = "B15003_022",
                                    "educ_masters" = "B15003_023",
                                    "educ_professional" = "B15003_024",
@@ -326,6 +352,11 @@ vt_tracts <- get_acs(geography = "tract",
                                    "housing_owned" = "B25003_002",
                                    "housing_rented" = "B25003_003",
                                    "educ_total" = "B15003_001",
+                                   "educ_hs" = "B15003_017",
+                                   "educ_ged" = "B15003_018",
+                                   "educ_somecoll_less1" = "B15003_019",
+                                   "educ_somecoll_more1" = "B15003_020",
+                                   "educ_associates" = "B15003_021",
                                    "educ_bachelors" = "B15003_022",
                                    "educ_masters" = "B15003_023",
                                    "educ_professional" = "B15003_024",
@@ -402,6 +433,11 @@ vt_tracts <- get_acs(geography = "tract",
 #                                      "housing_owned" = "B25003_002",
 #                                      "housing_rented" = "B25003_003",
 #                                      "educ_total" = "B15003_001",
+#                                      "educ_hs" = "B15003_017",
+#                                      "educ_ged" = "B15003_018",
+#                                      "educ_somecoll_less1" = "B15003_019",
+#                                      "educ_somecoll_more1" = "B15003_020",
+#                                      "educ_associates" = "B15003_021",
 #                                      "educ_bachelors" = "B15003_022",
 #                                      "educ_masters" = "B15003_023",
 #                                      "educ_professional" = "B15003_024",
@@ -465,6 +501,8 @@ vermont_us <- rbind(country_total, vt_state, vt_county, vt_county_subdivisions, 
 
 vermont_us <- select(vermont_us, !ends_with("M"))
 
+vermont_us <- left_join(vermont_us, county_homeless, by = "NAME")
+
 
 vermont_us_nomoe <- vermont_us %>%
   mutate(poverty_rate_total = round(((poverty_belowE / poverty_totalE) * 100),1),
@@ -474,6 +512,9 @@ vermont_us_nomoe <- vermont_us %>%
          snap_rate_children = round(((snap_received_childrenE / (snap_received_childrenE + 
                                                            snap_not_received_childrenE)) * 100),1),
          housing_owner_occupied = round(((housing_ownedE / housing_totalE) * 100),1),
+         educ_hs_plus = round((((educ_hsE + educ_gedE + educ_somecoll_less1E + educ_somecoll_more1E +
+                                   educ_associatesE + educ_bachelorsE + educ_mastersE + educ_professionalE + educ_doctorateE) / 
+                                  educ_totalE) * 100),1),
          educ_ba_plus = round((((educ_bachelorsE + educ_mastersE + educ_professionalE + educ_doctorateE) / 
                            educ_totalE) * 100),1),
          employment_rate_civilian = round(((laborforce_civilian_employedE / laborforce_civilian_totalE) * 100),1),
@@ -485,14 +526,15 @@ vermont_us_nomoe <- vermont_us %>%
          race_twoplus = round(((race_twoplusE / race_totalE)*100),1),
          race_hispanic = round(((race_hispanicE / race_totalE)*100),1),
          foreign_born = round(((foreign_bornE / foreign_born_totalE)*100),1),
-         has_health_insurance = round(((rowSums(.[54:71]) / rowSums(.[36:71])) * 100),1)) %>%
-  rename(population = populationE,
+         has_health_insurance = round(((rowSums(.[59:76]) / rowSums(.[41:76])) * 100),1)) %>%
+         rename(population = populationE,
          median_hh_income = median_hh_incomeE) %>%
   mutate(short_name = NAME) %>%
   separate(short_name, c("short_name", "extra"), sep = " town") %>%
   separate(short_name, c("short_name", "extra"), sep = " city") %>%
   separate(short_name, c("short_name", "extra"), sep = ", Vermont") %>%
   separate(short_name, c("short_name", "extra"), sep = ", Addison") %>%
+  separate(short_name, c("short_name", "extra"), sep = " County") %>%
   select(-extra) %>%
   mutate(short_name = ifelse(grepl("9601", short_name), "Starksboro, Monkton", 
                              ifelse(grepl("9602", short_name), "Ferrisburgh",
@@ -507,11 +549,11 @@ vermont_us_nomoe <- vermont_us %>%
    mutate(datawrapper_id = GEOID) %>%
   mutate(datawrapper_id = ifelse(geography=="county", str_sub(GEOID, 3, 6), 
                                  ifelse(geography=="census tract", str_sub(GEOID, 3, 11), GEOID))) %>%
-
-  select(GEOID, datawrapper_id, geography, NAME, short_name, median_hh_income,
+  select(GEOID, datawrapper_id, geography, NAME, short_name, population, median_hh_income,
          poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep, snap_rate_total, snap_rate_children,
-         housing_owner_occupied, educ_ba_plus, employment_rate_civilian,
-         race_white:race_hispanic, foreign_born, has_health_insurance) %>%
+         housing_owner_occupied, educ_hs_plus, educ_ba_plus, employment_rate_civilian,
+         race_white:race_hispanic, foreign_born, has_health_insurance,
+         all_of(names_county_homeless)) %>%
   arrange(desc(geography), datawrapper_id) %>%
   filter(short_name != "East Middlebury")
 
