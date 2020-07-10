@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xalan="http://xml.apache.org/xalan" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.isotc211.org/2005/gmd">
+    <fileIdentifier>
+        <gco:CharacterString>1476899231823r4171775199197676</gco:CharacterString>
+    </fileIdentifier>
+    <language>
+        <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+    </language>
+    <characterSet>
+        <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+    </characterSet>
+    <hierarchyLevel>
+        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+    </hierarchyLevel>
+    <contact>
+        <CI_ResponsibleParty>
+            <individualName>
+                <gco:CharacterString>GIS Database Administrator</gco:CharacterString>
+            </individualName>
+            <organisationName>
+                <gco:CharacterString>VT Center for Geographic Information</gco:CharacterString>
+            </organisationName>
+            <contactInfo>
+                <CI_Contact>
+                    <phone>
+                        <CI_Telephone>
+                            <voice>
+                                <gco:CharacterString>802/882-3002</gco:CharacterString>
+                            </voice>
+                            <voice>
+                                <gco:CharacterString>None</gco:CharacterString>
+                            </voice>
+                            <facsimile>
+                                <gco:CharacterString>802/828-3383</gco:CharacterString>
+                            </facsimile>
+                        </CI_Telephone>
+                    </phone>
+                    <address>
+                        <CI_Address>
+                            <deliveryPoint>
+                                <gco:CharacterString>1 National Life Dr., Davis Building, 6th Floor</gco:CharacterString>
+                            </deliveryPoint>
+                            <city>
+                                <gco:CharacterString>Montpelier</gco:CharacterString>
+                            </city>
+                            <administrativeArea>
+                                <gco:CharacterString>VT</gco:CharacterString>
+                            </administrativeArea>
+                            <postalCode>
+                                <gco:CharacterString>05620-0501</gco:CharacterString>
+                            </postalCode>
+                            <country>
+                                <Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+                            </country>
+                        </CI_Address>
+                    </address>
+                </CI_Contact>
+            </contactInfo>
+            <role>
+                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+            </role>
+        </CI_ResponsibleParty>
+    </contact>
+    <dateStamp>
+        <gco:Date>2012-03-09</gco:Date>
+    </dateStamp>
+    <metadataStandardName>
+        <gco:CharacterString>NAP - Metadata</gco:CharacterString>
+    </metadataStandardName>
+    <metadataStandardVersion>
+        <gco:CharacterString>1.2</gco:CharacterString>
+    </metadataStandardVersion>
+    <spatialRepresentationInfo>
+        <MD_VectorSpatialRepresentation>
+            <geometricObjects>
+                <MD_GeometricObjects>
+                    <geometricObjectType>
+                        <MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="complex" codeSpace="ISOTC211/19115">complex</MD_GeometricObjectTypeCode>
+                    </geometricObjectType>
+                    <geometricObjectCount>
+                        <gco:Integer>255</gco:Integer>
+                    </geometricObjectCount>
+                </MD_GeometricObjects>
+            </geometricObjects>
+        </MD_VectorSpatialRepresentation>
+    </spatialRepresentationInfo>
+    <referenceSystemInfo>
+        <MD_ReferenceSystem>
+            <referenceSystemIdentifier>
+                <RS_Identifier>
+                    <code>
+                        <gco:CharacterString>32145</gco:CharacterString>
+                    </code>
+                    <codeSpace>
+                        <gco:CharacterString>EPSG</gco:CharacterString>
+                    </codeSpace>
+                </RS_Identifier>
+            </referenceSystemIdentifier>
+        </MD_ReferenceSystem>
+    </referenceSystemInfo>
+    <identificationInfo>
+        <MD_DataIdentification>
+            <citation>
+                <CI_Citation>
+                    <title>
+                        <gco:CharacterString>DemoCensus_COUSUB2010</gco:CharacterString>
+                    </title>
+                    <date>
+                        <CI_Date>
+                            <date>
+                                <gco:Date>2012-03-09</gco:Date>
+                            </date>
+                            <dateType>
+                                <CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</CI_DateTypeCode>
+                            </dateType>
+                        </CI_Date>
+                    </date>
+                    <edition>
+                        <gco:CharacterString>2010</gco:CharacterString>
+                    </edition>
+                    <citedResponsibleParty>
+                        <CI_ResponsibleParty>
+                            <organisationName>
+                                <gco:CharacterString>VT Center for Geographic Information</gco:CharacterString>
+                            </organisationName>
+                            <contactInfo>
+                                <CI_Contact>
+                                    <address>
+                                        <CI_Address>
+                                            <deliveryPoint>
+                                                <gco:CharacterString>Waterbury VT 05676</gco:CharacterString>
+                                            </deliveryPoint>
+                                        </CI_Address>
+                                    </address>
+                                </CI_Contact>
+                            </contactInfo>
+                            <role>
+                                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher" codeSpace="ISOTC211/19115">publisher</CI_RoleCode>
+                            </role>
+                        </CI_ResponsibleParty>
+                    </citedResponsibleParty>
+                    <citedResponsibleParty>
+                        <CI_ResponsibleParty>
+                            <organisationName>
+                                <gco:CharacterString>VT Center for Geographic Information</gco:CharacterString>
+                            </organisationName>
+                            <contactInfo gco:nilReason="missing"/>
+                            <role>
+                                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator" codeSpace="ISOTC211/19115">originator</CI_RoleCode>
+                            </role>
+                        </CI_ResponsibleParty>
+                    </citedResponsibleParty>
+                    <presentationForm>
+                        <CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</CI_PresentationFormCode>
+                    </presentationForm>
+                    <series>
+                        <CI_Series>
+                            <name>
+                                <gco:CharacterString>2010 Census Data (county subdivision - town) plus stats</gco:CharacterString>
+                            </name>
+                            <issueIdentification>
+                                <gco:CharacterString>2010</gco:CharacterString>
+                            </issueIdentification>
+                        </CI_Series>
+                    </series>
+                    <otherCitationDetails>
+                        <gco:CharacterString>Tile Structure - COUNTY SUBDIVISION - TOWN</gco:CharacterString>
+                    </otherCitationDetails>
+                </CI_Citation>
+            </citation>
+            <abstract>
+                <gco:CharacterString>(Link to Metadata) COUSUB2010 contains a subset of attributes from Summary File 1 of the 2010 Decennial Census.The TIGER/Line Files are shapefiles and related database files (.dbf) that are an extract of selected geographic and cartographic information from the U.S. Census Bureau's Master Address File / Topologically Integrated Geographic Encoding and Referencing (MAF/TIGER) Database (MTDB). The MTDB represents a seamless national file with no overlaps or gaps between parts, however, each TIGER/Line File is designed to stand alone as an independent data set, or they can be combined to cover the entire nation. County subdivisions are the primary divisions of counties and their equivalent entities for the reporting of Census Bureau data, and they include legally minor civil divisions (MCDs) and statistical census county divisions (CCDs), and unorganized territories. For the 2010 Census, the legal MCDs are the primary governmental and/or administrative divisions of counties in 29 States and Puerto Rico; Tennessee changed from having CCDs for Census 2000 to having MCDs for the 2010 Census. In MCD States where no MCD exists or is not defined, the Census Bureau creates statistical unorganized territories to complete coverage. The entire area of the United States, Puerto Rico, and the Island Areas is covered by county subdivisions. The boundaries of all 2010 Census legal MCDs are as of January 1, 2010 as reported through the Census Bureau's Boundary and Annexation Survey (BAS). For the 2010 Census, CCDs or their equivalents are delineated in 21 States. The boundaries of all 2010 Census statistical CCDs were delineated as part of the Census Bureau's Participant Statistical Areas Program (PSAP).</gco:CharacterString>
+            </abstract>
+            <purpose>
+                <gco:CharacterString>In order for others to use the information in the Census MAF/TIGER database in a geographic information system (GIS) or for other geographic applications, the Census Bureau releases to the public extracts of the database in the form of TIGER/Line Shapefiles.</gco:CharacterString>
+            </purpose>
+            <status>
+                <MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed" codeSpace="ISOTC211/19115">completed</MD_ProgressCode>
+            </status>
+            <pointOfContact>
+                <CI_ResponsibleParty>
+                    <organisationName>
+                        <gco:CharacterString>U.S. Department of Commerce, U.S. Census Bureau, Geography Division, Geographic Products Branch</gco:CharacterString>
+                    </organisationName>
+                    <contactInfo>
+                        <CI_Contact>
+                            <phone>
+                                <CI_Telephone>
+                                    <voice>
+                                        <gco:CharacterString>301-763-1128</gco:CharacterString>
+                                    </voice>
+                                    <facsimile>
+                                        <gco:CharacterString>301-763-4710</gco:CharacterString>
+                                    </facsimile>
+                                </CI_Telephone>
+                            </phone>
+                            <address>
+                                <CI_Address>
+                                    <deliveryPoint>
+                                        <gco:CharacterString>4600 Silver Hill Road, Stop 7400</gco:CharacterString>
+                                    </deliveryPoint>
+                                    <city>
+                                        <gco:CharacterString>Washington</gco:CharacterString>
+                                    </city>
+                                    <administrativeArea>
+                                        <gco:CharacterString>DC</gco:CharacterString>
+                                    </administrativeArea>
+                                    <postalCode>
+                                        <gco:CharacterString>20233-7400</gco:CharacterString>
+                                    </postalCode>
+                                    <country>
+                                        <Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+                                    </country>
+                                    <electronicMailAddress>
+                                        <gco:CharacterString>geo.tiger@census.gov</gco:CharacterString>
+                                    </electronicMailAddress>
+                                </CI_Address>
+                            </address>
+                        </CI_Contact>
+                    </contactInfo>
+                    <role>
+                        <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+                    </role>
+                </CI_ResponsibleParty>
+            </pointOfContact>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Vermont</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>50</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or Equivalent Entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>U.S.</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>VT</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Vermont</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>50</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or Equivalent Entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>U.S.</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>VT</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Vermont</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>50</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or Equivalent Entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>U.S.</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>VT</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Vermont</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>50</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or Equivalent Entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>U.S.</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>VT</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Vermont</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>50</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or Equivalent Entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>U.S.</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>VT</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Vermont</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>50</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or Equivalent Entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>U.S.</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>VT</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>UT</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Town</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Unorganized -+Territory</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Minor Civil Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>State or equivalent entity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Census County Division</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Barrio</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Township</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>County Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Polygon</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Subdivision</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CCD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>MCD</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>society</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>ISO 19115 Topic Categories</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <resourceConstraints>
+                <MD_Constraints>
+                    <useLimitation>
+                        <gco:CharacterString>VCGI and the State of VT make no representations of any kind, including but not limited to the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied with respect to the data, service, or application.</gco:CharacterString>
+                    </useLimitation>
+                </MD_Constraints>
+            </resourceConstraints>
+            <resourceConstraints>
+                <MD_Constraints>
+                    <useLimitation>
+                        <gco:CharacterString>The TIGER/Line Shapefile products are not copyrighted however TIGER/Line and Census TIGER are registered trademarks of the U.S. Census Bureau. These products are free to use in a product or publication, however acknowledgement must be given to the U.S. Census Bureau as the source. The boundary information in the TIGER/Line Shapefiles are for statistical data collection and tabulation purposes only; their depiction and designation for statistical purposes does not constitute a determination of jurisdictional authority or rights of ownership or entitlement and they are not legal land descriptions.Coordinates in the TIGER/Line shapefiles have six implied decimal places, but the positional accuracy of these coordinates is not as great as the six decimal places suggest.</gco:CharacterString>
+                    </useLimitation>
+                </MD_Constraints>
+            </resourceConstraints>
+            <spatialRepresentationType>
+                <MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</MD_SpatialRepresentationTypeCode>
+            </spatialRepresentationType>
+            <language>
+                <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+            </language>
+            <characterSet>
+                <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+            </characterSet>
+            <topicCategory>
+                <MD_TopicCategoryCode>society</MD_TopicCategoryCode>
+            </topicCategory>
+            <extent>
+                <EX_Extent>
+                    <description>
+                        <gco:CharacterString>Publication Date</gco:CharacterString>
+                    </description>
+                    <geographicElement>
+                        <EX_GeographicBoundingBox>
+                            <extentTypeCode>
+                                <gco:Boolean>true</gco:Boolean>
+                            </extentTypeCode>
+                            <westBoundLongitude>
+                                <gco:Decimal>-73.4493</gco:Decimal>
+                            </westBoundLongitude>
+                            <eastBoundLongitude>
+                                <gco:Decimal>-71.4168</gco:Decimal>
+                            </eastBoundLongitude>
+                            <southBoundLatitude>
+                                <gco:Decimal>42.6912</gco:Decimal>
+                            </southBoundLatitude>
+                            <northBoundLatitude>
+                                <gco:Decimal>45.0897</gco:Decimal>
+                            </northBoundLatitude>
+                        </EX_GeographicBoundingBox>
+                    </geographicElement>
+                    <temporalElement>
+                        <EX_TemporalExtent>
+                            <extent>
+                                <gml:TimePeriod gml:id="N65827">
+                                    <gml:beginPosition>2010-01-01</gml:beginPosition>
+                                    <gml:endPosition>2010-07-01</gml:endPosition>
+                                </gml:TimePeriod>
+                            </extent>
+                        </EX_TemporalExtent>
+                    </temporalElement>
+                </EX_Extent>
+            </extent>
+            <extent>
+                <EX_Extent>
+                    <geographicElement>
+                        <EX_GeographicBoundingBox>
+                            <westBoundLongitude>
+                                <gco:Decimal>-73.437905</gco:Decimal>
+                            </westBoundLongitude>
+                            <eastBoundLongitude>
+                                <gco:Decimal>-71.465039</gco:Decimal>
+                            </eastBoundLongitude>
+                            <southBoundLatitude>
+                                <gco:Decimal>42.72685</gco:Decimal>
+                            </southBoundLatitude>
+                            <northBoundLatitude>
+                                <gco:Decimal>45.016659</gco:Decimal>
+                            </northBoundLatitude>
+                        </EX_GeographicBoundingBox>
+                    </geographicElement>
+                </EX_Extent>
+            </extent>
+        </MD_DataIdentification>
+    </identificationInfo>
+    <distributionInfo>
+        <MD_Distribution>
+            <distributionFormat>
+                <MD_Format>
+                    <name>
+                        <gco:CharacterString>SHP</gco:CharacterString>
+                    </name>
+                    <version gco:nilReason="missing"/>
+                    <specification>
+                        <gco:CharacterString>ESRI Shapefile format (compressed into ZIP file format)</gco:CharacterString>
+                    </specification>
+                    <fileDecompressionTechnique>
+                        <gco:CharacterString>ZIP extraction tool</gco:CharacterString>
+                    </fileDecompressionTechnique>
+                </MD_Format>
+            </distributionFormat>
+            <distributor>
+                <MD_Distributor>
+                    <distributorContact>
+                        <CI_ResponsibleParty>
+                            <organisationName>
+                                <gco:CharacterString>VT Center for Geographic Information</gco:CharacterString>
+                            </organisationName>
+                            <contactInfo>
+                                <CI_Contact>
+                                    <phone>
+                                        <CI_Telephone>
+                                            <voice>
+                                                <gco:CharacterString>802/882-3002</gco:CharacterString>
+                                            </voice>
+                                            <voice>
+                                                <gco:CharacterString>None</gco:CharacterString>
+                                            </voice>
+                                            <facsimile>
+                                                <gco:CharacterString>802/828-3383</gco:CharacterString>
+                                            </facsimile>
+                                        </CI_Telephone>
+                                    </phone>
+                                    <address>
+                                        <CI_Address>
+                                            <deliveryPoint>
+                                                <gco:CharacterString>1 National Life Dr., Davis Building, 6th Floor</gco:CharacterString>
+                                            </deliveryPoint>
+                                            <city>
+                                                <gco:CharacterString>Montpelier</gco:CharacterString>
+                                            </city>
+                                            <administrativeArea>
+                                                <gco:CharacterString>VT</gco:CharacterString>
+                                            </administrativeArea>
+                                            <postalCode>
+                                                <gco:CharacterString>05620-0501</gco:CharacterString>
+                                            </postalCode>
+                                            <country>
+                                                <Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+                                            </country>
+                                            <electronicMailAddress>
+                                                <gco:CharacterString>accd.vcgiinfo@vermont.gov</gco:CharacterString>
+                                            </electronicMailAddress>
+                                        </CI_Address>
+                                    </address>
+                                    <hoursOfService>
+                                        <gco:CharacterString>9am - 5pm, M-F</gco:CharacterString>
+                                    </hoursOfService>
+                                </CI_Contact>
+                            </contactInfo>
+                            <role>
+                                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor" codeSpace="ISOTC211/19115">distributor</CI_RoleCode>
+                            </role>
+                        </CI_ResponsibleParty>
+                    </distributorContact>
+                    <distributionOrderProcess>
+                        <MD_StandardOrderProcess>
+                            <fees>
+                                <gco:CharacterString>No charge when downloading from the internet, and when no custom processing is required.</gco:CharacterString>
+                            </fees>
+                            <plannedAvailableDateTime>
+                                <gco:DateTime>2012-03-09T00:00:00</gco:DateTime>
+                            </plannedAvailableDateTime>
+                            <orderingInstructions>
+                                <gco:CharacterString>Send an email describing data request to accd.vcgiinfo@vermont.gov</gco:CharacterString>
+                            </orderingInstructions>
+                            <turnaround>
+                                <gco:CharacterString>About 5 days.</gco:CharacterString>
+                            </turnaround>
+                        </MD_StandardOrderProcess>
+                    </distributionOrderProcess>
+                </MD_Distributor>
+            </distributor>
+            <transferOptions>
+                <MD_DigitalTransferOptions>
+                    <onLine>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>http://maps.vcgi.vermont.gov/gisdata/vcgi/packaged_zips/DemoCensus_COUSUB2010.zip</URL>
+                            </linkage>
+                            <protocol gco:nilReason="missing"/>
+                            <name>
+                                <gco:CharacterString>Download Pre-packaged Data</gco:CharacterString>
+                            </name>
+                            <function>
+                                <CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" codeSpace="ISOTC211/19115">download</CI_OnLineFunctionCode>
+                            </function>
+                        </CI_OnlineResource>
+                    </onLine>
+                </MD_DigitalTransferOptions>
+            </transferOptions>
+            <transferOptions>
+                <MD_DigitalTransferOptions>
+                    <onLine>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>http://maps.vcgi.vermont.gov/gisdata/vcgi/packaged_zips/DemoCensus_COUSUB2010.zip</URL>
+                            </linkage>
+                            <protocol gco:nilReason="missing"/>
+                            <description>
+                                <gco:CharacterString>Download from web site.</gco:CharacterString>
+                            </description>
+                        </CI_OnlineResource>
+                    </onLine>
+                </MD_DigitalTransferOptions>
+            </transferOptions>
+            <transferOptions>
+                <MD_DigitalTransferOptions>
+                    <offLine>
+                        <MD_Medium>
+                            <name>
+                                <MD_MediumNameCode codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#napMD_MediumNameCode" codeListValue="USBFlashDrive" codeSpace="ISOTC211/19139/NAP">USBFlashDrive</MD_MediumNameCode>
+                            </name>
+                        </MD_Medium>
+                    </offLine>
+                </MD_DigitalTransferOptions>
+            </transferOptions>
+            <transferOptions>
+                <MD_DigitalTransferOptions/>
+            </transferOptions>
+        </MD_Distribution>
+    </distributionInfo>
+    <dataQualityInfo>
+        <DQ_DataQuality>
+            <scope>
+                <DQ_Scope>
+                    <level>
+                        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+                    </level>
+                </DQ_Scope>
+            </scope>
+            <report>
+                <DQ_ConceptualConsistency>
+                    <measureDescription>
+                        <gco:CharacterString>The Census Bureau performed automated tests to ensure logical consistency and limits of shapefiles. Segments making up the outer and inner boundaries of a polygon tie end-to-end to completely enclose the area. All polygons are tested for closure. The Census Bureau uses its internally developed geographic update system to enhance and modify spatial and attribute data in the Census MAF/TIGER database. Standard geographic codes, such as FIPS codes for states, counties, municipalities, county subdivisions, places, American Indian/Alaska Native/Native Hawaiian areas, and congressional districts are used when encoding spatial entities. The Census Bureau performed spatial data tests for logical consistency of the codes during the compilation of the original Census MAF/TIGER database files. Most of the codes for geographic entities except states, counties, urban areas, Core Based Statistical Areas (CBSAs), American Indian Areas (AIAs), and congressional districts were provided to the Census Bureau by the USGS, the agency responsible for maintaining FIPS 55. Feature attribute information has been examined but has not been fully tested for consistency. For the TIGER/Line Shapefiles, the Point and Vector Object Count for the G-polygon SDTS Point and Vector Object Type reflects the number of records in the shapefile attribute table. For multi-polygon features, only one attribute record exists for each multi-polygon rather than one attribute record per individual G-polygon component of the multi-polygon feature. TIGER/Line Shapefile multi-polygons are an exception to the G-polygon object type classification. Therefore, when multi-polygons exist in a shapefile, the object count will be less than the actual number of G-polygons.</gco:CharacterString>
+                    </measureDescription>
+                    <result gco:nilReason="missing"/>
+                </DQ_ConceptualConsistency>
+            </report>
+            <report>
+                <DQ_CompletenessOmission>
+                    <measureDescription>
+                        <gco:CharacterString>Data completeness of the TIGER/Line Shapefiles reflects the contents of the Census MAF/TIGER database at the time the TIGER/Line Shapefiles were created.</gco:CharacterString>
+                    </measureDescription>
+                    <result gco:nilReason="missing"/>
+                </DQ_CompletenessOmission>
+            </report>
+            <report>
+                <DQ_QuantitativeAttributeAccuracy>
+                    <measureDescription>
+                        <gco:CharacterString>Accurate against Federal Information Processing Standards (FIPS), FIPS Publication 6-4, and FIPS-55 at the 100% level for the codes and base names. The remaining attribute information has been examined but has not been fully tested for accuracy.</gco:CharacterString>
+                    </measureDescription>
+                    <result gco:nilReason="missing"/>
+                </DQ_QuantitativeAttributeAccuracy>
+            </report>
+            <lineage>
+                <LI_Lineage>
+                    <processStep>
+                        <LI_ProcessStep>
+                            <description>
+                                <gco:CharacterString>TIGER/Line Shapefiles are extracted from the Census MAF/TIGER database by nation, state, county, and entity. Census MAF/TIGER data for all of the aforementioned geographic entities are then distributed among the shapefiles each containing attributes for line, polygon, or landmark geographic data.</gco:CharacterString>
+                            </description>
+                            <dateTime>
+                                <gco:DateTime>2010-01-01T00:00:00</gco:DateTime>
+                            </dateTime>
+                        </LI_ProcessStep>
+                    </processStep>
+                    <processStep>
+                        <LI_ProcessStep>
+                            <description>
+                                <gco:CharacterString>Census 2010 Summary File 1 data was brought into the Access database shell provided here http://www2.census.gov/census_2010/04-Summary_File_1/ using the process described in 0HowToUseMSAccessWithSummaryFile1.pdf located in the same folder. Queries were created to extract the desired attributes for each of six geographies and the results of those queries were exported as Excel spreadsheets. Those spreadsheet attribute tables were then joined to the Tiger shapefiles for each geography (in ArcGIS v 10) and then the new shapefiles were exported in VT State Plane Meters NAD83.</gco:CharacterString>
+                            </description>
+                            <dateTime>
+                                <gco:DateTime>2012-03-02T00:00:00</gco:DateTime>
+                            </dateTime>
+                            <processor>
+                                <CI_ResponsibleParty>
+                                    <individualName>
+                                        <gco:CharacterString>Leslie Pelch</gco:CharacterString>
+                                    </individualName>
+                                    <organisationName>
+                                        <gco:CharacterString>VCGI</gco:CharacterString>
+                                    </organisationName>
+                                    <positionName>
+                                        <gco:CharacterString>Outreach Coordinator</gco:CharacterString>
+                                    </positionName>
+                                    <contactInfo gco:nilReason="missing"/>
+                                    <role>
+                                        <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor" codeSpace="ISOTC211/19115">processor</CI_RoleCode>
+                                    </role>
+                                </CI_ResponsibleParty>
+                            </processor>
+                        </LI_ProcessStep>
+                    </processStep>
+                    <source>
+                        <LI_Source>
+                            <description>
+                                <gco:CharacterString>The selected geographic and cartographic information (line segments) are derived from the U.S. Census Bureau's Master Address File Topologically Integrated Geographic Encoding and Referencing (MAF/TIGER) database.</gco:CharacterString>
+                            </description>
+                            <sourceCitation>
+                                <CI_Citation>
+                                    <title>
+                                        <gco:CharacterString>Census MAF/TIGER database</gco:CharacterString>
+                                    </title>
+                                    <date gco:nilReason="missing"/>
+                                    <citedResponsibleParty gco:nilReason="missing"/>
+                                </CI_Citation>
+                            </sourceCitation>
+                            <sourceExtent>
+                                <EX_Extent>
+                                    <description>
+                                        <gco:CharacterString>Publication Date</gco:CharacterString>
+                                    </description>
+                                    <temporalElement>
+                                        <EX_TemporalExtent>
+                                            <extent>
+                                                <gml:TimePeriod gml:id="N66006">
+                                                    <gml:beginPosition>2010-01-01</gml:beginPosition>
+                                                    <gml:endPosition>2010-07-01</gml:endPosition>
+                                                </gml:TimePeriod>
+                                            </extent>
+                                        </EX_TemporalExtent>
+                                    </temporalElement>
+                                </EX_Extent>
+                            </sourceExtent>
+                        </LI_Source>
+                    </source>
+                </LI_Lineage>
+            </lineage>
+        </DQ_DataQuality>
+    </dataQualityInfo>
+    <metadataConstraints>
+        <MD_SecurityConstraints>
+            <classification>
+                <MD_ClassificationCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified" codeSpace="ISOTC211/19115">unclassified</MD_ClassificationCode>
+            </classification>
+            <classificationSystem>
+                <gco:CharacterString>N/A</gco:CharacterString>
+            </classificationSystem>
+            <handlingDescription>
+                <gco:CharacterString>No security considerations</gco:CharacterString>
+            </handlingDescription>
+        </MD_SecurityConstraints>
+    </metadataConstraints>
+</MD_Metadata>
