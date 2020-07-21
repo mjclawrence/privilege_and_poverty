@@ -1,40 +1,70 @@
-﻿id,geography,full_name,name,poverty_total,poverty_deep,poverty_not_deep
-1,us,United States,United States,13.1,5.9,7.2
-50,state,Vermont,Vermont,11,4.7,6.3
-5000100325,county subdivision,"Addison town, Addison County, Vermont",Addison,3.3,0.5,2.8
-5000108575,county subdivision,"Bridport town, Addison County, Vermont",Bridport,9.4,3,6.4
-5000109025,county subdivision,"Bristol town, Addison County, Vermont",Bristol,8.1,6.4,1.8
-5000116000,county subdivision,"Cornwall town, Addison County, Vermont",Cornwall,2.9,1.7,1.2
-5000126300,county subdivision,"Ferrisburgh town, Addison County, Vermont",Ferrisburgh,3,0.6,2.3
-5000128600,county subdivision,"Goshen town, Addison County, Vermont",Goshen,5.2,0,5.2
-5000129575,county subdivision,"Granville town, Addison County, Vermont",Granville,13.6,8,5.7
-5000131525,county subdivision,"Hancock town, Addison County, Vermont",Hancock,10.8,5,5.9
-5000139325,county subdivision,"Leicester town, Addison County, Vermont",Leicester,8.3,3.7,4.6
-5000140075,county subdivision,"Lincoln town, Addison County, Vermont",Lincoln,9.1,3,6.1
-5000144350,county subdivision,"Middlebury town, Addison County, Vermont",Middlebury,10.3,4.4,5.9
-5000145550,county subdivision,"Monkton town, Addison County, Vermont",Monkton,1.7,0.8,0.9
-5000148700,county subdivision,"New Haven town, Addison County, Vermont",New Haven,4.7,2.7,2
-5000153725,county subdivision,"Orwell town, Addison County, Vermont",Orwell,7.3,3.5,3.8
-5000153950,county subdivision,"Panton town, Addison County, Vermont",Panton,2.9,2,0.9
-5000159650,county subdivision,"Ripton town, Addison County, Vermont",Ripton,12.7,1.7,11
-5000162575,county subdivision,"Salisbury town, Addison County, Vermont",Salisbury,8.2,4.5,3.7
-5000165050,county subdivision,"Shoreham town, Addison County, Vermont",Shoreham,10.1,6.2,3.9
-5000170075,county subdivision,"Starksboro town, Addison County, Vermont",Starksboro,12.2,6.9,5.3
-5000174650,county subdivision,"Vergennes city, Addison County, Vermont",Vergennes,9.9,4.8,5.1
-5000176075,county subdivision,"Waltham town, Addison County, Vermont",Waltham,7.1,2.9,4.2
-5000183275,county subdivision,"Weybridge town, Addison County, Vermont",Weybridge,4.6,3.5,1.2
-5000183800,county subdivision,"Whiting town, Addison County, Vermont",Whiting,18.3,5.2,13.1
-1,county,"Addison County, Vermont",Addison,7.7,3.8,4
-3,county,"Bennington County, Vermont",Bennington,11.3,4.4,6.9
-5,county,"Caledonia County, Vermont",Caledonia,12.3,5,7.3
-7,county,"Chittenden County, Vermont",Chittenden,11.8,5.7,6
-9,county,"Essex County, Vermont",Essex,14.6,5.1,9.5
-11,county,"Franklin County, Vermont",Franklin,7.7,3.2,4.5
-13,county,"Grand Isle County, Vermont",Grand Isle,7.6,3.5,4.1
-15,county,"Lamoille County, Vermont",Lamoille,14.5,7.3,7.2
-17,county,"Orange County, Vermont",Orange,10.8,4.2,6.6
-19,county,"Orleans County, Vermont",Orleans,14,4.8,9.1
-21,county,"Rutland County, Vermont",Rutland,10.7,4,6.7
-23,county,"Washington County, Vermont",Washington,11.4,5.2,6.2
-25,county,"Windham County, Vermont",Windham,13.4,6,7.4
-27,county,"Windsor County, Vermont",Windsor,10,4.8,5.2
+﻿id,geography,full_name,name,value,poverty_type
+5000100325,county subdivision,"Addison town, Addison County, Vermont",Addison,3.3,poverty_total
+5000108575,county subdivision,"Bridport town, Addison County, Vermont",Bridport,9.4,poverty_total
+5000109025,county subdivision,"Bristol town, Addison County, Vermont",Bristol,8.1,poverty_total
+5000116000,county subdivision,"Cornwall town, Addison County, Vermont",Cornwall,2.9,poverty_total
+5000126300,county subdivision,"Ferrisburgh town, Addison County, Vermont",Ferrisburgh,3,poverty_total
+5000128600,county subdivision,"Goshen town, Addison County, Vermont",Goshen,5.2,poverty_total
+5000129575,county subdivision,"Granville town, Addison County, Vermont",Granville,13.6,poverty_total
+5000131525,county subdivision,"Hancock town, Addison County, Vermont",Hancock,10.8,poverty_total
+5000139325,county subdivision,"Leicester town, Addison County, Vermont",Leicester,8.3,poverty_total
+5000140075,county subdivision,"Lincoln town, Addison County, Vermont",Lincoln,9.1,poverty_total
+5000144350,county subdivision,"Middlebury town, Addison County, Vermont",Middlebury,10.3,poverty_total
+5000145550,county subdivision,"Monkton town, Addison County, Vermont",Monkton,1.7,poverty_total
+5000148700,county subdivision,"New Haven town, Addison County, Vermont",New Haven,4.7,poverty_total
+5000153725,county subdivision,"Orwell town, Addison County, Vermont",Orwell,7.3,poverty_total
+5000153950,county subdivision,"Panton town, Addison County, Vermont",Panton,2.9,poverty_total
+5000159650,county subdivision,"Ripton town, Addison County, Vermont",Ripton,12.7,poverty_total
+5000162575,county subdivision,"Salisbury town, Addison County, Vermont",Salisbury,8.2,poverty_total
+5000165050,county subdivision,"Shoreham town, Addison County, Vermont",Shoreham,10.1,poverty_total
+5000170075,county subdivision,"Starksboro town, Addison County, Vermont",Starksboro,12.2,poverty_total
+5000174650,county subdivision,"Vergennes city, Addison County, Vermont",Vergennes,9.9,poverty_total
+5000176075,county subdivision,"Waltham town, Addison County, Vermont",Waltham,7.1,poverty_total
+5000183275,county subdivision,"Weybridge town, Addison County, Vermont",Weybridge,4.6,poverty_total
+5000183800,county subdivision,"Whiting town, Addison County, Vermont",Whiting,18.3,poverty_total
+5000100325,county subdivision,"Addison town, Addison County, Vermont",Addison,0.5,poverty_deep
+5000108575,county subdivision,"Bridport town, Addison County, Vermont",Bridport,3,poverty_deep
+5000109025,county subdivision,"Bristol town, Addison County, Vermont",Bristol,6.4,poverty_deep
+5000116000,county subdivision,"Cornwall town, Addison County, Vermont",Cornwall,1.7,poverty_deep
+5000126300,county subdivision,"Ferrisburgh town, Addison County, Vermont",Ferrisburgh,0.6,poverty_deep
+5000128600,county subdivision,"Goshen town, Addison County, Vermont",Goshen,0,poverty_deep
+5000129575,county subdivision,"Granville town, Addison County, Vermont",Granville,8,poverty_deep
+5000131525,county subdivision,"Hancock town, Addison County, Vermont",Hancock,5,poverty_deep
+5000139325,county subdivision,"Leicester town, Addison County, Vermont",Leicester,3.7,poverty_deep
+5000140075,county subdivision,"Lincoln town, Addison County, Vermont",Lincoln,3,poverty_deep
+5000144350,county subdivision,"Middlebury town, Addison County, Vermont",Middlebury,4.4,poverty_deep
+5000145550,county subdivision,"Monkton town, Addison County, Vermont",Monkton,0.8,poverty_deep
+5000148700,county subdivision,"New Haven town, Addison County, Vermont",New Haven,2.7,poverty_deep
+5000153725,county subdivision,"Orwell town, Addison County, Vermont",Orwell,3.5,poverty_deep
+5000153950,county subdivision,"Panton town, Addison County, Vermont",Panton,2,poverty_deep
+5000159650,county subdivision,"Ripton town, Addison County, Vermont",Ripton,1.7,poverty_deep
+5000162575,county subdivision,"Salisbury town, Addison County, Vermont",Salisbury,4.5,poverty_deep
+5000165050,county subdivision,"Shoreham town, Addison County, Vermont",Shoreham,6.2,poverty_deep
+5000170075,county subdivision,"Starksboro town, Addison County, Vermont",Starksboro,6.9,poverty_deep
+5000174650,county subdivision,"Vergennes city, Addison County, Vermont",Vergennes,4.8,poverty_deep
+5000176075,county subdivision,"Waltham town, Addison County, Vermont",Waltham,2.9,poverty_deep
+5000183275,county subdivision,"Weybridge town, Addison County, Vermont",Weybridge,3.5,poverty_deep
+5000183800,county subdivision,"Whiting town, Addison County, Vermont",Whiting,5.2,poverty_deep
+5000100325,county subdivision,"Addison town, Addison County, Vermont",Addison,2.8,poverty_not_deep
+5000108575,county subdivision,"Bridport town, Addison County, Vermont",Bridport,6.4,poverty_not_deep
+5000109025,county subdivision,"Bristol town, Addison County, Vermont",Bristol,1.8,poverty_not_deep
+5000116000,county subdivision,"Cornwall town, Addison County, Vermont",Cornwall,1.2,poverty_not_deep
+5000126300,county subdivision,"Ferrisburgh town, Addison County, Vermont",Ferrisburgh,2.3,poverty_not_deep
+5000128600,county subdivision,"Goshen town, Addison County, Vermont",Goshen,5.2,poverty_not_deep
+5000129575,county subdivision,"Granville town, Addison County, Vermont",Granville,5.7,poverty_not_deep
+5000131525,county subdivision,"Hancock town, Addison County, Vermont",Hancock,5.9,poverty_not_deep
+5000139325,county subdivision,"Leicester town, Addison County, Vermont",Leicester,4.6,poverty_not_deep
+5000140075,county subdivision,"Lincoln town, Addison County, Vermont",Lincoln,6.1,poverty_not_deep
+5000144350,county subdivision,"Middlebury town, Addison County, Vermont",Middlebury,5.9,poverty_not_deep
+5000145550,county subdivision,"Monkton town, Addison County, Vermont",Monkton,0.9,poverty_not_deep
+5000148700,county subdivision,"New Haven town, Addison County, Vermont",New Haven,2,poverty_not_deep
+5000153725,county subdivision,"Orwell town, Addison County, Vermont",Orwell,3.8,poverty_not_deep
+5000153950,county subdivision,"Panton town, Addison County, Vermont",Panton,0.9,poverty_not_deep
+5000159650,county subdivision,"Ripton town, Addison County, Vermont",Ripton,11,poverty_not_deep
+5000162575,county subdivision,"Salisbury town, Addison County, Vermont",Salisbury,3.7,poverty_not_deep
+5000165050,county subdivision,"Shoreham town, Addison County, Vermont",Shoreham,3.9,poverty_not_deep
+5000170075,county subdivision,"Starksboro town, Addison County, Vermont",Starksboro,5.3,poverty_not_deep
+5000174650,county subdivision,"Vergennes city, Addison County, Vermont",Vergennes,5.1,poverty_not_deep
+5000176075,county subdivision,"Waltham town, Addison County, Vermont",Waltham,4.2,poverty_not_deep
+5000183275,county subdivision,"Weybridge town, Addison County, Vermont",Weybridge,1.2,poverty_not_deep
+5000183800,county subdivision,"Whiting town, Addison County, Vermont",Whiting,13.1,poverty_not_deep
