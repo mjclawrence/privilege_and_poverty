@@ -1,0 +1,270 @@
+se_variable	se_variable_description	variable_name
+A10008_001	     Households Total	
+      A10008_002	"     Households, family households"	pct_housing_hhtype_pct_family_any
+      A10008_003	"     Households, family households married couple"	pct_housing_hhtype_pct_family_married_couple
+      A10008_004	"     Households, family households other family"	pct_housing_hhtype_pct_family_other
+      A10008_005	"     Households, family, other, male household head, no wife"	pct_housing_hhtype_pct_family_other_headm_spouseno
+      A10008_006	"     Households, family, other, female household head, no husband"	pct_housing_hhtype_pct_family_other_headf_spouseno
+      A10008_007	"     Households, non family"	pct_housing_hhtype_pct_nonfamily_any
+      A10008_008	"     Households, non family, male householder"	pct_housing_hhtype_pct_nonfamily_headf
+      A10008_009	"     Households, non family, female households"	pct_housing_hhtype_pct_nonfamily_headf
+A10004B_001	   Renter-Occupied Housing Units	
+            A10004B_002	      Family Households	pct_housing_hhtype_renter_pct_family_any
+            A10004B_003	         Married-Couple Family	pct_housing_hhtype_renter_pct_family_married_couple
+            A10004B_007	         Other Family	pct_housing_hhtype_renter_pct_family_other
+            A10004B_008	"            Male Householder, No Wife Present"	pct_housing_hhtype_renter_pct_family_other_headm_spouseno
+            A10004B_012	"            Female Householder, No Husband Present"	pct_housing_hhtype_renter_pct_family_other_headf_spouseno
+            A10004B_016	      Nonfamily Households	pct_housing_hhtype_renter_pct_nonfamily_any
+            A10004B_017	         Householder Living Alone	pct_housing_hhtype_renter_pct_alone
+            A10004B_021	         Householder Not Living Alone	pct_housing_hhtype_renter_pct_notalone
+A10024_001	   Occupied Housing Units	
+            A10024_002	      1-Person Household	pct_housing_unittype_pct_1p
+            A10024_003	      2-Person Household	pct_housing_unittype_pct_2p
+            A10024_004	      3-Person Household	pct_housing_unittype_pct_3p
+            A10024_005	      4-Person Household	pct_housing_unittype_pct_4p
+            A10024_006	      5-Person Household	pct_housing_unittype_pct_5p
+            A10024_007	      6-Person Household	pct_housing_unittype_pct_6p
+            A10024_008	      7-or-More Person Household	pct_housing_unittype_pct_7p
+A10002B_001	   Renter-Occupied Housing Units	
+            A10002B_002	      1-Person Household	pct_housing_unittype_renter_pct_1p
+            A10002B_003	      2-Person Household	pct_housing_unittype_renter_pct_2p
+            A10002B_004	      3-Person Household	pct_housing_unittype_renter_pct_3p
+            A10002B_005	      4-Person Household	pct_housing_unittype_renter_pct_4p
+            A10002B_006	      5-Person Household	pct_housing_unittype_renter_pct_5p
+            A10002B_007	      6-Person Household	pct_housing_unittype_renter_pct_6p
+            A10002B_008	      7-or-More Person Household	pct_housing_unittype_renter_pct_7p
+A10022_001	   Occupied Housing Units	
+            A10022_002	      With Related Children of the Householder Under 18	pct_housing_hhchild_pct_children_related_under18_any
+            A10022_003	         With Own Children of the Householder Under 18	pct_housing_hhchild_pct_children_own_under18_total
+            A10022_004	            Under 6 Years Only	pct_housing_hhchild_pct_children_own_under06
+            A10022_005	            Under 6 Years and 6 to 17 Years	pct_housing_hhchild_pct_children_own_under06_6to17
+            A10022_006	            6 to 17 Years	pct_housing_hhchild_pct_children_own_6to17
+            A10022_007	         No Own Children of the Householder Under 18	pct_housing_hhchild_pct_children_own_under18_none
+            A10022_008	      No Related Children of the Householder Under 18	pct_housing_hhchild_pct_children_related_under18_none
+A10005B_001	   Renter-Occupied Housing Units	pct_housing_hhchild_rentertotal
+            A10005B_002	      With Related Children of the Householder Under 18	pct_housing_hhchild_renter_pct_children_related_under18_any
+            A10005B_003	         With Own Children of the Householder Under 18	pct_housing_hhchild_renter_pct_children_own_under18_total
+            A10005B_004	            Under 6 Years Only	pct_housing_hhchild_renter_pct_children_own_under06
+            A10005B_005	            Under 6 Years and 6 to 17 Years	pct_housing_hhchild_renter_pct_children_own_under06_6to17
+            A10005B_006	            6 to 17 Years	pct_housing_hhchild_renter_pct_children_own_6to17
+            A10005B_007	         No Own Children of the Householder Under 18	pct_housing_hhchild_renter_pct_children_own_under18_none
+            A10005B_008	      No Related Children of the Householder Under 18	pct_housing_hhchild_renter_pct_children_related_under18_none
+A10010_001	Total households	
+A10010_002	      With a Householder Who Is White Alone	pct_housing_hhrace_pct_whitealone
+             A10010_003	      With a Householder Who Is Black or African  American Alone	pct_housing_hhrace_pct_black
+             A10010_004	      With a Householder Who Is American Indian and  Alaska Native Alone	pct_housing_hhrace_pct_aian
+             A10010_005	      With a Householder Who Is Asian Alone	pct_housing_hhrace_pct_asian
+             A10010_006	      With a Householder Who Is Native Hawaiian and  Other Pacific Islander Alone	pct_housing_hhrace_pct_nhpi
+             A10010_007	      With a Householder Who Is Some Other Race Alone	pct_housing_hhrace_pct_other
+             A10010_008	      With a Householder Who Is Two or More Races	pct_housing_hhrace_pct_twoplus
+             A10010_009	      With a Householder Who Is Hispanic or Latino	pct_housing_hhrace_pct_hisp
+             A10010_010	"      With a Householder Who Is White Alone, Not  Hispanic or Latino"	pct_housing_hhrace_pct_whitenothisp
+A03001B_001	   Renter-Occupied Housing Units	
+             A03001B_002	      White Alone Householder	pct_housing_hhrace_renter_pct_whitealone
+             A03001B_003	      Black or African American Alone Householder	pct_housing_hhrace_renter_pct_black
+             A03001B_004	      American Indian and Alaska Native Alone Householder	pct_housing_hhrace_renter_pct_aian
+             A03001B_005	      Asian Alone Householder	pct_housing_hhrace_renter_pct_asian
+             A03001B_006	      Native Hawaiian and Other Pacific Islander Alone Householder	pct_housing_hhrace_renter_pct_nhpi
+             A03001B_007	      Some Other Race Alone Householder	pct_housing_hhrace_renter_pct_other
+             A03001B_008	      Two or More Races Householder	pct_housing_hhrace_renter_pct_twoplus
+             A03001B_009	"      White Alone, Not Hispanic or Latino Householder"	pct_housing_hhrace_renter_pct_hisp
+             A03001B_010	      Hispanic or Latino Householder	pct_housing_hhrace_renter_pct_whitenothisp
+               A10003B_001	   Average Household Size for Renter-Occupied Housing Units	
+A10026_001	   Occupied Housing Units	
+             A10026_002	"      Less than $20,000"	pct_housing_cost_pct_inc20k_total
+             A10026_003	         Less than 20 Percent	pct_housing_cost_pct_inc20k_cost20pct
+             A10026_004	         20 to 29 Percent	pct_housing_cost_pct_inc20k_cost29pct
+             A10026_005	         30 Percent or More	pct_housing_cost_pct_inc20k_cost30pct
+             A10026_006	"      $20,000 to $34,999"	pct_housing_cost_pct_inc34k_total
+             A10026_007	         Less than 20 Percent	pct_housing_cost_pct_inc34k_cost20pct
+             A10026_008	         20 to 29 Percent	pct_housing_cost_pct_inc34k_cost29pct
+             A10026_009	         30 Percent or More	pct_housing_cost_pct_inc34k_cost30pct
+             A10026_010	"      $35,000 to $49,999"	pct_housing_cost_pct_inc49k_total
+             A10026_011	         Less than 20 Percent	pct_housing_cost_pct_inc49k_cost20pct
+             A10026_012	         20 to 29 Percent	pct_housing_cost_pct_inc49k_cost29pct
+             A10026_013	         30 Percent or More	pct_housing_cost_pct_inc49k_cost30pct
+             A10026_014	"      $50,000 to $74,999"	pct_housing_cost_pct_inc74k_total
+             A10026_015	         Less than 20 Percent	pct_housing_cost_pct_inc74k_cost20pct
+             A10026_016	         20 to 29 Percent	pct_housing_cost_pct_inc74k_cost29pct
+             A10026_017	         30 Percent or More	pct_housing_cost_pct_inc74k_cost30pct
+             A10026_018	"      $75,000 or More"	pct_housing_cost_pct_inc75k_total
+             A10026_019	         Less than 20 Percent	pct_housing_cost_pct_inc75k_cost20pct
+             A10026_020	         20 to 29 Percent	pct_housing_cost_pct_inc75k_cost29pct
+             A10026_021	         30 Percent or More	pct_housing_cost_pct_inc75k_cost30pct
+             A10026_022	      Zero or Negative Income	pct_housing_cost_pct_incnone
+             A10026_023	      No Cash Rent	pct_housing_cost_pct_costnone
+A10001_001	   Housing Units	
+A10060_001	   Occupied Housing Units	
+             A10060_002	      Owner Occupied	pct_housing_units_occupied_pct_owner_occupied
+             A10060_003	      Renter Occupied	pct_housing_units_occupied_pct_renter_occupied
+A10044_001	   Housing Units	pct_housing_units_occupied_status_total
+             A10044_002	      Occupied	pct_housing_units_occupied_status_pct_occupied
+             A10044_003	      Vacant	pct_housing_units_occupied_status_pct_vacant
+A10047_001	   Vacant Housing Units	pct_housing_units_vacant_status_total
+             A10047_002	      For Rent	pct_housing_units_vacant_status_pct_forrent
+             A10047_003	      For Sale Only	pct_housing_units_vacant_status_pct_forsale
+             A10047_004	      Other Vacant	pct_housing_units_vacant_status_pct_other
+A10050_001	   Occupied Housing Units	
+             A10050_002	      No Bedroom	pct_housing_units_br_pct_0br
+             A10050_003	      1 Bedroom	pct_housing_units_br_pct_1br
+             A10050_005	      2 Bedrooms	pct_housing_units_br_pct_2br
+             A10050_006	      3 Bedrooms	pct_housing_units_br_pct_3br
+             A10050_007	      4 Bedrooms	pct_housing_units_br_pct_4br
+             A10050_008	      5 or More Bedrooms	pct_housing_units_br_pct_5br
+A10042B_001	   Renter-Occupied Housing Units	
+             A10042B_002	      No Bedroom	pct_housing_units_br_renter_pct_0br
+             A10042B_003	      1 Bedroom	pct_housing_units_br_renter_pct_1br
+             A10042B_004	      2 Bedrooms	pct_housing_units_br_renter_pct_2br
+             A10042B_005	      3 Bedrooms	pct_housing_units_br_renter_pct_3br
+             A10042B_006	      4 Bedrooms	pct_housing_units_br_renter_pct_4br
+             A10042B_007	      5 or More Bedrooms	pct_housing_units_br_renter_pct_5br
+A10034_001	   Occupied Housing Units	
+             A10034_002	"      Gas (Utility, Bottled, Tank, or Lp Gas)"	pct_housing_heattype_pct_gas
+             A10034_003	      Electricity	pct_housing_heattype_pct_electricity
+             A10034_004	"      Fuel Oil, Kerosene, Etc."	pct_housing_heattype_pct_fuel
+             A10034_005	"      Coal, Coke or Wood"	pct_housing_heattype_pct_coal_coke_wood
+             A10034_006	      Solar Energy	pct_housing_heattype_pct_solar
+             A10034_007	      Other Fuel	pct_housing_heattype_pct_other
+             A10034_008	      No Fuel Used	pct_housing_heattype_pct_none
+A10036_001	   Median Value	
+A18001_001	   Renter-Occupied Housing Units with Cash Rent	
+             A18001_002	      Less than $300	pct_housing_rent_pct_0_300
+             A18001_003	      $300 to $599	pct_housing_rent_pct_300_599
+             A18001_004	      $600 to $799	pct_housing_rent_pct_600_799
+             A18001_005	      $800 to $999	pct_housing_rent_pct_800_999
+             A18001_006	"      $1,000 to $1,249"	pct_housing_rent_pct_1000_1249
+             A18001_007	"      $1,250 to $1,499"	pct_housing_rent_pct_1250_1499
+             A18001_008	"      $1,500 to $1,999"	pct_housing_rent_pct_1500_1999
+             A18001_009	"      $2,000 or More"	pct_housing_rent_pct_2000_plus
+A18002_001	   Renter-Occupied Housing Units	
+             A18002_002	      Less than 10 Percent	pct_housing_cost_renter_pct_10
+             A18002_003	      10 to 29 Percent	pct_housing_cost_renter_pct_29
+             A18002_004	      30 to 49 Percent	pct_housing_cost_renter_pct_49
+             A18002_005	      50 Percent or More	pct_housing_cost_renter_pct_50plus
+             A18002_006	      Not Computed	pct_housing_cost_renter_pct_notcomputed
+A18009_001	   Median Gross Rent	
+A18003_001	   Median Gross Rent as a Percentage of Household  Income in the Past 12 Months (Dollars)	
+A10049_001	   Housing Units with a Mortgage	
+             A10049_002	      Less than 30 Percent	pct_housing_cost_owner_mortgage_pct_30
+             A10049_003	      30 Percent or More	pct_housing_cost_owner_mortgage_pct_49
+             A10049_004	      50 Percent or More	pct_housing_cost_owner_mortgage_pct_50plus
+             A10049_005	      Not Computed	pct_housing_cost_owner_mortgage_pct_notcomputed
+A10051_001	   Housing Units Without a Mortgage	
+             A10051_002	      Less than 30 Percent	pct_housing_cost_owner_nomortgage_pct_30
+             A10051_003	      30 Percent or More	pct_housing_cost_owner_nomortgage_pct_49
+             A10051_004	      50 Percent or More	pct_housing_cost_owner_nomortgage_pct_50plus
+             A10051_005	      Not Computed	pct_housing_cost_owner_nomortgage_pct_notcomputed
+A10037_001	   Median Selected Monthly Owner Costs as a Percentage of Household Income	
+             A10037_002	      Housing Units with a Mortgage	
+             A10037_003	      Housing Units Without a Mortgage	
+A10039B_001	   Renter-Occupied Housing Units	
+             A10039B_002	"      Less than $20,000"	pct_housing_cost_renter_pct_inc20k_total
+             A10039B_003	         Less than 20 Percent	pct_housing_cost_renter_pct_inc20k_cost20pct
+             A10039B_004	         20 to 29 Percent	pct_housing_cost_renter_pct_inc20k_cost29pct
+             A10039B_005	         30 Percent or More	pct_housing_cost_renter_pct_inc20k_cost30pct
+             A10039B_006	"      $20,000 to $34,999"	pct_housing_cost_renter_pct_inc34k_total
+             A10039B_007	         Less than 20 Percent	pct_housing_cost_renter_pct_inc34k_cost20pct
+             A10039B_008	         20 to 29 Percent	pct_housing_cost_renter_pct_inc34k_cost29pct
+             A10039B_009	         30 Percent or More	pct_housing_cost_renter_pct_inc34k_cost30pct
+             A10039B_010	"      $35,000 to $49,999"	pct_housing_cost_renter_pct_inc49k_total
+             A10039B_011	         Less than 20 Percent	pct_housing_cost_renter_pct_inc49k_cost20pct
+             A10039B_012	         20 to 29 Percent	pct_housing_cost_renter_pct_inc49k_cost29pct
+             A10039B_013	         30 Percent or More	pct_housing_cost_renter_pct_inc49k_cost30pct
+             A10039B_014	"      $50,000 to $74,999"	pct_housing_cost_renter_pct_inc74k_total
+             A10039B_015	         Less than 20 Percent	pct_housing_cost_renter_pct_inc74k_cost20pct
+             A10039B_016	         20 to 29 Percent	pct_housing_cost_renter_pct_inc74k_cost29pct
+             A10039B_017	         30 Percent or More	pct_housing_cost_renter_pct_inc74k_cost30pct
+             A10039B_018	"      $75,000 or More"	pct_housing_cost_renter_pct_inc75k_total
+             A10039B_019	         Less than 20 Percent	pct_housing_cost_renter_pct_inc75k_cost20pct
+             A10039B_020	         20 to 29 Percent	pct_housing_cost_renter_pct_inc75k_cost29pct
+             A10039B_021	         30 Percent or More	pct_housing_cost_renter_pct_inc75k_cost30pct
+             A10039B_022	      Zero or Negative Income	pct_housing_cost_renter_pct_incnone
+             A10039B_023	      No Cash Rent	pct_housing_cost_renter_pct_costnone
+A13002_001	   Families	
+             A13002_002	      Income Below Poverty Level	pct_poverty_familytype_any_pct_below
+             A13002_003	         Married Couple Family with related children under 18	pct_poverty_familytype_married_children_any_pct_below
+             A13002_004	         Married Couple Family with no related children under 18	pct_poverty_familytype_married_children_none_pct_below
+             A13002_005	"         Male Householder, No Wife Present"	pct_poverty_familytype_headm_spouseno_pct_below
+             A13002_006	            With Related Children Under 18 Years	pct_poverty_familytype_headm_spouseno_children_any_pct_below
+             A13002_007	            No Related Children Under 18 Years	pct_poverty_familytype_headm_spouseno_children_none_pct_below
+             A13002_008	"         Female Householder, No Husband Present"	pct_poverty_familytype_headf_spouseno_pct_below
+             A13002_009	            With Related Children Under 18 Years	pct_poverty_familytype_headf_spouseno_children_any_pct_below
+             A13002_010	            No Related Children Under 18 Years	pct_poverty_familytype_headf_spouseno_children_none_pct_below
+             A13002_011	      Income At or Above Poverty Level	pct_poverty_familytype_any_pct_above
+A13003A_001	   Population Under 18 Years of Age for Whom Poverty Status Is Determined	
+             A13003A_002	      Living in Poverty	pct_poverty_age_under18_pct_below
+             A13003A_003	      At or Above Poverty Level	pct_poverty_age_under18_pct_above
+A13003B_001	   Population Age 18 to 64 for Whom Poverty Status  Is Determined	
+             A13003B_002	      Living in Poverty	pct_poverty_age_18_64_pct_below
+             A13003B_003	      At or Above Poverty Level	pct_poverty-age_18_64_pct_above
+A13003C_001	   Population Age 65 and Over for Whom Poverty  Status Is Determined	
+             A13003C_002	      Living in Poverty	pct_poverty_age_65over_pct_below
+             A13003C_003	      At or Above Poverty Level	pct_poverty_age_65over_pct_above
+A13004_001	   Population for Whom Poverty Status Is Determined	
+             A13004_002	      Under .50	pct_poverty_level_pct_point50
+             A13004_003	      .50 to .74	pct_poverty_level_pct_point75
+             A13004_004	      .75 to .99	pct_poverty_level_pct_point99
+             A13004_005	      1.00 to 1.49	pct_poverty_level_pct_1point49
+             A13004_006	      1.50 to 1.99	pct_poverty_level_pct_1point99
+             A13004_007	      2.00 and Over	pct_poverty_level_pct_2point
+A13001A_001	   White Alone Population for Whom Poverty Status Is  Determined	
+             A13001A_002	      Income Below Poverty Level	pct_poverty_race_white_pct_below
+             A13001A_003	      Income At or Above Poverty Level	pct_poverty_race_white_pct_above
+A13001B_001	   Black or African American Alone Population for  Whom Poverty Status Is Determined	
+             A13001B_002	      Income Below Poverty Level	pct_poverty_race_black_pct_below
+             A13001B_003	      Income At or Above Poverty Level	pct_poverty_race_black_pct_above
+A13001C_001	   American Indian and Alaska Native Alone  Population for Whom Poverty Status Is Determined	
+             A13001C_002	      Income Below Poverty Level	pct_poverty_race_aian_pct_below
+             A13001C_003	      Income At or Above Poverty Level	pct_poverty_race_aian_pct_above
+A13001D_001	   Asian Alone Population for Whom Poverty Status Is  Determined	
+             A13001D_002	      Income Below Poverty Level	pct_poverty_race_asian_pct_below
+             A13001D_003	      Income At or Above Poverty Level	pct_poverty_race_asian_pct_above
+A13001E_001	   Native Hawaiian and Other Pacific Islander Alone  Population for Whom Poverty Status Is Determined	
+             A13001E_002	      Income Below Poverty Level	pct_poverty_race_nhpi_pct_below
+             A13001E_003	      Income At or Above Poverty Level	pct_poverty_race_nhpi_pct_above
+A13001F_001	   Some Other Race Alone Population for Whom Poverty  Status Is Determined	
+             A13001F_002	      Income Below Poverty Level	pct_poverty_race_other_pct_below
+             A13001F_003	      Income At or Above Poverty Level	pct_poverty_race_other_pct_above
+A13001G_001	   Two or More Races Population for Whom Poverty  Status Is Determined	
+             A13001G_002	      Income Below Poverty Level	pct_poverty_race_twoplus_pct_below
+             A13001G_003	      Income At or Above Poverty Level	pct_poverty_race_twoplus_pct_above
+A13001H_001	   Hispanic or Latino Population for Whom Poverty  Status Is Determined	
+             A13001H_002	      Income Below Poverty Level	pct_poverty_race_hispanic_pct_below
+             A13001H_003	      Income At or Above Poverty Level	pct_poverty_race_hispanic_pct_above
+A13001I_001	"   White Alone, Not Hispanic or Latino Population  for Whom Poverty Status Is Determined"	
+             A13001I_002	      Income Below Poverty Level	pct_poverty_race_whitenothisp_pct_below
+             A13001I_003	      Income At or Above Poverty Level	pct_poverty_race_whitenothisp_pct_above
+A09005_001	   Workers 16 Years and Over	
+             A09005_002	"      Car, Truck, or Van"	pct_transportation_pct_drove_any
+             A09005_009	         Drove Alone	pct_transportation_pct_drove_alone
+             A09005_010	         Carpooled	pct_transportation_pct_drove_carpool
+             A09005_003	      Public Transportation (Includes Taxicab)	pct_transportation_pct_public
+             A09005_004	      Motorcycle	pct_transportation_pct_motorcycle
+             A09005_005	      Bicycle	pct_transportation_pct_bike
+             A09005_006	      Walked	pct_transportation_pct_walk
+             A09005_007	      Other Means	pct_transportation_pct_other
+             A09005_008	      Worked At Home	pct_transportation_pct_workhome
+             A09004B_001	      Householder Lived in Renter-Occupied Housing Units	
+             A09004B_002	"         Car, Truck, or Van - Drove Alone"	pct_transportation_renter_pct_drove_alone
+             A09004B_003	"         Car, Truck, or Van - Carpooled"	pct_transportation_renter_pct_drove_carpool
+             A09004B_004	         Public Transportation (Excluding Taxicab)	pct_transportation_renter_pct_public
+             A09004B_005	         Walked	pct_transportation_renter_pct_walk
+             A09004B_006	"         Taxicab, Motorcycle, Bicycle, or Other Means"	pct_transportation_renter_pct_other
+             A09004B_007	         Worked At Home	pct_transportation_renter_pct_workhome
+A09001_001	   Workers 16 Years and Over	
+             A09001_002	      Did Not Work At Home	pct_transportation_commutetime_pct_any
+             A09001_003	         Less than 10 Minutes	pct_transportation_commutetime_pct_10mins
+             A09001_004	         10 to 19 Minutes	pct_transportation_commutetime_pct_19mins
+             A09001_005	         20 to 29 Minutes	pct_transportation_commutetime_pct_29mins
+             A09001_006	         30 to 39 Minutes	pct_transportation_commutetime_pct_39mins
+             A09001_007	         40 to 59 Minutes	pct_transportation_commutetime_pct_59mins
+             A09001_008	         60 to 89 Minutes	pct_transportation_commutetime_pct_89mins
+             A09001_009	         90 or More Minutes	pct_transportation_commutetime_pct_90mins
+             A09001_010	      Worked At Home	pct_transportation_commutetime_pct_workhome
+A08002B_007	   Population 1 Year and Over in Households in the United States	
+             A08002B_001	      Householder Lived in Renter-Occupied Housing Units	
+             A08002B_002	         Same House 1 Year Ago	pct_housing_moveunit_renter_pct_samehouse
+             A08002B_003	         Moved WithIn Same County	pct_housing_moveunit_renter_pct_samecounty
+             A08002B_004	         Moved From Different County WithIn Same State	pct_housing_moveunit_renter_pct_diffcounty_samestate
+             A08002B_005	         Moved From Different State	pct_housing_moveunit_renter_pct_diffstate
+             A08002B_006	         Moved From Abroad	pct_housing_moveunit_renter_pct_diffcountry
