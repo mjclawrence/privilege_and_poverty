@@ -7,8 +7,8 @@ county_homeless <- read.csv("https://raw.githubusercontent.com/mjclawrence/privi
 county_homeless$NAME <- as.character(county_homeless$NAME)
 names_county_homeless <- names(county_homeless[,2:23])
 
-county_geo <- read.csv("")
-
+county_geo <- read.csv("https://raw.githubusercontent.com/mjclawrence/privilege_and_poverty/master/addison_county_101/county_lat_lon.csv")
+county_geo$GEOID <- as.character(county_geo$GEOID)
 
 acs_vars <- load_variables(year = 2018,
                            dataset = "ACS5",
@@ -418,11 +418,13 @@ vt_tracts <- get_acs(geography = "tract",
   mutate(geography = "census tract")
 
 
-vermont_us <- rbind(country_total, states_total, vt_state, vt_county, vt_county_subdivisions, vt_tracts)
+vermont_us <- rbind(country, states_all, vt_state, vt_county, vt_county_subdivisions, vt_tracts)
 
 vermont_us <- select(vermont_us, !ends_with("M"))
 
 vermont_us <- left_join(vermont_us, county_homeless, by = "NAME")
+
+vermont_us <- left_join(vermont_us, county_geo, by = "GEOID")
 
 
 vermont_us_nomoe <- vermont_us %>%
@@ -470,7 +472,7 @@ vermont_us_nomoe <- vermont_us %>%
    mutate(datawrapper_id = GEOID) %>%
   mutate(datawrapper_id = ifelse(geography=="county", str_sub(GEOID, 3, 6), 
                                  ifelse(geography=="census tract", str_sub(GEOID, 3, 11), GEOID))) %>%
-  select(GEOID, datawrapper_id, geography, NAME, short_name, population, median_hh_income,
+  select(GEOID, datawrapper_id, geography, NAME, short_name, latitude, longitude, population, median_hh_income,
          poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep, snap_rate_total, snap_rate_children,
          housing_owner_occupied, educ_hs_plus, educ_ba_plus, employment_rate_civilian,
          race_white:race_hispanic, foreign_born, has_health_insurance,
