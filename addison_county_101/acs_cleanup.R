@@ -4,6 +4,7 @@ library(tidycensus)
 # Add homeless data from here: https://www.housingdata.org/profile/population-household/homelessness
 county_homeless <- read.csv("https://raw.githubusercontent.com/mjclawrence/privilege_and_poverty/master/addison_county_101/homeless_data_2020.csv",
                             header = TRUE)
+county_homeless <- rename(county_homeless, homeless_count_gender_men = homeless_count_gender_male)
 county_homeless$NAME <- as.character(county_homeless$NAME)
 names_county_homeless <- names(county_homeless[,2:23])
 
@@ -89,7 +90,54 @@ country <- get_acs(geography = "us",
                                        "insurance_with_54_fmle" = "B27001_047",
                                        "insurance_with_64_fmle" = "B27001_050",
                                        "insurance_with_74_fmle" = "B27001_053",
-                                       "insurance_with_75_fmle" = "B27001_056"),
+                                       "insurance_with_75_fmle" = "B27001_056",
+                                       "total_sex_age" = "B01001_001",
+                                       "total_sexm_age05" = "B01001_003",
+                                       "total_sexm_age09" = "B01001_004",
+                                       "total_sexm_age14" = "B01001_005",
+                                       "total_sexm_age17" = "B01001_006",
+                                       "total_sexm_age19" = "B01001_007",
+                                       "total_sexm_age20" = "B01001_008",
+                                       "total_sexm_age21" = "B01001_009",
+                                       "total_sexm_age24" = "B01001_010",
+                                       "total_sexm_age29" = "B01001_011",
+                                       "total_sexm_age34" = "B01001_012",
+                                       "total_sexm_age39" = "B01001_013",
+                                       "total_sexm_age44" = "B01001_014",
+                                       "total_sexm_age49" = "B01001_015",
+                                       "total_sexm_age54" = "B01001_016",
+                                       "total_sexm_age59" = "B01001_017",
+                                       "total_sexm_age61" = "B01001_018",
+                                       "total_sexm_age64" = "B01001_019",
+                                       "total_sexm_age66" = "B01001_020",
+                                       "total_sexm_age69" = "B01001_021",
+                                       "total_sexm_age74" = "B01001_022",
+                                       "total_sexm_age79" = "B01001_023",
+                                       "total_sexm_age84" = "B01001_024",
+                                       "total_sexm_age85" = "B01001_025",
+                                       "total_sexf_age05" = "B01001_027",
+                                       "total_sexf_age09" = "B01001_028",
+                                       "total_sexf_age14" = "B01001_029",
+                                       "total_sexf_age17" = "B01001_030",
+                                       "total_sexf_age19" = "B01001_031",
+                                       "total_sexf_age20" = "B01001_032",
+                                       "total_sexf_age21" = "B01001_033",
+                                       "total_sexf_age24" = "B01001_034",
+                                       "total_sexf_age29" = "B01001_035",
+                                       "total_sexf_age34" = "B01001_036",
+                                       "total_sexf_age39" = "B01001_037",
+                                       "total_sexf_age44" = "B01001_038",
+                                       "total_sexf_age49" = "B01001_039",
+                                       "total_sexf_age54" = "B01001_040",
+                                       "total_sexf_age59" = "B01001_041",
+                                       "total_sexf_age61" = "B01001_042",
+                                       "total_sexf_age64" = "B01001_043",
+                                       "total_sexf_age66" = "B01001_044",
+                                       "total_sexf_age69" = "B01001_045",
+                                       "total_sexf_age74" = "B01001_046",
+                                       "total_sexf_age79" = "B01001_047",
+                                       "total_sexf_age84" = "B01001_048",
+                                       "total_sexf_age85" = "B01001_049"),
                          output = "wide") %>%
   mutate(geography = "us")
 
@@ -169,13 +217,63 @@ states_all <- get_acs(geography = "state",
                                        "insurance_with_54_fmle" = "B27001_047",
                                        "insurance_with_64_fmle" = "B27001_050",
                                        "insurance_with_74_fmle" = "B27001_053",
-                                       "insurance_with_75_fmle" = "B27001_056"),
+                                       "insurance_with_75_fmle" = "B27001_056",
+                                       "total_sex_age" = "B01001_001",
+                                       "total_sexm_age05" = "B01001_003",
+                                       "total_sexm_age09" = "B01001_004",
+                                       "total_sexm_age14" = "B01001_005",
+                                       "total_sexm_age17" = "B01001_006",
+                                       "total_sexm_age19" = "B01001_007",
+                                       "total_sexm_age20" = "B01001_008",
+                                       "total_sexm_age21" = "B01001_009",
+                                       "total_sexm_age24" = "B01001_010",
+                                       "total_sexm_age29" = "B01001_011",
+                                       "total_sexm_age34" = "B01001_012",
+                                       "total_sexm_age39" = "B01001_013",
+                                       "total_sexm_age44" = "B01001_014",
+                                       "total_sexm_age49" = "B01001_015",
+                                       "total_sexm_age54" = "B01001_016",
+                                       "total_sexm_age59" = "B01001_017",
+                                       "total_sexm_age61" = "B01001_018",
+                                       "total_sexm_age64" = "B01001_019",
+                                       "total_sexm_age66" = "B01001_020",
+                                       "total_sexm_age69" = "B01001_021",
+                                       "total_sexm_age74" = "B01001_022",
+                                       "total_sexm_age79" = "B01001_023",
+                                       "total_sexm_age84" = "B01001_024",
+                                       "total_sexm_age85" = "B01001_025",
+                                       "total_sexf_age05" = "B01001_027",
+                                       "total_sexf_age09" = "B01001_028",
+                                       "total_sexf_age14" = "B01001_029",
+                                       "total_sexf_age17" = "B01001_030",
+                                       "total_sexf_age19" = "B01001_031",
+                                       "total_sexf_age20" = "B01001_032",
+                                       "total_sexf_age21" = "B01001_033",
+                                       "total_sexf_age24" = "B01001_034",
+                                       "total_sexf_age29" = "B01001_035",
+                                       "total_sexf_age34" = "B01001_036",
+                                       "total_sexf_age39" = "B01001_037",
+                                       "total_sexf_age44" = "B01001_038",
+                                       "total_sexf_age49" = "B01001_039",
+                                       "total_sexf_age54" = "B01001_040",
+                                       "total_sexf_age59" = "B01001_041",
+                                       "total_sexf_age61" = "B01001_042",
+                                       "total_sexf_age64" = "B01001_043",
+                                       "total_sexf_age66" = "B01001_044",
+                                       "total_sexf_age69" = "B01001_045",
+                                       "total_sexf_age74" = "B01001_046",
+                                       "total_sexf_age79" = "B01001_047",
+                                       "total_sexf_age84" = "B01001_048",
+                                       "total_sexf_age85" = "B01001_049"),
                          output = "wide") %>%
   mutate(geography = "state")
 
 
-vt_state <- filter(states_all, NAME == "Vermont")
 
+vt_state <- states_all %>%
+  filter(NAME == "Vermont") %>%
+  mutate(geography = str_replace(geography, "state", "state_vt"))
+  
 
 vt_county <- get_acs(geography = "county",
                            state = "VT",
@@ -252,7 +350,54 @@ vt_county <- get_acs(geography = "county",
                                    "insurance_with_54_fmle" = "B27001_047",
                                    "insurance_with_64_fmle" = "B27001_050",
                                    "insurance_with_74_fmle" = "B27001_053",
-                                   "insurance_with_75_fmle" = "B27001_056"),
+                                   "insurance_with_75_fmle" = "B27001_056",
+                                   "total_sex_age" = "B01001_001",
+                                   "total_sexm_age05" = "B01001_003",
+                                   "total_sexm_age09" = "B01001_004",
+                                   "total_sexm_age14" = "B01001_005",
+                                   "total_sexm_age17" = "B01001_006",
+                                   "total_sexm_age19" = "B01001_007",
+                                   "total_sexm_age20" = "B01001_008",
+                                   "total_sexm_age21" = "B01001_009",
+                                   "total_sexm_age24" = "B01001_010",
+                                   "total_sexm_age29" = "B01001_011",
+                                   "total_sexm_age34" = "B01001_012",
+                                   "total_sexm_age39" = "B01001_013",
+                                   "total_sexm_age44" = "B01001_014",
+                                   "total_sexm_age49" = "B01001_015",
+                                   "total_sexm_age54" = "B01001_016",
+                                   "total_sexm_age59" = "B01001_017",
+                                   "total_sexm_age61" = "B01001_018",
+                                   "total_sexm_age64" = "B01001_019",
+                                   "total_sexm_age66" = "B01001_020",
+                                   "total_sexm_age69" = "B01001_021",
+                                   "total_sexm_age74" = "B01001_022",
+                                   "total_sexm_age79" = "B01001_023",
+                                   "total_sexm_age84" = "B01001_024",
+                                   "total_sexm_age85" = "B01001_025",
+                                   "total_sexf_age05" = "B01001_027",
+                                   "total_sexf_age09" = "B01001_028",
+                                   "total_sexf_age14" = "B01001_029",
+                                   "total_sexf_age17" = "B01001_030",
+                                   "total_sexf_age19" = "B01001_031",
+                                   "total_sexf_age20" = "B01001_032",
+                                   "total_sexf_age21" = "B01001_033",
+                                   "total_sexf_age24" = "B01001_034",
+                                   "total_sexf_age29" = "B01001_035",
+                                   "total_sexf_age34" = "B01001_036",
+                                   "total_sexf_age39" = "B01001_037",
+                                   "total_sexf_age44" = "B01001_038",
+                                   "total_sexf_age49" = "B01001_039",
+                                   "total_sexf_age54" = "B01001_040",
+                                   "total_sexf_age59" = "B01001_041",
+                                   "total_sexf_age61" = "B01001_042",
+                                   "total_sexf_age64" = "B01001_043",
+                                   "total_sexf_age66" = "B01001_044",
+                                   "total_sexf_age69" = "B01001_045",
+                                   "total_sexf_age74" = "B01001_046",
+                                   "total_sexf_age79" = "B01001_047",
+                                   "total_sexf_age84" = "B01001_048",
+                                   "total_sexf_age85" = "B01001_049"),
                            output = "wide") %>%
   mutate(geography = "county")
 
@@ -332,7 +477,54 @@ vt_county_subdivisions <- get_acs(geography = "county subdivision",
                                    "insurance_with_54_fmle" = "B27001_047",
                                    "insurance_with_64_fmle" = "B27001_050",
                                    "insurance_with_74_fmle" = "B27001_053",
-                                   "insurance_with_75_fmle" = "B27001_056"),
+                                   "insurance_with_75_fmle" = "B27001_056",
+                                   "total_sex_age" = "B01001_001",
+                                   "total_sexm_age05" = "B01001_003",
+                                   "total_sexm_age09" = "B01001_004",
+                                   "total_sexm_age14" = "B01001_005",
+                                   "total_sexm_age17" = "B01001_006",
+                                   "total_sexm_age19" = "B01001_007",
+                                   "total_sexm_age20" = "B01001_008",
+                                   "total_sexm_age21" = "B01001_009",
+                                   "total_sexm_age24" = "B01001_010",
+                                   "total_sexm_age29" = "B01001_011",
+                                   "total_sexm_age34" = "B01001_012",
+                                   "total_sexm_age39" = "B01001_013",
+                                   "total_sexm_age44" = "B01001_014",
+                                   "total_sexm_age49" = "B01001_015",
+                                   "total_sexm_age54" = "B01001_016",
+                                   "total_sexm_age59" = "B01001_017",
+                                   "total_sexm_age61" = "B01001_018",
+                                   "total_sexm_age64" = "B01001_019",
+                                   "total_sexm_age66" = "B01001_020",
+                                   "total_sexm_age69" = "B01001_021",
+                                   "total_sexm_age74" = "B01001_022",
+                                   "total_sexm_age79" = "B01001_023",
+                                   "total_sexm_age84" = "B01001_024",
+                                   "total_sexm_age85" = "B01001_025",
+                                   "total_sexf_age05" = "B01001_027",
+                                   "total_sexf_age09" = "B01001_028",
+                                   "total_sexf_age14" = "B01001_029",
+                                   "total_sexf_age17" = "B01001_030",
+                                   "total_sexf_age19" = "B01001_031",
+                                   "total_sexf_age20" = "B01001_032",
+                                   "total_sexf_age21" = "B01001_033",
+                                   "total_sexf_age24" = "B01001_034",
+                                   "total_sexf_age29" = "B01001_035",
+                                   "total_sexf_age34" = "B01001_036",
+                                   "total_sexf_age39" = "B01001_037",
+                                   "total_sexf_age44" = "B01001_038",
+                                   "total_sexf_age49" = "B01001_039",
+                                   "total_sexf_age54" = "B01001_040",
+                                   "total_sexf_age59" = "B01001_041",
+                                   "total_sexf_age61" = "B01001_042",
+                                   "total_sexf_age64" = "B01001_043",
+                                   "total_sexf_age66" = "B01001_044",
+                                   "total_sexf_age69" = "B01001_045",
+                                   "total_sexf_age74" = "B01001_046",
+                                   "total_sexf_age79" = "B01001_047",
+                                   "total_sexf_age84" = "B01001_048",
+                                   "total_sexf_age85" = "B01001_049"),
                      output = "wide") %>%
   mutate(geography = "county subdivision")
 
@@ -413,7 +605,54 @@ vt_tracts <- get_acs(geography = "tract",
                                    "insurance_with_54_fmle" = "B27001_047",
                                    "insurance_with_64_fmle" = "B27001_050",
                                    "insurance_with_74_fmle" = "B27001_053",
-                                   "insurance_with_75_fmle" = "B27001_056"),
+                                   "insurance_with_75_fmle" = "B27001_056",
+                                   "total_sex_age" = "B01001_001",
+                                   "total_sexm_age05" = "B01001_003",
+                                   "total_sexm_age09" = "B01001_004",
+                                   "total_sexm_age14" = "B01001_005",
+                                   "total_sexm_age17" = "B01001_006",
+                                   "total_sexm_age19" = "B01001_007",
+                                   "total_sexm_age20" = "B01001_008",
+                                   "total_sexm_age21" = "B01001_009",
+                                   "total_sexm_age24" = "B01001_010",
+                                   "total_sexm_age29" = "B01001_011",
+                                   "total_sexm_age34" = "B01001_012",
+                                   "total_sexm_age39" = "B01001_013",
+                                   "total_sexm_age44" = "B01001_014",
+                                   "total_sexm_age49" = "B01001_015",
+                                   "total_sexm_age54" = "B01001_016",
+                                   "total_sexm_age59" = "B01001_017",
+                                   "total_sexm_age61" = "B01001_018",
+                                   "total_sexm_age64" = "B01001_019",
+                                   "total_sexm_age66" = "B01001_020",
+                                   "total_sexm_age69" = "B01001_021",
+                                   "total_sexm_age74" = "B01001_022",
+                                   "total_sexm_age79" = "B01001_023",
+                                   "total_sexm_age84" = "B01001_024",
+                                   "total_sexm_age85" = "B01001_025",
+                                   "total_sexf_age05" = "B01001_027",
+                                   "total_sexf_age09" = "B01001_028",
+                                   "total_sexf_age14" = "B01001_029",
+                                   "total_sexf_age17" = "B01001_030",
+                                   "total_sexf_age19" = "B01001_031",
+                                   "total_sexf_age20" = "B01001_032",
+                                   "total_sexf_age21" = "B01001_033",
+                                   "total_sexf_age24" = "B01001_034",
+                                   "total_sexf_age29" = "B01001_035",
+                                   "total_sexf_age34" = "B01001_036",
+                                   "total_sexf_age39" = "B01001_037",
+                                   "total_sexf_age44" = "B01001_038",
+                                   "total_sexf_age49" = "B01001_039",
+                                   "total_sexf_age54" = "B01001_040",
+                                   "total_sexf_age59" = "B01001_041",
+                                   "total_sexf_age61" = "B01001_042",
+                                   "total_sexf_age64" = "B01001_043",
+                                   "total_sexf_age66" = "B01001_044",
+                                   "total_sexf_age69" = "B01001_045",
+                                   "total_sexf_age74" = "B01001_046",
+                                   "total_sexf_age79" = "B01001_047",
+                                   "total_sexf_age84" = "B01001_048",
+                                   "total_sexf_age85" = "B01001_049"),
                      output = "wide") %>%
   mutate(geography = "census tract")
 
@@ -449,10 +688,29 @@ vermont_us_nomoe <- vermont_us %>%
          race_twoplus = round(((race_twoplusE / race_totalE)*100),1),
          race_hispanic = round(((race_hispanicE / race_totalE)*100),1),
          foreign_born = round(((foreign_bornE / foreign_born_totalE)*100),1),
-         has_health_insurance = round(((rowSums(.[59:76]) / rowSums(.[41:76])) * 100),1)) %>%
+         has_health_insurance = round(((rowSums(.[59:76]) / rowSums(.[41:76])) * 100),1),
+         age_under18 = round((((total_sexm_age05E + total_sexm_age09E + total_sexm_age14E + total_sexm_age17E +
+                                 total_sexf_age05E + total_sexf_age09E + total_sexf_age14E + total_sexf_age17E) / 
+                                 total_sex_ageE)*100),1),
+         age_18_24 = round((((total_sexm_age19E + total_sexm_age20E + total_sexm_age21E + total_sexm_age24E +
+                                total_sexf_age19E + total_sexf_age20E + total_sexf_age21E + total_sexf_age24E) /
+                               total_sex_ageE)*100),1),
+         age_25_34 = round((((total_sexm_age29E + total_sexm_age34E + total_sexf_age29E + total_sexf_age34E) /
+                               total_sex_ageE)*100),1),
+         age_35_54 = round((((total_sexm_age39E + total_sexm_age44E + total_sexm_age49E + total_sexm_age54E +
+                                total_sexf_age39E + total_sexf_age44E + total_sexf_age49E + total_sexf_age54E) /
+                               total_sex_ageE)*100),1),
+         age_55_64 = round((((total_sexm_age59E + total_sexm_age61E + total_sexm_age64E  +
+                                total_sexf_age59E + total_sexf_age61E + total_sexf_age64E) /
+                               total_sex_ageE)*100),1),
+         age_over65 = round((((total_sexm_age66E + total_sexm_age69E + total_sexm_age74E + 
+                                 total_sexm_age79E + total_sexm_age84E + total_sexm_age85E +
+                                 total_sexf_age66E + total_sexf_age69E + total_sexf_age74E + 
+                                 total_sexf_age79E + total_sexf_age84E + total_sexf_age85E) /
+                                total_sex_ageE)*100),1)) %>%
          rename(population = populationE,
          median_hh_income = median_hh_incomeE) %>%
-  mutate(short_name = NAME) %>%
+         mutate(short_name = NAME) %>%
   separate(short_name, c("short_name", "extra"), sep = " town") %>%
   separate(short_name, c("short_name", "extra"), sep = " city") %>%
   separate(short_name, c("short_name", "extra"), sep = ", Vermont") %>%
@@ -472,7 +730,7 @@ vermont_us_nomoe <- vermont_us %>%
    mutate(datawrapper_id = GEOID) %>%
   mutate(datawrapper_id = ifelse(geography=="county", str_sub(GEOID, 3, 6), 
                                  ifelse(geography=="census tract", str_sub(GEOID, 3, 11), GEOID))) %>%
-  select(GEOID, datawrapper_id, geography, NAME, short_name, latitude, longitude, population, median_hh_income,
+  select(GEOID, datawrapper_id, geography, NAME, short_name, latitude, longitude, population, age_under18:age_over65, median_hh_income,
          poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep, snap_rate_total, snap_rate_children,
          housing_owner_occupied, educ_hs_plus, educ_ba_plus, employment_rate_civilian,
          race_white:race_hispanic, foreign_born, has_health_insurance,
@@ -488,6 +746,185 @@ vermont_us_nomoe$datawrapper_id <- as.character(vermont_us_nomoe$datawrapper_id)
 
 write.csv(vermont_us_nomoe, "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/acs_stats.csv",
           row.names = FALSE)
+
+
+## StoryMap Data Links
+
+geography_variables <- c("geoid", "geography", "name", "short_name", 
+                         "latitude", "longitude")
+
+# Population for US, Vermont, Counties
+population_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), population)
+
+write.csv(population_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/population_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Population for Counties
+population_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("county")) %>% 
+  select(all_of(geography_variables), population)
+
+write.csv(population_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/population_counties.csv",
+          row.names = FALSE)
+
+# Population by age for US, Vermont, Counties
+population_age_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), age_under18:age_over65)
+
+write.csv(population_age_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/population_age_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Race for US, Vermont, Counties
+race_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), race_white:race_hispanic)
+
+write.csv(race_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_age_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Foreign born for US, Vermont, Counties
+foreign_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), foreign_born)
+
+write.csv(foreign_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/foreign_age_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Median Income for Counties
+income_county <- vermont_us_nomoe %>%
+  filter(geography == "county") %>%
+  select(all_of(geography_variables), median_hh_income)
+
+write.csv(income_county, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/income_county.csv",
+          row.names = FALSE)
+
+# Poverty rate for US, Vermont, Counties
+poverty_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep)
+
+write.csv(poverty_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Education for US, Vermont, Counties
+education_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         educ_hs_plus, educ_ba_plus)
+
+write.csv(education_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Homeless for Counties
+homeless_counties <- vermont_us_nomoe %>%
+  filter(geography == "county") %>% 
+  select(all_of(geography_variables), homeless_count_total_individuals,
+         homeless_count_total_adults, homeless_count_total_children,
+         starts_with("homeless_count_gender"), starts_with("homeless_count_location"))
+
+write.csv(homeless_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/homeless_counties.csv",
+          row.names = FALSE)
+
+# Population for Towns
+population_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), population)
+
+write.csv(population_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/population_towns.csv",
+          row.names = FALSE)
+
+# Population by age for towns
+population_age_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), age_under18:age_over65)
+
+write.csv(population_age_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/population_age_towns.csv",
+          row.names = FALSE)
+
+# Race for towns
+race_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), race_white:race_hispanic)
+
+write.csv(race_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_towns.csv",
+          row.names = FALSE)
+
+# Foreign born for towns
+foreign_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), foreign_born)
+
+write.csv(foreign_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/foreign_towns.csv",
+          row.names = FALSE)
+  
+# Median Income for Towns
+income_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  select(all_of(geography_variables), median_hh_income)
+
+write.csv(income_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/income_towns.csv",
+          row.names = FALSE)
+
+
+# Umployment Rate for Towns
+unemployment_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  mutate(unemployment_rate = 100 - employment_rate_civilian) %>%
+  select(all_of(geography_variables), unemployment_rate) 
+
+write.csv(unemployment_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/unemployment_towns.csv",
+          row.names = FALSE)
+
+# Poverty rate for towns
+poverty_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), 
+         poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep)
+
+write.csv(poverty_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_towns.csv",
+          row.names = FALSE)
+
+# Education for towns
+education_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), 
+         educ_hs_plus, educ_ba_plus)
+
+write.csv(education_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_towns.csv",
+          row.names = FALSE)
+
+# SNAP for towns
+snap_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), 
+         snap_rate_total, snap_rate_children)
+
+write.csv(snap_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/snap_towns.csv",
+          row.names = FALSE)
+
+
 
 vermont_us_race <- vermont_us_nomoe %>%
   select(geoid, datawrapper_id, geography, name, short_name, race_white:race_hispanic) %>%
