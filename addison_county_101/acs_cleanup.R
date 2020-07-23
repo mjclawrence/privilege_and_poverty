@@ -786,7 +786,7 @@ race_us_vt_counties <- vermont_us_nomoe %>%
   select(all_of(geography_variables), race_white:race_hispanic)
 
 write.csv(race_us_vt_counties, 
-          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_age_us_vt_counties.csv",
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_us_vt_counties.csv",
           row.names = FALSE)
 
 # Foreign born for US, Vermont, Counties
@@ -795,17 +795,19 @@ foreign_us_vt_counties <- vermont_us_nomoe %>%
   select(all_of(geography_variables), foreign_born)
 
 write.csv(foreign_us_vt_counties, 
-          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/foreign_age_us_vt_counties.csv",
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/foreign_us_vt_counties.csv",
           row.names = FALSE)
 
-# Median Income for Counties
-income_county <- vermont_us_nomoe %>%
-  filter(geography == "county") %>%
-  select(all_of(geography_variables), median_hh_income)
+# Umployment Rate for Towns
+unemployment_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>%
+  mutate(unemployment_rate = 100 - employment_rate_civilian) %>%
+  select(all_of(geography_variables), unemployment_rate) 
 
-write.csv(income_county, 
-          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/income_county.csv",
+write.csv(unemployment_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/unemployment_us_vt_counties.csv",
           row.names = FALSE)
+
 
 # Poverty rate for US, Vermont, Counties
 poverty_us_vt_counties <- vermont_us_nomoe %>%
@@ -825,6 +827,15 @@ education_us_vt_counties <- vermont_us_nomoe %>%
 
 write.csv(education_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Median Income for Counties
+income_counties <- vermont_us_nomoe %>%
+  filter(geography == "county") %>%
+  select(all_of(geography_variables), median_hh_income)
+
+write.csv(income_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/income_counties.csv",
           row.names = FALSE)
 
 # Homeless for Counties
