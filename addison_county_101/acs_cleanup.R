@@ -789,6 +789,15 @@ write.csv(race_us_vt_counties,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_us_vt_counties.csv",
           row.names = FALSE)
 
+# Race Long for US, Vermont, Counties
+
+race_long_us_vt_counties <- race_us_vt_counties %>%
+  gather(race, percentage, race_white:race_hispanic)
+
+write.csv(race_long_us_vt_counties,
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_long_us_vt_counties.csv",
+          row.names = FALSE)
+
 # Foreign born for US, Vermont, Counties
 foreign_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
