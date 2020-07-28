@@ -872,8 +872,9 @@ poverty_levels_us_vt_counties <- vermont_us_nomoe %>%
   select(all_of(geography_variables), 
          poverty_level_below_050:poverty_level_above_200) %>%
   mutate(poverty_level_above_100 = poverty_level_100_124 + poverty_level_125_149 +
-                                             poverty_level_150_184 + poverty_level_185_199 +
-                                             poverty_level_above_200)
+           poverty_level_150_184 + poverty_level_185_199 +
+           poverty_level_above_200,
+         poverty_level_below_100 = poverty_level_below_050 + poverty_level_050_099)
 
 write.csv(poverty_levels_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_us_vt_counties.csv",
@@ -1013,7 +1014,8 @@ poverty_levels_towns <- vermont_us_nomoe %>%
          poverty_level_below_050:poverty_level_above_200) %>%
   mutate(poverty_level_above_100 = poverty_level_100_124 + poverty_level_125_149 +
            poverty_level_150_184 + poverty_level_185_199 +
-           poverty_level_above_200)
+           poverty_level_above_200,
+         poverty_level_below_100 = poverty_level_below_050 + poverty_level_050_099)
 
 write.csv(poverty_levels_towns, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_towns.csv",
