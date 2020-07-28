@@ -866,6 +866,19 @@ write.csv(poverty_us_vt_counties,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_us_vt_counties.csv",
           row.names = FALSE)
 
+# Poverty levels for US, VT, Counties
+poverty_levels_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         poverty_level_below_050:poverty_level_above_200) %>%
+  mutate(poverty_level_above_100 = poverty_level_100_124 + poverty_level_125_149 +
+                                             poverty_level_150_184 + poverty_level_185_199 +
+                                             poverty_level_above_200)
+
+write.csv(poverty_levels_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_us_vt_counties.csv",
+          row.names = FALSE)
+
 # Education for US, Vermont, Counties
 education_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
@@ -876,17 +889,17 @@ write.csv(education_us_vt_counties,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_us_vt_counties.csv",
           row.names = FALSE)
 
-# Owner Occupied Housing for Counties
+# Owner Occupied Housing for US, Vermont, Counties
 housing_owner_occupied_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
   select(all_of(geography_variables), 
          housing_owner_occupied)
 
 write.csv(housing_owner_occupied_us_vt_counties, 
-          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/housing_owner_occupied_us_vt_counties",
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/housing_owner_occupied_us_vt_counties.csv",
           row.names = FALSE)
 
-# SNAP for Counties
+# SNAP for US, Vermont, Counties
 snap_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
   select(all_of(geography_variables), 
@@ -894,6 +907,18 @@ snap_us_vt_counties <- vermont_us_nomoe %>%
 
 write.csv(snap_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/snap_us_vt_counties.csv",
+          row.names = FALSE)
+
+# No health Insurance for US, Vermont, Counties
+health_insurance_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>%
+  mutate(uninsured = 100 - has_health_insurance,
+         insured = has_health_insurance) %>%
+  select(all_of(geography_variables), 
+         uninsured, insured)
+
+write.csv(health_insurance_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/health_insurance_us_vt_counties.csv",
           row.names = FALSE)
 
 # Median Income for Counties
@@ -961,7 +986,6 @@ write.csv(income_towns,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/income_towns.csv",
           row.names = FALSE)
 
-
 # Umployment Rate for Towns
 unemployment_towns <- vermont_us_nomoe %>%
   filter(geography == "county subdivision") %>%
@@ -982,6 +1006,19 @@ write.csv(poverty_towns,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_towns.csv",
           row.names = FALSE)
 
+# Poverty levels for towns
+poverty_levels_towns <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         poverty_level_below_050:poverty_level_above_200) %>%
+  mutate(poverty_level_above_100 = poverty_level_100_124 + poverty_level_125_149 +
+           poverty_level_150_184 + poverty_level_185_199 +
+           poverty_level_above_200)
+
+write.csv(poverty_levels_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_towns.csv",
+          row.names = FALSE)
+
 # Education for towns
 education_towns <- vermont_us_nomoe %>%
   filter(geography == "county subdivision") %>% 
@@ -990,6 +1027,16 @@ education_towns <- vermont_us_nomoe %>%
 
 write.csv(education_towns, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_towns.csv",
+          row.names = FALSE)
+
+# Owner Occupied Housing for towns
+housing_owner_occupied_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), 
+         housing_owner_occupied)
+
+write.csv(housing_owner_occupied_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/housing_owner_occupied_towns.csv",
           row.names = FALSE)
 
 # SNAP for towns
@@ -1002,6 +1049,17 @@ write.csv(snap_towns,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/snap_towns.csv",
           row.names = FALSE)
 
+# No health Insurance for towns
+health_insurance_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  mutate(uninsured = 100 - has_health_insurance,
+         insured = has_health_insurance) %>%
+  select(all_of(geography_variables), 
+         uninsured, insured)
+
+write.csv(health_insurance_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/health_insurance_towns.csv",
+          row.names = FALSE)
 
 
 vermont_us_race <- vermont_us_nomoe %>%
