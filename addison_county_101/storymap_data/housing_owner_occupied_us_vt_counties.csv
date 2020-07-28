@@ -1,0 +1,17 @@
+"geoid","geography","name","short_name","latitude","longitude","housing_owner_occupied"
+"1","us","United States","United States",NA,NA,63.9
+"50","state_vt","Vermont","Vermont",NA,NA,72.2
+"50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,74.1
+"50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,73.3
+"50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,72.2
+"50007","county","Chittenden County, Vermont","Chittenden",44.460676,73.070525,63
+"50009","county","Essex County, Vermont","Essex",44.724021,-71.732736,80.2
+"50011","county","Franklin County, Vermont","Franklin",44.858964,-72.909402,74.5
+"50013","county","Grand Isle County, Vermont","Grand Isle",44.801788,-73.300758,82.4
+"50015","county","Lamoille County, Vermont","Lamoille",44.603504,-72.638356,72.5
+"50017","county","Orange County, Vermont","Orange",44.003392,-72.369687,80.9
+"50019","county","Orleans County, Vermont","Orleans",44.828442,-72.25163,77
+"50021","county","Rutland County, Vermont","Rutland",43.580844,-73.038196,72.5
+"50023","county","Washington County, Vermont","Washington",44.274953,-72.609475,70.8
+"50025","county","Windham County, Vermont","Windham",42.999143,-72.716335,67.8
+"50027","county","Windsor County, Vermont","Windsor",43.588143,-72.591515,73.2

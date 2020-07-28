@@ -22,8 +22,13 @@ country <- get_acs(geography = "us",
                                        "poverty_total" = "B17001_001",
                                        "poverty_below" = "B17001_002",
                                        "poverty_level_total" = "C17002_001",
-                                       "poverty_level_below_fiftypercent" = "C17002_002",
-                                       "poverty_level_above_fiftypercent" = "C17002_003",
+                                       "poverty_level_050" = "C17002_002",
+                                       "poverty_level_099" = "C17002_003",
+                                       "poverty_level_124" = "C17002_004",
+                                       "poverty_level_149" = "C17002_005",
+                                       "poverty_level_184" = "C17002_006",
+                                       "poverty_level_199" = "C17002_007",
+                                       "poverty_level_200" = "C17002_008",
                                        "snap_total" = "B22002_001",
                                        "snap_received" = "B22002_002",
                                        "snap_received_children" = "B22002_003",
@@ -142,6 +147,10 @@ country <- get_acs(geography = "us",
   mutate(geography = "us")
 
 
+poverty_table <- get_acs(geography = "us",
+                         survey = "acs1",
+                         table = "C17002")
+
 states_all <- get_acs(geography = "state",
                          survey = "acs1",
                          variables = c("population" = "B01003_001",
@@ -149,8 +158,13 @@ states_all <- get_acs(geography = "state",
                                        "poverty_total" = "B17001_001",
                                        "poverty_below" = "B17001_002",
                                        "poverty_level_total" = "C17002_001",
-                                       "poverty_level_below_fiftypercent" = "C17002_002",
-                                       "poverty_level_above_fiftypercent" = "C17002_003",
+                                       "poverty_level_050" = "C17002_002",
+                                       "poverty_level_099" = "C17002_003",
+                                       "poverty_level_124" = "C17002_004",
+                                       "poverty_level_149" = "C17002_005",
+                                       "poverty_level_184" = "C17002_006",
+                                       "poverty_level_199" = "C17002_007",
+                                       "poverty_level_200" = "C17002_008",
                                        "snap_total" = "B22002_001",
                                        "snap_received" = "B22002_002",
                                        "snap_received_children" = "B22002_003",
@@ -282,8 +296,13 @@ vt_county <- get_acs(geography = "county",
                                    "poverty_total" = "B17001_001",
                                    "poverty_below" = "B17001_002",
                                    "poverty_level_total" = "C17002_001",
-                                   "poverty_level_below_fiftypercent" = "C17002_002",
-                                   "poverty_level_above_fiftypercent" = "C17002_003",
+                                   "poverty_level_050" = "C17002_002",
+                                   "poverty_level_099" = "C17002_003",
+                                   "poverty_level_124" = "C17002_004",
+                                   "poverty_level_149" = "C17002_005",
+                                   "poverty_level_184" = "C17002_006",
+                                   "poverty_level_199" = "C17002_007",
+                                   "poverty_level_200" = "C17002_008",
                                    "snap_total" = "B22002_001",
                                    "snap_received" = "B22002_002",
                                    "snap_received_children" = "B22002_003",
@@ -409,8 +428,13 @@ vt_county_subdivisions <- get_acs(geography = "county subdivision",
                                    "poverty_total" = "B17001_001",
                                    "poverty_below" = "B17001_002",
                                    "poverty_level_total" = "C17002_001",
-                                   "poverty_level_below_fiftypercent" = "C17002_002",
-                                   "poverty_level_above_fiftypercent" = "C17002_003",
+                                   "poverty_level_050" = "C17002_002",
+                                   "poverty_level_099" = "C17002_003",
+                                   "poverty_level_124" = "C17002_004",
+                                   "poverty_level_149" = "C17002_005",
+                                   "poverty_level_184" = "C17002_006",
+                                   "poverty_level_199" = "C17002_007",
+                                   "poverty_level_200" = "C17002_008",
                                    "snap_total" = "B22002_001",
                                    "snap_received" = "B22002_002",
                                    "snap_received_children" = "B22002_003",
@@ -537,8 +561,13 @@ vt_tracts <- get_acs(geography = "tract",
                                    "poverty_total" = "B17001_001",
                                    "poverty_below" = "B17001_002",
                                    "poverty_level_total" = "C17002_001",
-                                   "poverty_level_below_fiftypercent" = "C17002_002",
-                                   "poverty_level_above_fiftypercent" = "C17002_003",
+                                   "poverty_level_050" = "C17002_002",
+                                   "poverty_level_099" = "C17002_003",
+                                   "poverty_level_124" = "C17002_004",
+                                   "poverty_level_149" = "C17002_005",
+                                   "poverty_level_184" = "C17002_006",
+                                   "poverty_level_199" = "C17002_007",
+                                   "poverty_level_200" = "C17002_008",
                                    "snap_total" = "B22002_001",
                                    "snap_received" = "B22002_002",
                                    "snap_received_children" = "B22002_003",
@@ -668,8 +697,15 @@ vermont_us <- left_join(vermont_us, county_geo, by = "GEOID")
 
 vermont_us_nomoe <- vermont_us %>%
   mutate(poverty_rate_total = round(((poverty_belowE / poverty_totalE) * 100),1),
-         poverty_rate_deep = round(((poverty_level_below_fiftypercentE / poverty_level_totalE) * 100),1),
-         poverty_rate_notdeep = round(((poverty_level_above_fiftypercentE / poverty_level_totalE) * 100),1),
+         poverty_rate_deep = round(((poverty_level_050E / poverty_level_totalE) * 100),1),
+         poverty_rate_notdeep = round(((poverty_level_099E / poverty_level_totalE) * 100),1),
+         poverty_level_below_050 = round(((poverty_level_050E / poverty_level_totalE) * 100), 1),
+         poverty_level_050_099 = round(((poverty_level_099E / poverty_level_totalE) * 100), 1),
+         poverty_level_100_124 = round(((poverty_level_124E / poverty_level_totalE) * 100), 1),
+         poverty_level_125_149 = round(((poverty_level_149E / poverty_level_totalE) * 100), 1),
+         poverty_level_150_184 = round(((poverty_level_184E / poverty_level_totalE) * 100), 1),
+         poverty_level_185_199 = round(((poverty_level_199E / poverty_level_totalE) * 100), 1),
+         poverty_level_above_200 = round(((poverty_level_200E / poverty_level_totalE) * 100), 1),
          snap_rate_total = round(((snap_receivedE / snap_totalE) * 100),1),
          snap_rate_children = round(((snap_received_childrenE / (snap_received_childrenE + 
                                                            snap_not_received_childrenE)) * 100),1),
@@ -688,7 +724,7 @@ vermont_us_nomoe <- vermont_us %>%
          race_twoplus = round(((race_twoplusE / race_totalE)*100),1),
          race_hispanic = round(((race_hispanicE / race_totalE)*100),1),
          foreign_born = round(((foreign_bornE / foreign_born_totalE)*100),1),
-         has_health_insurance = round(((rowSums(.[59:76]) / rowSums(.[41:76])) * 100),1),
+         has_health_insurance = round(((rowSums(.[64:81]) / rowSums(.[46:81])) * 100),1),
          age_under18 = round((((total_sexm_age05E + total_sexm_age09E + total_sexm_age14E + total_sexm_age17E +
                                  total_sexf_age05E + total_sexf_age09E + total_sexf_age14E + total_sexf_age17E) / 
                                  total_sex_ageE)*100),1),
@@ -731,7 +767,7 @@ vermont_us_nomoe <- vermont_us %>%
   mutate(datawrapper_id = ifelse(geography=="county", str_sub(GEOID, 3, 6), 
                                  ifelse(geography=="census tract", str_sub(GEOID, 3, 11), GEOID))) %>%
   select(GEOID, datawrapper_id, geography, NAME, short_name, latitude, longitude, population, age_under18:age_over65, median_hh_income,
-         poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep, snap_rate_total, snap_rate_children,
+         poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep, poverty_level_below_050:poverty_level_above_200, snap_rate_total, snap_rate_children,
          housing_owner_occupied, educ_hs_plus, educ_ba_plus, employment_rate_civilian,
          race_white:race_hispanic, foreign_born, has_health_insurance,
          all_of(names_county_homeless)) %>%
@@ -838,6 +874,26 @@ education_us_vt_counties <- vermont_us_nomoe %>%
 
 write.csv(education_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Owner Occupied Housing for Counties
+housing_owner_occupied_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         housing_owner_occupied)
+
+write.csv(housing_owner_occupied_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/housing_owner_occupied_us_vt_counties",
+          row.names = FALSE)
+
+# SNAP for Counties
+snap_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         snap_rate_total, snap_rate_children)
+
+write.csv(snap_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/snap_us_vt_counties.csv",
           row.names = FALSE)
 
 # Median Income for Counties
