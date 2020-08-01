@@ -1,0 +1,6 @@
+abstract,year,author,midd_author,title,journal,link,type,topic
+"This article discusses major challenges facing intergenerational mobility research in three main domains: (1) the (dis)connection between theory and empirical applications; (2) data gaps; and (3) measurement concerns. In doing so, it highlights theoretical and empirical extensions to better describe, explain and predict complex intergenerational transmission processes in the light of new and rapid administrative data linkages, more mature survey data and other forms of big data. The article concludes with future directions for research.",year1,author1,no,title1,journal1,link1,news,"poverty, mobility, education"
+abstract2,year2,author2,yes,title2,journal2,link2,policy,health
+abstract3,year3,author3,yes,title3,journal3,link3,academic,"education,race"
+abstract4,year2,author4,no,title4,journal2,link4,news,"sex,race,migration"
+abstract5,year1,author5,yes,title5,journal3,link5,"policy, research",punishment
