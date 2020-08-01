@@ -1,4 +1,4 @@
-"GEOID","NAME","estimate"
+"FIPS-Code","name","estimate"
 "01001","Autauga County, Alabama",0.4602
 "01003","Baldwin County, Alabama",0.4609
 "01005","Barbour County, Alabama",0.4731
