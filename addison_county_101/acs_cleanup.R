@@ -15,9 +15,9 @@ acs_vars <- load_variables(year = 2018,
                            dataset = "ACS5",
                            cache = TRUE)
 
-poverty_race_table <- get_acs(geography = "us",
-                         survey = "acs1",
-                         table = "B17001")
+poverty_race_table <- get_acs(geography = "state",
+                         survey = "acs5",
+                         table = "B17001B")
 
 country <- get_acs(geography = "us",
                          survey = "acs1",
@@ -327,37 +327,42 @@ states_all <- get_acs(geography = "state",
                                        "poverty_level_age17_total" = "B17024_028",
                                        "poverty_level_050_age17" = "B17024_029",
                                        "poverty_level_074_age17" = "B17024_030",
-                                       "poverty_level_099_age17" = "B17024_031",
-                                       "poverty_race_white_total" = "B17001H_001",
-                                       "poverty_race_black_total" = "B17001B_001",
-                                       "poverty_race_amindian_total" = "B17001C_001",
-                                       "poverty_race_asian_total" = "B17001D_001",
-                                       "poverty_race_nhpi_total" = "B17001E_001",
-                                       "poverty_race_other_total" = "B17001F_001",
-                                       "poverty_race_twoplus_total" = "B17001G_001",
-                                       "poverty_race_hispanic_total" = "B17001I_001",
-                                       "poverty_race_white_below" = "B17001H_002",
-                                       "poverty_race_black_below" = "B17001B_002",
-                                       "poverty_race_amindian_below" = "B17001C_002",
-                                       "poverty_race_asian_below" = "B17001D_002",
-                                       "poverty_race_nhpi_below" = "B17001E_002",
-                                       "poverty_race_other_below" = "B17001F_002",
-                                       "poverty_race_twoplus_below" = "B17001G_002",
-                                       "poverty_race_hispanic_below" = "B17001I_002",
-                                       "poverty_below_sexm_total" = "B17001_003",
-                                       "poverty_above_sexm_total" = "B17001_032",
-                                       "poverty_below_sexf_total" = "B17001_017",
-                                       "poverty_above_sexf_total" = "B17001_046",
-                                       "poverty_below_family_related_children_married_couple" = "B17006_003",
-                                       "poverty_below_family_related_children_unmarried_male" = "B17006_008",
-                                       "poverty_below_family_related_children_unmarried_female" = "B17006_012",
-                                       "poverty_above_family_related_children_married_couple" = "B17006_017",
-                                       "poverty_above_family_related_children_unmarried_male" = "B17006_022",
-                                       "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
+                                       "poverty_level_099_age17" = "B17024_031"),
                       output = "wide") %>%
   mutate(geography = "state")
 
+states_all_acs5 <- get_acs(geography = "state",
+                      survey = "acs5",
+                      variables = c("poverty_race_white_total" = "B17001H_001",
+                                    "poverty_race_black_total" = "B17001B_001",
+                                    "poverty_race_amindian_total" = "B17001C_001",
+                                    "poverty_race_asian_total" = "B17001D_001",
+                                    "poverty_race_nhpi_total" = "B17001E_001",
+                                    "poverty_race_other_total" = "B17001F_001",
+                                    "poverty_race_twoplus_total" = "B17001G_001",
+                                    "poverty_race_hispanic_total" = "B17001I_001",
+                                    "poverty_race_white_below" = "B17001H_002",
+                                    "poverty_race_black_below" = "B17001B_002",
+                                    "poverty_race_amindian_below" = "B17001C_002",
+                                    "poverty_race_asian_below" = "B17001D_002",
+                                    "poverty_race_nhpi_below" = "B17001E_002",
+                                    "poverty_race_other_below" = "B17001F_002",
+                                    "poverty_race_twoplus_below" = "B17001G_002",
+                                    "poverty_race_hispanic_below" = "B17001I_002",
+                                    "poverty_below_sexm_total" = "B17001_003",
+                                    "poverty_above_sexm_total" = "B17001_032",
+                                    "poverty_below_sexf_total" = "B17001_017",
+                                    "poverty_above_sexf_total" = "B17001_046",
+                                    "poverty_below_family_related_children_married_couple" = "B17006_003",
+                                    "poverty_below_family_related_children_unmarried_male" = "B17006_008",
+                                    "poverty_below_family_related_children_unmarried_female" = "B17006_012",
+                                    "poverty_above_family_related_children_married_couple" = "B17006_017",
+                                    "poverty_above_family_related_children_unmarried_male" = "B17006_022",
+                                    "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
+                      output = "wide") %>%
+  mutate(geography = "state")
 
+states_all <- left_join(states_all, states_all_acs5, by = c("GEOID", "NAME", "geography"))
 
 vt_state <- states_all %>%
   filter(NAME == "Vermont") %>%
@@ -1387,7 +1392,7 @@ write.csv(child_poverty_towns,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/child_poverty_towns.csv",
           row.names = FALSE)
 
-# Poverty by family type for Vermont, counties
+# Poverty by family type for towns
 child_poverty_family_type_towns <- vermont_us_nomoe %>%
   filter(geography == "county subdivision") %>%
   select(all_of(geography_variables), 
@@ -1439,6 +1444,8 @@ write.csv(health_insurance_towns,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/health_insurance_towns.csv",
           row.names = FALSE)
 
+
+# Race Long
 
 vermont_us_race <- vermont_us_nomoe %>%
   select(geoid, datawrapper_id, geography, name, short_name, race_white:race_hispanic) %>%

@@ -1,5 +1,5 @@
 "geoid","geography","name","short_name","latitude","longitude","poverty_rate_total","poverty_rate_race_white","poverty_rate_race_black","poverty_rate_race_nhpi_amind","poverty_rate_race_asian","poverty_rate_race_other","poverty_rate_race_twoplus","poverty_rate_race_hispanic"
-"50","state_vt","Vermont","Vermont",NA,NA,11,10.5,NA,NA,NA,NA,NA,NA
+"50","state_vt","Vermont","Vermont",NA,NA,11,10.7,23.8,16.8,15.4,12.7,20.1,16.2
 "50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,7.7,7.8,2.7,16.2,0,10.5,11.5,10.6
 "50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,11.3,11,59.4,5.8,8.2,0,13.7,27.5
 "50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,12.3,11.3,50.3,62.3,51.7,14.8,21.6,27.4

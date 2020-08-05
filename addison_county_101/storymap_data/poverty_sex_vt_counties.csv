@@ -1,5 +1,5 @@
 "geoid","geography","name","short_name","latitude","longitude","poverty_rate_sex_male","poverty_rate_sex_female"
-"50","state_vt","Vermont","Vermont",NA,NA,10.3,11.6
+"50","state_vt","Vermont","Vermont",NA,NA,10.3,12
 "50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,7.2,8.3
 "50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,10.6,12
 "50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,11.5,13.1
