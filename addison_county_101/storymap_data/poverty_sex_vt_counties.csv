@@ -1,0 +1,16 @@
+"geoid","geography","name","short_name","latitude","longitude","poverty_rate_sex_male","poverty_rate_sex_female"
+"50","state_vt","Vermont","Vermont",NA,NA,10.3,11.6
+"50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,7.2,8.3
+"50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,10.6,12
+"50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,11.5,13.1
+"50007","county","Chittenden County, Vermont","Chittenden",44.460676,73.070525,11.2,12.3
+"50009","county","Essex County, Vermont","Essex",44.724021,-71.732736,12.3,16.9
+"50011","county","Franklin County, Vermont","Franklin",44.858964,-72.909402,5.6,9.8
+"50013","county","Grand Isle County, Vermont","Grand Isle",44.801788,-73.300758,7.2,8.1
+"50015","county","Lamoille County, Vermont","Lamoille",44.603504,-72.638356,13.6,15.4
+"50017","county","Orange County, Vermont","Orange",44.003392,-72.369687,9.8,11.8
+"50019","county","Orleans County, Vermont","Orleans",44.828442,-72.25163,12.6,15.4
+"50021","county","Rutland County, Vermont","Rutland",43.580844,-73.038196,9.9,11.4
+"50023","county","Washington County, Vermont","Washington",44.274953,-72.609475,10.9,11.9
+"50025","county","Windham County, Vermont","Windham",42.999143,-72.716335,11.8,15
+"50027","county","Windsor County, Vermont","Windsor",43.588143,-72.591515,9.5,10.5

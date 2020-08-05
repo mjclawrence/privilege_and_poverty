@@ -1,0 +1,16 @@
+"geoid","geography","name","short_name","latitude","longitude","poverty_rate_total","poverty_rate_race_white","poverty_rate_race_black","poverty_rate_race_nhpi_amind","poverty_rate_race_asian","poverty_rate_race_other","poverty_rate_race_twoplus","poverty_rate_race_hispanic"
+"50","state_vt","Vermont","Vermont",NA,NA,11,10.5,NA,NA,NA,NA,NA,NA
+"50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,7.7,7.8,2.7,16.2,0,10.5,11.5,10.6
+"50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,11.3,11,59.4,5.8,8.2,0,13.7,27.5
+"50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,12.3,11.3,50.3,62.3,51.7,14.8,21.6,27.4
+"50007","county","Chittenden County, Vermont","Chittenden",44.460676,73.070525,11.8,10.7,25.5,12.6,16.4,16.5,20.7,20.2
+"50009","county","Essex County, Vermont","Essex",44.724021,-71.732736,14.6,13.5,100,65,17.1,73.3,12.4,13.3
+"50011","county","Franklin County, Vermont","Franklin",44.858964,-72.909402,7.7,7.6,0,5.3,0.6,0,19.3,3.4
+"50013","county","Grand Isle County, Vermont","Grand Isle",44.801788,-73.300758,7.6,8.1,0,0,0,0,3.1,0
+"50015","county","Lamoille County, Vermont","Lamoille",44.603504,-72.638356,14.5,14.2,20.2,10.6,0,0,38.4,23.8
+"50017","county","Orange County, Vermont","Orange",44.003392,-72.369687,10.8,10.7,15.5,13.7,0,42.9,9,13
+"50019","county","Orleans County, Vermont","Orleans",44.828442,-72.25163,14,14,8.9,10.7,10.9,0,23.1,2.1
+"50021","county","Rutland County, Vermont","Rutland",43.580844,-73.038196,10.7,10.6,9.1,20.8,0,11.4,21,14.5
+"50023","county","Washington County, Vermont","Washington",44.274953,-72.609475,11.4,10.7,23.4,26.3,20.9,43.9,26.4,21.8
+"50025","county","Windham County, Vermont","Windham",42.999143,-72.716335,13.4,12.9,37.2,18.3,45.1,28.2,14.2,6.7
+"50027","county","Windsor County, Vermont","Windsor",43.588143,-72.591515,10,9.6,9.9,33.3,3.6,5.6,26.3,13.7

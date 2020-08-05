@@ -1,0 +1,53 @@
+"geoid","geography","name","short_name","latitude","longitude","poverty_rate_sex_male","poverty_rate_sex_female"
+"1","us","United States","United States",NA,NA,11.9,14.3
+"01","state","Alabama","Alabama",NA,NA,15,18.5
+"02","state","Alaska","Alaska",NA,NA,10.5,11.3
+"04","state","Arizona","Arizona",NA,NA,13.1,14.9
+"05","state","Arkansas","Arkansas",NA,NA,15.1,19.3
+"06","state","California","California",NA,NA,11.6,14
+"08","state","Colorado","Colorado",NA,NA,8.7,10.6
+"09","state","Connecticut","Connecticut",NA,NA,9.2,11.6
+"10","state","Delaware","Delaware",NA,NA,11.6,13.3
+"11","state","District of Columbia","District of Columbia",NA,NA,13.9,18.2
+"12","state","Florida","Florida",NA,NA,12.5,14.6
+"13","state","Georgia","Georgia",NA,NA,12.8,15.8
+"15","state","Hawaii","Hawaii",NA,NA,8.1,9.5
+"16","state","Idaho","Idaho",NA,NA,11.1,12.5
+"17","state","Illinois","Illinois",NA,NA,10.9,13.3
+"18","state","Indiana","Indiana",NA,NA,11.7,14.5
+"19","state","Iowa","Iowa",NA,NA,10,12.5
+"20","state","Kansas","Kansas",NA,NA,10.8,13.1
+"21","state","Kentucky","Kentucky",NA,NA,15.4,18.3
+"22","state","Louisiana","Louisiana",NA,NA,16.8,20.3
+"23","state","Maine","Maine",NA,NA,10.4,12.8
+"24","state","Maryland","Maryland",NA,NA,7.9,9.9
+"25","state","Massachusetts","Massachusetts",NA,NA,9,10.9
+"26","state","Michigan","Michigan",NA,NA,12.9,15.2
+"27","state","Minnesota","Minnesota",NA,NA,8.7,10.5
+"28","state","Mississippi","Mississippi",NA,NA,17.3,21.9
+"29","state","Missouri","Missouri",NA,NA,12.1,14.3
+"30","state","Montana","Montana",NA,NA,12.3,13.8
+"31","state","Nebraska","Nebraska",NA,NA,9.9,12.1
+"32","state","Nevada","Nevada",NA,NA,11.7,14.1
+"33","state","New Hampshire","New Hampshire",NA,NA,6.8,8.4
+"34","state","New Jersey","New Jersey",NA,NA,8.4,10.5
+"35","state","New Mexico","New Mexico",NA,NA,18.3,20.6
+"36","state","New York","New York",NA,NA,12.2,14.9
+"37","state","North Carolina","North Carolina",NA,NA,12.7,15.3
+"38","state","North Dakota","North Dakota",NA,NA,10.2,11.2
+"39","state","Ohio","Ohio",NA,NA,12.6,15.1
+"40","state","Oklahoma","Oklahoma",NA,NA,14.4,16.8
+"41","state","Oregon","Oregon",NA,NA,11.5,13.6
+"42","state","Pennsylvania","Pennsylvania",NA,NA,11.2,13.2
+"44","state","Rhode Island","Rhode Island",NA,NA,12.2,13.6
+"45","state","South Carolina","South Carolina",NA,NA,13.7,16.7
+"46","state","South Dakota","South Dakota",NA,NA,12.1,14.1
+"47","state","Tennessee","Tennessee",NA,NA,13.9,16.6
+"48","state","Texas","Texas",NA,NA,13.4,16.3
+"49","state","Utah","Utah",NA,NA,8.1,9.9
+"50","state","Vermont","Vermont",NA,NA,10.3,11.6
+"51","state","Virginia","Virginia",NA,NA,9.4,11.9
+"53","state","Washington","Washington",NA,NA,9.5,11
+"54","state","West Virginia","West Virginia",NA,NA,16.6,19
+"55","state","Wisconsin","Wisconsin",NA,NA,10.1,12
+"56","state","Wyoming","Wyoming",NA,NA,9,13.2

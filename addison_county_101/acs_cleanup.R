@@ -15,6 +15,10 @@ acs_vars <- load_variables(year = 2018,
                            dataset = "ACS5",
                            cache = TRUE)
 
+poverty_race_table <- get_acs(geography = "us",
+                         survey = "acs1",
+                         table = "B17001")
+
 country <- get_acs(geography = "us",
                          survey = "acs1",
                          variables = c("population" = "B01003_001",
@@ -142,14 +146,47 @@ country <- get_acs(geography = "us",
                                        "total_sexf_age74" = "B01001_046",
                                        "total_sexf_age79" = "B01001_047",
                                        "total_sexf_age84" = "B01001_048",
-                                       "total_sexf_age85" = "B01001_049"),
+                                       "total_sexf_age85" = "B01001_049",
+                                       "poverty_level_age06_total" = "B17024_002",
+                                       "poverty_level_050_age06" = "B17024_003",
+                                       "poverty_level_074_age06" = "B17024_004",
+                                       "poverty_level_099_age06" = "B17024_005",
+                                       "poverty_level_age11_total" = "B17024_015",
+                                       "poverty_level_050_age11" = "B17024_016",
+                                       "poverty_level_074_age11" = "B17024_017",
+                                       "poverty_level_099_age11" = "B17024_018",
+                                       "poverty_level_age17_total" = "B17024_028",
+                                       "poverty_level_050_age17" = "B17024_029",
+                                       "poverty_level_074_age17" = "B17024_030",
+                                       "poverty_level_099_age17" = "B17024_031",
+                                       "poverty_race_white_total" = "B17001H_001",
+                                       "poverty_race_black_total" = "B17001B_001",
+                                       "poverty_race_amindian_total" = "B17001C_001",
+                                       "poverty_race_asian_total" = "B17001D_001",
+                                       "poverty_race_nhpi_total" = "B17001E_001",
+                                       "poverty_race_other_total" = "B17001F_001",
+                                       "poverty_race_twoplus_total" = "B17001G_001",
+                                       "poverty_race_hispanic_total" = "B17001I_001",
+                                       "poverty_race_white_below" = "B17001H_002",
+                                       "poverty_race_black_below" = "B17001B_002",
+                                       "poverty_race_amindian_below" = "B17001C_002",
+                                       "poverty_race_asian_below" = "B17001D_002",
+                                       "poverty_race_nhpi_below" = "B17001E_002",
+                                       "poverty_race_other_below" = "B17001F_002",
+                                       "poverty_race_twoplus_below" = "B17001G_002",
+                                       "poverty_race_hispanic_below" = "B17001I_002",
+                                       "poverty_below_sexm_total" = "B17001_003",
+                                       "poverty_above_sexm_total" = "B17001_032",
+                                       "poverty_below_sexf_total" = "B17001_017",
+                                       "poverty_above_sexf_total" = "B17001_046",
+                                       "poverty_below_family_related_children_married_couple" = "B17006_003",
+                                       "poverty_below_family_related_children_unmarried_male" = "B17006_008",
+                                       "poverty_below_family_related_children_unmarried_female" = "B17006_012",
+                                       "poverty_above_family_related_children_married_couple" = "B17006_017",
+                                       "poverty_above_family_related_children_unmarried_male" = "B17006_022",
+                                       "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
                          output = "wide") %>%
   mutate(geography = "us")
-
-
-poverty_table <- get_acs(geography = "us",
-                         survey = "acs1",
-                         table = "C17002")
 
 states_all <- get_acs(geography = "state",
                          survey = "acs1",
@@ -278,8 +315,46 @@ states_all <- get_acs(geography = "state",
                                        "total_sexf_age74" = "B01001_046",
                                        "total_sexf_age79" = "B01001_047",
                                        "total_sexf_age84" = "B01001_048",
-                                       "total_sexf_age85" = "B01001_049"),
-                         output = "wide") %>%
+                                       "total_sexf_age85" = "B01001_049",
+                                       "poverty_level_age06_total" = "B17024_002",
+                                       "poverty_level_050_age06" = "B17024_003",
+                                       "poverty_level_074_age06" = "B17024_004",
+                                       "poverty_level_099_age06" = "B17024_005",
+                                       "poverty_level_age11_total" = "B17024_015",
+                                       "poverty_level_050_age11" = "B17024_016",
+                                       "poverty_level_074_age11" = "B17024_017",
+                                       "poverty_level_099_age11" = "B17024_018",
+                                       "poverty_level_age17_total" = "B17024_028",
+                                       "poverty_level_050_age17" = "B17024_029",
+                                       "poverty_level_074_age17" = "B17024_030",
+                                       "poverty_level_099_age17" = "B17024_031",
+                                       "poverty_race_white_total" = "B17001H_001",
+                                       "poverty_race_black_total" = "B17001B_001",
+                                       "poverty_race_amindian_total" = "B17001C_001",
+                                       "poverty_race_asian_total" = "B17001D_001",
+                                       "poverty_race_nhpi_total" = "B17001E_001",
+                                       "poverty_race_other_total" = "B17001F_001",
+                                       "poverty_race_twoplus_total" = "B17001G_001",
+                                       "poverty_race_hispanic_total" = "B17001I_001",
+                                       "poverty_race_white_below" = "B17001H_002",
+                                       "poverty_race_black_below" = "B17001B_002",
+                                       "poverty_race_amindian_below" = "B17001C_002",
+                                       "poverty_race_asian_below" = "B17001D_002",
+                                       "poverty_race_nhpi_below" = "B17001E_002",
+                                       "poverty_race_other_below" = "B17001F_002",
+                                       "poverty_race_twoplus_below" = "B17001G_002",
+                                       "poverty_race_hispanic_below" = "B17001I_002",
+                                       "poverty_below_sexm_total" = "B17001_003",
+                                       "poverty_above_sexm_total" = "B17001_032",
+                                       "poverty_below_sexf_total" = "B17001_017",
+                                       "poverty_above_sexf_total" = "B17001_046",
+                                       "poverty_below_family_related_children_married_couple" = "B17006_003",
+                                       "poverty_below_family_related_children_unmarried_male" = "B17006_008",
+                                       "poverty_below_family_related_children_unmarried_female" = "B17006_012",
+                                       "poverty_above_family_related_children_married_couple" = "B17006_017",
+                                       "poverty_above_family_related_children_unmarried_male" = "B17006_022",
+                                       "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
+                      output = "wide") %>%
   mutate(geography = "state")
 
 
@@ -416,8 +491,46 @@ vt_county <- get_acs(geography = "county",
                                    "total_sexf_age74" = "B01001_046",
                                    "total_sexf_age79" = "B01001_047",
                                    "total_sexf_age84" = "B01001_048",
-                                   "total_sexf_age85" = "B01001_049"),
-                           output = "wide") %>%
+                                   "total_sexf_age85" = "B01001_049",
+                                   "poverty_level_age06_total" = "B17024_002",
+                                   "poverty_level_050_age06" = "B17024_003",
+                                   "poverty_level_074_age06" = "B17024_004",
+                                   "poverty_level_099_age06" = "B17024_005",
+                                   "poverty_level_age11_total" = "B17024_015",
+                                   "poverty_level_050_age11" = "B17024_016",
+                                   "poverty_level_074_age11" = "B17024_017",
+                                   "poverty_level_099_age11" = "B17024_018",
+                                   "poverty_level_age17_total" = "B17024_028",
+                                   "poverty_level_050_age17" = "B17024_029",
+                                   "poverty_level_074_age17" = "B17024_030",
+                                   "poverty_level_099_age17" = "B17024_031",
+                                   "poverty_race_white_total" = "B17001H_001",
+                                   "poverty_race_black_total" = "B17001B_001",
+                                   "poverty_race_amindian_total" = "B17001C_001",
+                                   "poverty_race_asian_total" = "B17001D_001",
+                                   "poverty_race_nhpi_total" = "B17001E_001",
+                                   "poverty_race_other_total" = "B17001F_001",
+                                   "poverty_race_twoplus_total" = "B17001G_001",
+                                   "poverty_race_hispanic_total" = "B17001I_001",
+                                   "poverty_race_white_below" = "B17001H_002",
+                                   "poverty_race_black_below" = "B17001B_002",
+                                   "poverty_race_amindian_below" = "B17001C_002",
+                                   "poverty_race_asian_below" = "B17001D_002",
+                                   "poverty_race_nhpi_below" = "B17001E_002",
+                                   "poverty_race_other_below" = "B17001F_002",
+                                   "poverty_race_twoplus_below" = "B17001G_002",
+                                   "poverty_race_hispanic_below" = "B17001I_002",
+                                   "poverty_below_sexm_total" = "B17001_003",
+                                   "poverty_above_sexm_total" = "B17001_032",
+                                   "poverty_below_sexf_total" = "B17001_017",
+                                   "poverty_above_sexf_total" = "B17001_046",
+                                   "poverty_below_family_related_children_married_couple" = "B17006_003",
+                                   "poverty_below_family_related_children_unmarried_male" = "B17006_008",
+                                   "poverty_below_family_related_children_unmarried_female" = "B17006_012",
+                                   "poverty_above_family_related_children_married_couple" = "B17006_017",
+                                   "poverty_above_family_related_children_unmarried_male" = "B17006_022",
+                                   "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
+                     output = "wide") %>%
   mutate(geography = "county")
 
 vt_county_subdivisions <- get_acs(geography = "county subdivision",
@@ -548,7 +661,45 @@ vt_county_subdivisions <- get_acs(geography = "county subdivision",
                                    "total_sexf_age74" = "B01001_046",
                                    "total_sexf_age79" = "B01001_047",
                                    "total_sexf_age84" = "B01001_048",
-                                   "total_sexf_age85" = "B01001_049"),
+                                   "total_sexf_age85" = "B01001_049",
+                                   "poverty_level_age06_total" = "B17024_002",
+                                   "poverty_level_050_age06" = "B17024_003",
+                                   "poverty_level_074_age06" = "B17024_004",
+                                   "poverty_level_099_age06" = "B17024_005",
+                                   "poverty_level_age11_total" = "B17024_015",
+                                   "poverty_level_050_age11" = "B17024_016",
+                                   "poverty_level_074_age11" = "B17024_017",
+                                   "poverty_level_099_age11" = "B17024_018",
+                                   "poverty_level_age17_total" = "B17024_028",
+                                   "poverty_level_050_age17" = "B17024_029",
+                                   "poverty_level_074_age17" = "B17024_030",
+                                   "poverty_level_099_age17" = "B17024_031",
+                                   "poverty_race_white_total" = "B17001H_001",
+                                   "poverty_race_black_total" = "B17001B_001",
+                                   "poverty_race_amindian_total" = "B17001C_001",
+                                   "poverty_race_asian_total" = "B17001D_001",
+                                   "poverty_race_nhpi_total" = "B17001E_001",
+                                   "poverty_race_other_total" = "B17001F_001",
+                                   "poverty_race_twoplus_total" = "B17001G_001",
+                                   "poverty_race_hispanic_total" = "B17001I_001",
+                                   "poverty_race_white_below" = "B17001H_002",
+                                   "poverty_race_black_below" = "B17001B_002",
+                                   "poverty_race_amindian_below" = "B17001C_002",
+                                   "poverty_race_asian_below" = "B17001D_002",
+                                   "poverty_race_nhpi_below" = "B17001E_002",
+                                   "poverty_race_other_below" = "B17001F_002",
+                                   "poverty_race_twoplus_below" = "B17001G_002",
+                                   "poverty_race_hispanic_below" = "B17001I_002",
+                                   "poverty_below_sexm_total" = "B17001_003",
+                                   "poverty_above_sexm_total" = "B17001_032",
+                                   "poverty_below_sexf_total" = "B17001_017",
+                                   "poverty_above_sexf_total" = "B17001_046",
+                                   "poverty_below_family_related_children_married_couple" = "B17006_003",
+                                   "poverty_below_family_related_children_unmarried_male" = "B17006_008",
+                                   "poverty_below_family_related_children_unmarried_female" = "B17006_012",
+                                   "poverty_above_family_related_children_married_couple" = "B17006_017",
+                                   "poverty_above_family_related_children_unmarried_male" = "B17006_022",
+                                   "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
                      output = "wide") %>%
   mutate(geography = "county subdivision")
 
@@ -681,7 +832,45 @@ vt_tracts <- get_acs(geography = "tract",
                                    "total_sexf_age74" = "B01001_046",
                                    "total_sexf_age79" = "B01001_047",
                                    "total_sexf_age84" = "B01001_048",
-                                   "total_sexf_age85" = "B01001_049"),
+                                   "total_sexf_age85" = "B01001_049",
+                                   "poverty_level_age06_total" = "B17024_002",
+                                   "poverty_level_050_age06" = "B17024_003",
+                                   "poverty_level_074_age06" = "B17024_004",
+                                   "poverty_level_099_age06" = "B17024_005",
+                                   "poverty_level_age11_total" = "B17024_015",
+                                   "poverty_level_050_age11" = "B17024_016",
+                                   "poverty_level_074_age11" = "B17024_017",
+                                   "poverty_level_099_age11" = "B17024_018",
+                                   "poverty_level_age17_total" = "B17024_028",
+                                   "poverty_level_050_age17" = "B17024_029",
+                                   "poverty_level_074_age17" = "B17024_030",
+                                   "poverty_level_099_age17" = "B17024_031",
+                                   "poverty_race_white_total" = "B17001H_001",
+                                   "poverty_race_black_total" = "B17001B_001",
+                                   "poverty_race_amindian_total" = "B17001C_001",
+                                   "poverty_race_asian_total" = "B17001D_001",
+                                   "poverty_race_nhpi_total" = "B17001E_001",
+                                   "poverty_race_other_total" = "B17001F_001",
+                                   "poverty_race_twoplus_total" = "B17001G_001",
+                                   "poverty_race_hispanic_total" = "B17001I_001",
+                                   "poverty_race_white_below" = "B17001H_002",
+                                   "poverty_race_black_below" = "B17001B_002",
+                                   "poverty_race_amindian_below" = "B17001C_002",
+                                   "poverty_race_asian_below" = "B17001D_002",
+                                   "poverty_race_nhpi_below" = "B17001E_002",
+                                   "poverty_race_other_below" = "B17001F_002",
+                                   "poverty_race_twoplus_below" = "B17001G_002",
+                                   "poverty_race_hispanic_below" = "B17001I_002",
+                                   "poverty_below_sexm_total" = "B17001_003",
+                                   "poverty_above_sexm_total" = "B17001_032",
+                                   "poverty_below_sexf_total" = "B17001_017",
+                                   "poverty_above_sexf_total" = "B17001_046",
+                                   "poverty_below_family_related_children_married_couple" = "B17006_003",
+                                   "poverty_below_family_related_children_unmarried_male" = "B17006_008",
+                                   "poverty_below_family_related_children_unmarried_female" = "B17006_012",
+                                   "poverty_above_family_related_children_married_couple" = "B17006_017",
+                                   "poverty_above_family_related_children_unmarried_male" = "B17006_022",
+                                   "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
                      output = "wide") %>%
   mutate(geography = "census tract")
 
@@ -743,7 +932,44 @@ vermont_us_nomoe <- vermont_us %>%
                                  total_sexm_age79E + total_sexm_age84E + total_sexm_age85E +
                                  total_sexf_age66E + total_sexf_age69E + total_sexf_age74E + 
                                  total_sexf_age79E + total_sexf_age84E + total_sexf_age85E) /
-                                total_sex_ageE)*100),1)) %>%
+                                total_sex_ageE)*100),1),
+         child_poverty_rate_total = round((((poverty_level_050_age06E + poverty_level_074_age06E + poverty_level_099_age06E +
+                                       poverty_level_050_age11E + poverty_level_074_age11E + poverty_level_099_age11E +
+                                       poverty_level_050_age17E + poverty_level_074_age17E + poverty_level_099_age17E) /
+                                       (poverty_level_age06_totalE + 
+                                       poverty_level_age11_totalE + 
+                                       poverty_level_age17_totalE)) * 100),1),
+         child_poverty_rate_deep = round((((poverty_level_050_age06E + poverty_level_050_age11E + poverty_level_050_age17E) /
+                                              (poverty_level_age06_totalE + 
+                                                 poverty_level_age11_totalE + 
+                                                 poverty_level_age17_totalE)) * 100),1),
+         child_poverty_rate_notdeep = round((((poverty_level_074_age06E + poverty_level_099_age06E +
+                                               poverty_level_074_age11E + poverty_level_099_age11E +
+                                               poverty_level_074_age17E + poverty_level_099_age17E) /
+                                              (poverty_level_age06_totalE + 
+                                                 poverty_level_age11_totalE + 
+                                                 poverty_level_age17_totalE)) * 100),1),
+         poverty_rate_race_white = round(((poverty_race_white_belowE / poverty_race_white_totalE)*100),1),
+         poverty_rate_race_black = round(((poverty_race_black_belowE / poverty_race_black_totalE)*100),1),
+         poverty_rate_race_nhpi_amind = round(((poverty_race_nhpi_belowE + poverty_race_amindian_belowE) / 
+                                             (poverty_race_nhpi_totalE + poverty_race_amindian_totalE)*100),1),
+         poverty_rate_race_asian = round(((poverty_race_asian_belowE / poverty_race_asian_totalE)*100),1),
+         poverty_rate_race_other = round(((poverty_race_other_belowE / poverty_race_other_totalE)*100),1),
+         poverty_rate_race_twoplus = round(((poverty_race_twoplus_belowE / poverty_race_twoplus_totalE)*100),1),
+         poverty_rate_race_hispanic = round(((poverty_race_hispanic_belowE / poverty_race_hispanic_totalE)*100),1),
+         poverty_rate_sex_male = round(((poverty_below_sexm_totalE / 
+                                           (poverty_below_sexm_totalE + poverty_above_sexm_totalE))*100),1),
+         poverty_rate_sex_female = round(((poverty_below_sexf_totalE / 
+                                             (poverty_below_sexf_totalE + poverty_above_sexf_totalE))*100),1),
+         child_poverty_family_married_couple = round(((poverty_below_family_related_children_married_coupleE/
+                                                  (poverty_below_family_related_children_married_coupleE +
+                                                  poverty_above_family_related_children_married_coupleE))*100),1),
+         child_poverty_family_unmarried_male = round(((poverty_below_family_related_children_unmarried_maleE/
+                                                  (poverty_below_family_related_children_unmarried_maleE +
+                                                     poverty_above_family_related_children_unmarried_maleE))*100),1),
+         child_poverty_family_unmarried_female = round(((poverty_below_family_related_children_unmarried_femaleE/
+                                                         (poverty_below_family_related_children_unmarried_femaleE +
+                                                            poverty_above_family_related_children_unmarried_femaleE))*100),1)) %>%
          rename(population = populationE,
          median_hh_income = median_hh_incomeE) %>%
          mutate(short_name = NAME) %>%
@@ -770,7 +996,9 @@ vermont_us_nomoe <- vermont_us %>%
          poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep, poverty_level_below_050:poverty_level_above_200, snap_rate_total, snap_rate_children,
          housing_owner_occupied, educ_hs_plus, educ_ba_plus, employment_rate_civilian,
          race_white:race_hispanic, foreign_born, has_health_insurance,
-         all_of(names_county_homeless)) %>%
+         all_of(names_county_homeless), child_poverty_rate_total:child_poverty_rate_notdeep,
+         poverty_rate_race_white:poverty_rate_race_hispanic, poverty_rate_sex_male, poverty_rate_sex_female,
+         child_poverty_family_married_couple, child_poverty_family_unmarried_male, child_poverty_family_unmarried_female) %>%
   arrange(desc(geography), datawrapper_id) %>%
   filter(short_name != "East Middlebury")
 
@@ -788,6 +1016,112 @@ write.csv(vermont_us_nomoe, "/Users/lawrence/Documents/GitHub/privilege_and_pove
 
 geography_variables <- c("geoid", "geography", "name", "short_name", 
                          "latitude", "longitude")
+
+# Poverty rate for US states
+poverty_us_states <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state")) %>%
+  filter(name != "Puerto Rico") %>%
+  select(all_of(geography_variables), 
+         poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep)
+
+write.csv(poverty_us_states, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_us_states.csv",
+          row.names = FALSE)
+
+# Poverty rate by race for US, states
+poverty_race_us_states <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state")) %>%
+  filter(name != "Puerto Rico") %>%
+  select(all_of(geography_variables), 
+         poverty_rate_total, poverty_rate_race_white:poverty_rate_race_hispanic)
+
+write.csv(poverty_race_us_states, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_race_us_states.csv",
+          row.names = FALSE)
+
+# Poverty rate by sex for US, states
+poverty_sex_us_states <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state")) %>%
+  filter(name != "Puerto Rico") %>%
+  select(all_of(geography_variables), 
+         poverty_rate_sex_male, poverty_rate_sex_female)
+
+write.csv(poverty_sex_us_states, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_sex_us_states.csv",
+          row.names = FALSE)
+
+
+# Child poverty rate for US, states
+child_poverty_us_states <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state")) %>%
+  filter(name != "Puerto Rico") %>%
+  select(all_of(geography_variables), 
+         child_poverty_rate_total, child_poverty_rate_deep, child_poverty_rate_notdeep)
+
+write.csv(child_poverty_us_states, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/child_poverty_us_states.csv",
+          row.names = FALSE)
+
+# Poverty by family type for US, states
+child_poverty_family_type_us_states <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state")) %>%
+  filter(name != "Puerto Rico") %>%
+  select(all_of(geography_variables), 
+         child_poverty_family_married_couple:child_poverty_family_unmarried_female)
+
+write.csv(child_poverty_family_type_us_states, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/child_poverty_family_type_us_states.csv",
+          row.names = FALSE)
+
+# Poverty rate for Vermont, Counties
+poverty_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep)
+
+write.csv(poverty_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_vt_counties.csv",
+          row.names = FALSE)
+
+# Poverty rate by race for counties
+poverty_race_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("state_vt", "county")) %>%
+  select(all_of(geography_variables), 
+         poverty_rate_total, poverty_rate_race_white:poverty_rate_race_hispanic)
+
+write.csv(poverty_race_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_race_vt_counties.csv",
+          row.names = FALSE)
+
+# Poverty rate by sex for Vermont, counties
+poverty_sex_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("state_vt", "county")) %>%
+  select(all_of(geography_variables), 
+         poverty_rate_sex_male, poverty_rate_sex_female)
+
+write.csv(poverty_sex_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_sex_vt_counties.csv",
+          row.names = FALSE)
+
+# Child poverty rate for Vermont, Counties
+child_poverty_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("state_vt", "county")) %>%
+  select(all_of(geography_variables), 
+         child_poverty_rate_total, child_poverty_rate_deep, child_poverty_rate_notdeep)
+
+write.csv(child_poverty_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/child_poverty_vt_counties.csv",
+          row.names = FALSE)
+
+# Poverty by family type for Vermont, counties
+child_poverty_family_type_vt_county <- vermont_us_nomoe %>%
+  filter(geography %in% c("state_vt", "county")) %>%
+  select(all_of(geography_variables), 
+         child_poverty_family_married_couple:child_poverty_family_unmarried_female)
+
+write.csv(child_poverty_family_type_vt_county, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/child_poverty_family_type_vt_county.csv",
+          row.names = FALSE)
 
 # Population for US, Vermont, Counties
 population_us_vt_counties <- vermont_us_nomoe %>%
@@ -845,7 +1179,7 @@ write.csv(foreign_us_vt_counties,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/foreign_us_vt_counties.csv",
           row.names = FALSE)
 
-# Umployment Rate for Towns
+# Umployment Rate for US, Vermont, Counties
 unemployment_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>%
   mutate(unemployment_rate = 100 - employment_rate_civilian) %>%
@@ -1008,6 +1342,26 @@ write.csv(poverty_towns,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_towns.csv",
           row.names = FALSE)
 
+# Poverty rate by race for towns
+poverty_race_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  select(all_of(geography_variables), 
+         poverty_rate_total, poverty_rate_race_white:poverty_rate_race_hispanic)
+
+write.csv(poverty_race_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_race_towns.csv",
+          row.names = FALSE)
+
+# Poverty rate by sex for towns
+poverty_sex_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  select(all_of(geography_variables), 
+         poverty_rate_sex_male, poverty_rate_sex_female)
+
+write.csv(poverty_sex_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_sex_towns.csv",
+          row.names = FALSE)
+
 # Poverty levels for towns
 poverty_levels_towns <- vermont_us_nomoe %>%
   filter(geography == "county subdivision") %>% 
@@ -1021,6 +1375,26 @@ poverty_levels_towns <- vermont_us_nomoe %>%
 
 write.csv(poverty_levels_towns, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_towns.csv",
+          row.names = FALSE)
+
+# Child poverty rate for towns
+child_poverty_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(all_of(geography_variables), 
+         child_poverty_rate_total, child_poverty_rate_deep, child_poverty_rate_notdeep)
+
+write.csv(child_poverty_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/child_poverty_towns.csv",
+          row.names = FALSE)
+
+# Poverty by family type for Vermont, counties
+child_poverty_family_type_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  select(all_of(geography_variables), 
+         child_poverty_family_married_couple:child_poverty_family_unmarried_female)
+
+write.csv(child_poverty_family_type_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/child_poverty_family_type_towns.csv",
           row.names = FALSE)
 
 # Education for towns
