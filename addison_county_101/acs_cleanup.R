@@ -1445,6 +1445,34 @@ write.csv(health_insurance_towns,
           row.names = FALSE)
 
 
+# Summary of poverty, deep poverty, child poverty, and child deep poverty for towns
+poverty_summary_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision" | short_name == "Addison") %>%
+  select(all_of(geography_variables),
+         poverty_rate_total, poverty_rate_deep, child_poverty_rate_total, child_poverty_rate_deep) %>%
+  mutate(short_name = ifelse(geography == "county", "Addison County", short_name))
+
+write.csv(poverty_summary_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_summary_towns.csv",
+          row.names = FALSE)
+
+
+# Summary of poverty, deep poverty, poverty by race, child poverty, child deep poverty, poverty by family type for states
+poverty_summary_states <- vermont_us_nomoe %>%
+  filter(geography == "state") %>%
+  select(all_of(geography_variables),
+         poverty_rate_total, poverty_rate_deep, 
+         poverty_rate_race_white:poverty_rate_race_hispanic,
+         child_poverty_rate_total, child_poverty_rate_deep,
+         child_poverty_family_married_couple, child_poverty_family_unmarried_male,
+         child_poverty_family_unmarried_female)
+
+write.csv(poverty_summary_states, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_summary_states.csv",
+          row.names = FALSE)
+
+
+
 # Race Long
 
 vermont_us_race <- vermont_us_nomoe %>%
