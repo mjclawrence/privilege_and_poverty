@@ -1004,7 +1004,7 @@ vermont_us_nomoe <- vermont_us %>%
          all_of(names_county_homeless), child_poverty_rate_total:child_poverty_rate_notdeep,
          poverty_rate_race_white:poverty_rate_race_hispanic, poverty_rate_sex_male, poverty_rate_sex_female,
          child_poverty_family_married_couple, child_poverty_family_unmarried_male, child_poverty_family_unmarried_female,
-         poverty_belowE) %>%
+         poverty_belowE, poverty_level_050E) %>%
   arrange(desc(geography), datawrapper_id) %>%
   filter(short_name != "East Middlebury")
 
@@ -1476,11 +1476,13 @@ write.csv(poverty_summary_states,
 poverty_summary_counties <- vermont_us_nomoe %>%
   filter(geography == "county") %>%
   select(all_of(geography_variables),
-         poverty_belowe, poverty_rate_total, poverty_rate_deep, 
+         poverty_belowe, poverty_level_050e, poverty_rate_total, poverty_rate_deep, 
          poverty_rate_race_white:poverty_rate_race_hispanic,
          child_poverty_rate_total, child_poverty_rate_deep,
          child_poverty_family_married_couple, child_poverty_family_unmarried_male,
-         child_poverty_family_unmarried_female)
+         child_poverty_family_unmarried_female) %>%
+  mutate(pct_in_poverty_in_deep_poverty = 
+           round((poverty_level_050e / poverty_belowe) * 100),1)
 
 write.csv(poverty_summary_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_summary_counties.csv",
