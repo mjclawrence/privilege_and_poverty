@@ -115,10 +115,12 @@ covid_merge <- left_join(covid_cases_deaths, covid_pop,
                          by = c("countyFIPS", "County_Name", "State")) %>%
   filter(population>0) %>%
   mutate(case_rate = total_cases / population,
-         case_rate_per100k = (total_cases * 100000) / population)
+         case_rate_per100k = (total_cases * 100000) / population,
+         deaths_per100k = (total_deaths * 100000) / population)
 
 summary(covid_merge$case_rate)
 summary(covid_merge$case_rate_per100k)
+summary(covid_merge$deaths_per100k)
 
 covid_merge <- covid_merge %>%
   mutate(countyFIPS = sprintf("%05d", as.numeric(countyFIPS))) %>%
@@ -147,6 +149,10 @@ wtd.cor(pov_covid$poverty_rate, pov_covid$case_rate_per100k,
 
 cor(pov_covid$poverty_rate_150, pov_covid$case_rate_per100k, use = "complete")
 wtd.cor(pov_covid$poverty_rate_150, pov_covid$case_rate_per100k, 
+        weight = pov_covid$population)
+
+cor(pov_covid$giniE, pov_covid$deaths_per100k, use = "complete")
+wtd.cor(pov_covid$giniE, pov_covid$deaths_per100k, 
         weight = pov_covid$population)
 
 
@@ -183,9 +189,8 @@ pov_covid <- pov_covid %>%
 
 pov_covid %>%
   filter(case_rate>0) %>%
-  ggplot(aes(x = poverty_rate_std, y = case_rate_std,
-             size = population)) + geom_point() +
-  gghighlight(State == "VT")
+  ggplot(aes(x = giniE, y = case_rate_per100k,
+             size = population, color = total_deaths)) + geom_point() 
 
 
 pov_covid <- pov_covid %>%
@@ -195,7 +200,8 @@ poverty_covid <- pov_covid %>%
   filter(case_rate_per100k > 0) %>%
   rename(gini = giniE) %>%
   select(GEOID, NAME, poverty_rate, poverty_rate_150,
-         gini, deep_poverty_rate, case_rate_per100k, population, vermont)
+         gini, deep_poverty_rate, case_rate_per100k, total_deaths,
+         population, vermont)
 
 write.csv(poverty_covid, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_covid.csv",
