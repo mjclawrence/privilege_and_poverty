@@ -68,9 +68,9 @@ pov_cor_clean %>%
 
 covid_cases <- read_csv("https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv",
                         col_names = TRUE)
+
 covid_cases <- covid_cases %>%
   rename(County_Name = "County Name")
-
 
 covid_cases_gather <- covid_cases %>%
   gather(date, cases, 5:204) %>%
@@ -83,14 +83,35 @@ covid_cases_gather <- covid_cases %>%
   select(-7) %>%
   ungroup()
 
+covid_deaths <- read_csv("https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_deaths_usafacts.csv",
+                         col_names = TRUE)
+
+covid_deaths <- covid_deaths %>%
+  rename(County_Name = "County Name")
+
+covid_deaths_gather <- covid_deaths %>%
+  gather(date, deaths, 5:204) %>%
+  group_by(countyFIPS) %>%
+  filter(date == max(date),
+         !grepl("Unallocated", County_Name)) %>%
+  mutate(as_of_date = date,
+         total_deaths = deaths) %>%
+  spread(date, deaths) %>%
+  select(-7) %>%
+  ungroup()
+
+
 covid_pop <- read_csv("https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_county_population_usafacts.csv",
                       col_names = TRUE)
 
 covid_pop <- covid_pop %>%
   rename(County_Name = "County Name")
 
+covid_cases_deaths <- left_join(covid_cases_gather, covid_deaths_gather,
+                         by = c("countyFIPS", "County_Name", "State", "as_of_date", "stateFIPS"))
+  
 
-covid_merge <- left_join(covid_cases_gather, covid_pop,
+covid_merge <- left_join(covid_cases_deaths, covid_pop,
                          by = c("countyFIPS", "County_Name", "State")) %>%
   filter(population>0) %>%
   mutate(case_rate = total_cases / population,
@@ -171,6 +192,7 @@ pov_covid <- pov_covid %>%
   mutate(vermont = ifelse(State == "VT", "Vermont", "All Other States"))
 
 poverty_covid <- pov_covid %>%
+  filter(case_rate_per100k > 0) %>%
   rename(gini = giniE) %>%
   select(GEOID, NAME, poverty_rate, poverty_rate_150,
          gini, deep_poverty_rate, case_rate_per100k, population, vermont)
