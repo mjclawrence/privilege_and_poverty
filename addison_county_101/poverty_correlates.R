@@ -55,6 +55,10 @@ pov_cor_clean %>%
   ggplot(aes(x = median_rent_pct_incomeE, y = poverty_rate,
              size = pop_totalE)) + geom_point() + gghighlight(State == "VT")
 
+
+## COVID Data
+## From here: https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/
+
 covid_cases <- read_csv("https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv",
                         col_names = TRUE)
 covid_cases <- covid_cases %>%
