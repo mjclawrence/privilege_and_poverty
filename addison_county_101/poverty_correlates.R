@@ -15,12 +15,15 @@ pov_cor <- get_acs(year = 2018,
                                  commute_04 = "B08303_002",
                                  commute_09 = "B08303_003",
                                  commute_14 = "B08303_004",
-                                 poverty_total = "B17001_001",
-                                 poverty_050 = "B17001_002",
-                                 poverty_099 = "B17001_003",
+                                 poverty_total = "C17002_001",
+                                 poverty_050 = "C17002_002",
+                                 poverty_099 = "C17002_003",
+                                 poverty_124 = "C17002_004",
+                                 poverty_149 = "C17002_005",
                                  pop_total = "B01003_001",
                                  median_hhi = "B19013_001",
-                                 median_rent_pct_income = "B25071_001"),
+                                 median_rent_pct_income = "B25071_001",
+                                 gini = "B19083_001"),
                    output = "wide")
 
 
@@ -34,7 +37,10 @@ pov_cor_clean <- pov_cor %>%
          deep_poverty_rate = 
            round(((poverty_050E) / poverty_totalE), 3),
          poverty_in_deep_poverty =
-           round(((poverty_050E) / (poverty_050E + poverty_099E)),3))
+           round(((poverty_050E) / (poverty_050E + poverty_099E)),3),
+         poverty_rate_150 =
+           round(((poverty_050E + poverty_099E + poverty_124E + poverty_149E)/
+                    poverty_totalE), 3))
 
 cor(pov_cor_clean$commute_under15, pov_cor_clean$poverty_rate, use = "complete")
 
@@ -42,7 +48,7 @@ cor(pov_cor_clean$commute_under15, pov_cor_clean$deep_poverty_rate, use = "compl
 
 cor(pov_cor_clean$commute_under15, pov_cor_clean$poverty_in_deep_poverty, use = "complete")
 
-wtd.cor(pov_cor_clean$commute_under15, pov_cor_clean$poverty_rate, weight = pov_cor_clean$pop_totalE)
+wtd.cor(pov_cor_clean$commute_under15, pov_cor_clean$giniE, weight = pov_cor_clean$pop_totalE)
 wtd.cor(pov_cor_clean$commute_under15, pov_cor_clean$deep_poverty_rate, weight = pov_cor_clean$pop_totalE)
 wtd.cor(pov_cor_clean$commute_under15, pov_cor_clean$poverty_in_deep_poverty, weight = pov_cor_clean$pop_totalE)
 wtd.cor(pov_cor_clean$commute_under15, pov_cor_clean$median_hhiE, weight = pov_cor_clean$pop_totalE)
@@ -52,8 +58,9 @@ wtd.cor(pov_cor_clean$median_rent_pct_incomeE, pov_cor_clean$poverty_rate, weigh
 
 
 pov_cor_clean %>%
-  ggplot(aes(x = median_rent_pct_incomeE, y = poverty_rate,
-             size = pop_totalE)) + geom_point() + gghighlight(State == "VT")
+  ggplot(aes(x = median_rent_pct_incomeE, y = poverty_rate_150,
+             size = pop_totalE)) + geom_point() +
+  gghighlight(grepl("Vermont", NAME))
 
 
 ## COVID Data
@@ -98,14 +105,30 @@ covid_merge <- covid_merge %>%
 
 pov_covid <- left_join(pov_cor_clean, covid_merge, by = "GEOID")
 
-plot_rent <- ggplot(pov_covid, aes(x = median_rent_pct_incomeE,
-                                       y = case_rate_per100k,
-                                       size = pop_totalE))
-plot_rent + geom_point() + gghighlight(grepl("Vermont", NAME))
+pov_covid %>%
+  filter(case_rate_per100k < 8200 & poverty_rate < .5) %>%
+ggplot(aes(x = poverty_rate_150, y = case_rate_per100k,
+           size = pop_totalE)) + geom_point()
 
-cor(pov_covid$median_rent_pct_incomeE, pov_covid$case_rate_per100k, use = "complete")
-wtd.cor(pov_covid$median_rent_pct_incomeE, pov_covid$case_rate_per100k, 
+pov_covid %>%
+  filter(case_rate_per100k < 8200) %>%
+  ggplot(aes(x = giniE, y = case_rate_per100k,
+             size = pop_totalE)) + geom_point() + geom_smooth(method = "lm") +
+  gghighlight(grepl("Vermont", NAME))
+
+cor(pov_covid$giniE, pov_covid$case_rate_per100k, use = "complete")
+wtd.cor(pov_covid$giniE, pov_covid$case_rate_per100k, 
         weight = pov_covid$population)
+
+cor(pov_covid$poverty_rate, pov_covid$case_rate_per100k, use = "complete")
+wtd.cor(pov_covid$poverty_rate, pov_covid$case_rate_per100k, 
+        weight = pov_covid$population)
+
+cor(pov_covid$poverty_rate_150, pov_covid$case_rate_per100k, use = "complete")
+wtd.cor(pov_covid$poverty_rate_150, pov_covid$case_rate_per100k, 
+        weight = pov_covid$population)
+
+
 
 cor(pov_covid$deep_poverty_rate, pov_covid$case_rate_per100k, use = "complete")
 wtd.cor(pov_covid$deep_poverty_rate, pov_covid$case_rate_per100k, 
@@ -143,5 +166,17 @@ pov_covid %>%
              size = population)) + geom_point() +
   gghighlight(State == "VT")
 
+
+pov_covid <- pov_covid %>%
+  mutate(vermont = ifelse(State == "VT", "Vermont", "All Other States"))
+
+poverty_covid <- pov_covid %>%
+  rename(gini = giniE) %>%
+  select(GEOID, NAME, poverty_rate, poverty_rate_150,
+         gini, deep_poverty_rate, case_rate_per100k, population, vermont)
+
+write.csv(poverty_covid, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_covid.csv",
+          row.names = FALSE)
 
 
