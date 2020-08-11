@@ -1,0 +1,13 @@
+﻿Children,Family Type,Livable Wage,Poverty Wage
+0 children,1 Adult,12.74,6
+1 child,1 Adult,26.74,8.13
+2 children,1 Adult,31.5,10.25
+3 children,1 Adult,38.82,12.38
+0 children,"2 Adults, 1 Working",20.01,8.13
+1 child,"2 Adults, 1 Working",24.72,10.25
+2 children,"2 Adults, 1 Working",27.39,12.38
+3 children,"2 Adults, 1 Working",31.34,14.5
+0 children,"2 Adults, Both Working",10,4.06
+1 child,"2 Adults, Both Working",14.75,5.13
+2 children,"2 Adults, Both Working",17.15,6.19
+3 children,"2 Adults, Both Working",20.19,7.25
