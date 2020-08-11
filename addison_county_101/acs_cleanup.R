@@ -974,7 +974,14 @@ vermont_us_nomoe <- vermont_us %>%
                                                      poverty_above_family_related_children_unmarried_maleE))*100),1),
          child_poverty_family_unmarried_female = round(((poverty_below_family_related_children_unmarried_femaleE/
                                                          (poverty_below_family_related_children_unmarried_femaleE +
-                                                            poverty_above_family_related_children_unmarried_femaleE))*100),1)) %>%
+                                                            poverty_above_family_related_children_unmarried_femaleE))*100),1),
+         poverty_rate_race_notwhite = round((((poverty_race_black_belowE + poverty_race_nhpi_belowE + 
+                                                 poverty_race_asian_belowE + poverty_race_other_belowE +
+                                                 poverty_race_twoplus_belowE + poverty_race_hispanic_belowE) /
+                                                (poverty_race_black_totalE + poverty_race_nhpi_totalE + 
+                                                   poverty_race_asian_totalE + poverty_race_other_totalE +
+                                                   poverty_race_twoplus_totalE + poverty_race_hispanic_totalE)) * 100), 1),
+         poverty_rate_notwhite_vs_white = round((poverty_rate_race_notwhite - poverty_rate_race_white),1)) %>%
          rename(population = populationE,
          median_hh_income = median_hh_incomeE) %>%
          mutate(short_name = NAME) %>%
@@ -1004,7 +1011,7 @@ vermont_us_nomoe <- vermont_us %>%
          all_of(names_county_homeless), child_poverty_rate_total:child_poverty_rate_notdeep,
          poverty_rate_race_white:poverty_rate_race_hispanic, poverty_rate_sex_male, poverty_rate_sex_female,
          child_poverty_family_married_couple, child_poverty_family_unmarried_male, child_poverty_family_unmarried_female,
-         poverty_belowE, poverty_level_050E) %>%
+         poverty_belowE, poverty_level_050E, poverty_rate_race_notwhite, poverty_rate_notwhite_vs_white) %>%
   arrange(desc(geography), datawrapper_id) %>%
   filter(short_name != "East Middlebury")
 
@@ -1219,6 +1226,16 @@ poverty_levels_us_vt_counties <- vermont_us_nomoe %>%
 
 write.csv(poverty_levels_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_us_vt_counties.csv",
+          row.names = FALSE)
+
+# Poverty white vs non-white for US, VT, Counties
+poverty_white_nonwhite_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(all_of(geography_variables), 
+         poverty_rate_race_white, poverty_rate_race_notwhite, poverty_rate_notwhite_vs_white)
+
+write.csv(poverty_white_nonwhite_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_white_nonwhite_us_vt_counties.csv",
           row.names = FALSE)
 
 # Education for US, Vermont, Counties
