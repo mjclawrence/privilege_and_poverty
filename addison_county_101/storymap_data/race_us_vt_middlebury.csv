@@ -1,0 +1,5 @@
+"geoid","geography","name","short_name","latitude","longitude","race_white","race_black","race_nhpi_amind","race_asian","race_other","race_twoplus","race_hispanic"
+"1","us","United States","United States",NA,NA,60.2,12.3,0.8,5.6,0.3,2.4,18.3
+"50","state_vt","Vermont","Vermont",NA,NA,92.6,1.2,0.3,1.9,0.2,1.9,2
+"5000144350","county subdivision","Middlebury town, Addison County, Vermont","Middlebury",44.0018997,-73.1190475,83.8,3,0.1,5.7,0,2.5,4.8
+"50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,92.7,1.2,0.3,1.9,0.1,1.5,2.3
