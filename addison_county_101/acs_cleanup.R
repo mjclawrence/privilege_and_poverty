@@ -1280,6 +1280,16 @@ write.csv(race_us_vt_counties,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_us_vt_counties.csv",
           row.names = FALSE)
 
+# Race for US, Vermont, Counties
+race_us_vt_middlebury <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt") |
+           (geography == "county" & grepl("Addison County", name)) | short_name=="Middlebury") %>% 
+  select(all_of(geography_variables), race_white:race_hispanic)
+
+write.csv(race_us_vt_middlebury, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_us_vt_middlebury.csv",
+          row.names = FALSE)
+
 # Race Long for US, Vermont, Counties
 
 race_transpose_us_vt_counties <- race_us_vt_counties %>%
