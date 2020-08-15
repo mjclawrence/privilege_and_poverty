@@ -460,6 +460,17 @@ all_counties_states_nomoe$geoid <- as.character(all_counties_states_nomoe$geoid)
 all_counties_states_nomoe$datawrapper_id <- as.character(all_counties_states_nomoe$datawrapper_id)
 
 
+nopr <- all_counties_states_nomoe %>%
+  filter(!grepl("Puerto Rico", name),
+         geography == "county")
+
+summary(nopr$poverty_rate)
+
+nopr %>%
+  filter(grepl("Vermont", name)) %>%
+  select(name, poverty_rate_deep) %>%
+  arrange(poverty_rate_deep)
+
 vermont <- all_counties_states_nomoe %>%
   filter(grepl("Vermont", name) & geography == "county") %>%
   select(name, geoid, poverty_rate_race_notwhite, poverty_rate_notwhite_vs_white,
