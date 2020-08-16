@@ -1,7 +1,6 @@
-"educ_levels","United States","Vermont","Addison County, Vermont","Bennington County, Vermont","Caledonia County, Vermont","Chittenden County, Vermont","Essex County, Vermont","Franklin County, Vermont","Grand Isle County, Vermont","Lamoille County, Vermont","Orange County, Vermont","Orleans County, Vermont","Rutland County, Vermont","Washington County, Vermont","Windham County, Vermont","Windsor County, Vermont"
-"name","United States","Vermont","Addison County, Vermont","Bennington County, Vermont","Caledonia County, Vermont","Chittenden County, Vermont","Essex County, Vermont","Franklin County, Vermont","Grand Isle County, Vermont","Lamoille County, Vermont","Orange County, Vermont","Orleans County, Vermont","Rutland County, Vermont","Washington County, Vermont","Windham County, Vermont","Windsor County, Vermont"
-"educ_lessthanhs","11.6"," 6.5"," 7.2"," 8.2"," 9.0"," 5.9","14.1"," 9.2"," 5.7"," 7.3"," 8.1","12.5"," 7.7"," 6.5"," 6.6"," 6.8"
-"educ_hs_ged","26.9","28.6","30.5","29.3","36.1","19.2","45.5","38.2","28.1","25.1","35.5","38.3","35.1","27.3","30.2","30.1"
-"educ_somecoll","28.9","26.2","25.7","26.8","26.8","24.2","24.7","28.9","27.0","30.2","27.2","27.6","26.9","24.7","24.6","26.8"
-"educ_ba","20.0","23.1","21.9","21.7","17.1","29.8"," 9.4","15.9","22.1","22.7","16.1","13.1","19.2","23.4","21.8","20.6"
-"educ_gradprof","12.6","15.6","14.7","14.0","11.0","20.9"," 6.3"," 7.8","17.1","14.7","13.1"," 8.5","11.1","18.1","16.8","15.7"
+"educ_levels","United States","Vermont","Addison","Bennington","Caledonia","Chittenden","Essex","Franklin","Grand Isle","Lamoille","Orange","Orleans","Rutland","Washington","Windham","Windsor"
+"educ_lessthanhs",11.6,6.5,7.2,8.2,9,5.90000000000001,14.1,9.2,5.69999999999999,7.3,8.09999999999999,12.5,7.7,6.5,6.60000000000001,6.8
+"educ_hs_ged",26.9,28.6,30.5,29.3,36.1,19.2,45.5,38.2,28.1,25.1,35.5,38.3,35.1,27.3,30.2,30.1
+"educ_somecoll",28.9,26.2,25.7,26.8,26.8,24.2,24.7,28.9,27,30.2,27.2,27.6,26.9,24.7,24.6,26.8
+"educ_ba",20,23.1,21.9,21.7,17.1,29.8,9.4,15.9,22.1,22.7,16.1,13.1,19.2,23.4,21.8,20.6
+"educ_gradprof",12.6,15.6,14.7,14,11,20.9,6.3,7.8,17.1,14.7,13.1,8.5,11.1,18.1,16.8,15.7
