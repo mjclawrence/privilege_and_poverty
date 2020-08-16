@@ -11,6 +11,10 @@ names_county_homeless <- names(county_homeless[,2:23])
 county_geo <- read.csv("https://raw.githubusercontent.com/mjclawrence/privilege_and_poverty/master/addison_county_101/county_lat_lon.csv")
 county_geo$GEOID <- as.character(county_geo$GEOID)
 
+all_towns <- get_acs(geography = "county subdivision",
+                     state = "VT",
+                     table = "B20004")
+
 acs_vars <- load_variables(year = 2018,
                            dataset = "ACS5",
                            cache = TRUE)
@@ -1083,7 +1087,12 @@ vermont_us_nomoe <- vermont_us %>%
          housing_type_owner_occupied = round(((housing_ownedE / housing_totalE) * 100), 1),
          housing_type_renter_occupied = round(((housing_rentedE / housing_totalE) * 100), 1),
          commute_15minutes_or_less = round((((commute_time_05E + commute_time_09E + commute_time_14E) / 
-                                               commute_time_totalE) * 100), 1)) %>%
+                                               commute_time_totalE) * 100), 1),
+         educ_hs_ged = round((((educ_hsE + educ_gedE) / educ_totalE) * 100), 1),
+         educ_somecoll = round((((educ_somecoll_less1E + educ_somecoll_more1E + educ_associatesE) / educ_totalE) * 100), 1),
+         educ_ba = round((((educ_bachelorsE) / educ_totalE)*100),1),
+         educ_gradprof = round((((educ_mastersE + educ_professionalE + educ_doctorateE) / educ_totalE) * 100), 1),
+         educ_lessthanhs = 100 - (educ_hs_ged + educ_somecoll + educ_ba + educ_gradprof)) %>%
          rename(population = populationE,
          median_hh_income = median_hh_incomeE,
          median_gross_rent = median_gross_rentE,
@@ -1119,7 +1128,8 @@ vermont_us_nomoe <- vermont_us %>%
          poverty_belowE, poverty_level_050E, poverty_rate_race_notwhite, poverty_rate_notwhite_vs_white,
          median_gross_rent, median_gross_rent_pct, median_value_owner_occupied,
          housing_type_owner_occupied, housing_type_renter_occupied,
-         commute_15minutes_or_less) %>%
+         commute_15minutes_or_less, educ_lessthanhs, educ_hs_ged, educ_somecoll,
+         educ_ba, educ_gradprof) %>%
   arrange(desc(geography), datawrapper_id) %>%
   filter(short_name != "East Middlebury")
 
@@ -1274,7 +1284,8 @@ write.csv(population_age_us_vt_counties,
 # Race for US, Vermont, Counties
 race_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
-  select(all_of(geography_variables), race_white:race_hispanic)
+  select(all_of(geography_variables), race_white:race_hispanic) %>%
+  arrange(race_white)
 
 write.csv(race_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_us_vt_counties.csv",
@@ -1340,7 +1351,7 @@ poverty_levels_us_vt_counties <- vermont_us_nomoe %>%
            poverty_level_150_184 + poverty_level_185_199 +
            poverty_level_above_200,
          poverty_level_below_100 = poverty_level_below_050 + poverty_level_050_099) %>%
-  arrange(desc(poverty_level_below_100))
+  arrange(desc(poverty_level_below_100 + poverty_level_100_124))
 
 write.csv(poverty_levels_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_us_vt_counties.csv",
@@ -1360,7 +1371,8 @@ write.csv(poverty_white_nonwhite_us_vt_counties,
 education_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
   select(all_of(geography_variables), 
-         educ_hs_plus, educ_ba_plus)
+         educ_hs_plus, educ_ba_plus,
+         educ_lessthanhs, educ_hs_ged, educ_somecoll, educ_ba, educ_gradprof)
 
 write.csv(education_us_vt_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_us_vt_counties.csv",
@@ -1525,7 +1537,7 @@ poverty_levels_towns <- vermont_us_nomoe %>%
            poverty_level_150_184 + poverty_level_185_199 +
            poverty_level_above_200,
          poverty_level_below_100 = poverty_level_below_050 + poverty_level_050_099) %>%
-  arrange(desc(poverty_level_below_100))
+  arrange(desc(poverty_level_below_100 + poverty_level_100_124))
 
 write.csv(poverty_levels_towns, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_levels_towns.csv",
@@ -1555,7 +1567,8 @@ write.csv(child_poverty_family_type_towns,
 education_towns <- vermont_us_nomoe %>%
   filter(geography == "county subdivision") %>% 
   select(all_of(geography_variables), 
-         educ_hs_plus, educ_ba_plus)
+         educ_hs_plus, educ_ba_plus,
+         educ_lessthanhs, educ_hs_ged, educ_somecoll, educ_ba, educ_gradprof)
 
 write.csv(education_towns, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_towns.csv",
