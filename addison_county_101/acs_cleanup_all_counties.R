@@ -609,12 +609,6 @@ all_counties_states_nomoe <- all_counties_states %>%
   rename(population = populationE,
          median_hh_income = median_hh_incomeE) %>%
   mutate(short_name = NAME) %>%
-  separate(short_name, c("short_name", "extra"), sep = " town") %>%
-  separate(short_name, c("short_name", "extra"), sep = " city") %>%
-  separate(short_name, c("short_name", "extra"), sep = ", Vermont") %>%
-  separate(short_name, c("short_name", "extra"), sep = ", Addison") %>%
-  separate(short_name, c("short_name", "extra"), sep = " County") %>%
-  select(-extra) %>%
   mutate(datawrapper_id = GEOID) %>%
   mutate(datawrapper_id = ifelse(geography=="county", str_sub(GEOID, 3, 6), 
                                  ifelse(geography=="census tract", str_sub(GEOID, 3, 11), GEOID))) %>%
@@ -661,6 +655,13 @@ vermont_gather <- vermont %>%
   select(geoid, poverty_rate_race_high)
 
 
+all_towns <- all_counties_states_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  separate(name, c("short_name", "county", "state"), sep = ",") %>%
+  separate(short_name, c("short_name", "town"), sep = "town") %>%
+  separate(short_name, c("short_name", "town"), sep = "city")
+
+
 ## StoryMap Data Links
 
 geography_variables <- c("geoid", "geography", "name")
@@ -668,9 +669,8 @@ geography_variables <- c("geoid", "geography", "name")
 
 # Poverty rate for Vermont towns
 
-poverty_all_towns <- all_counties_states_nomoe %>%
-  filter(geography == "county subdivision") %>%
-  select(all_of(geography_variables), short_name,
+poverty_all_towns <- all_towns %>%
+  select(geoid, geography, short_name, county,
          poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep,
          child_poverty_rate_total, child_poverty_rate_deep, child_poverty_rate_notdeep) %>%
   mutate(poverty_rate_total = ifelse(is.na(poverty_rate_total) | poverty_rate_total==0, "", poverty_rate_total),
@@ -681,6 +681,10 @@ poverty_all_towns <- all_counties_states_nomoe %>%
          child_poverty_rate_notdeep = ifelse(is.na(child_poverty_rate_notdeep) | child_poverty_rate_notdeep==0, "", child_poverty_rate_notdeep),
          )
 
+poverty_all_towns <- poverty_all_towns %>%
+  mutate(poverty_rate_total = as.numeric(poverty_rate_total))
+
+summary(poverty_all_towns$poverty_rate_total)
 
 write.csv(poverty_all_towns, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_all_towns.csv",

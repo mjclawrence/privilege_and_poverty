@@ -1,256 +1,247 @@
-"geoid","geography","name","short_name","poverty_rate_total","poverty_rate_deep","poverty_rate_notdeep","child_poverty_rate_total","child_poverty_rate_deep","child_poverty_rate_notdeep"
-"5000100325","county subdivision","Addison town, Addison County, Vermont","Addison","3.3","0.5","2.8","","",""
-"5000108575","county subdivision","Bridport town, Addison County, Vermont","Bridport","9.4","3","6.4","12.3","7.5","4.8"
-"5000109025","county subdivision","Bristol town, Addison County, Vermont","Bristol","8.1","6.4","1.8","10.2","8.4","1.8"
-"5000116000","county subdivision","Cornwall town, Addison County, Vermont","Cornwall","2.9","1.7","1.2","","",""
-"5000126300","county subdivision","Ferrisburgh town, Addison County, Vermont","Ferrisburgh","3","0.6","2.3","","",""
-"5000128600","county subdivision","Goshen town, Addison County, Vermont","Goshen","5.2","","5.2","","",""
-"5000129575","county subdivision","Granville town, Addison County, Vermont","Granville","13.6","8","5.7","18.1","12.5","5.6"
-"5000131525","county subdivision","Hancock town, Addison County, Vermont","Hancock","10.8","5","5.9","17","11.3","5.7"
-"5000139325","county subdivision","Leicester town, Addison County, Vermont","Leicester","8.3","3.7","4.6","17.9","10.7","7.1"
-"5000140075","county subdivision","Lincoln town, Addison County, Vermont","Lincoln","9.1","3","6.1","4.5","2.6","1.9"
-"5000144350","county subdivision","Middlebury town, Addison County, Vermont","Middlebury","10.3","4.4","5.9","10.8","4.7","6.1"
-"5000145550","county subdivision","Monkton town, Addison County, Vermont","Monkton","1.7","0.8","0.9","0.7","","0.7"
-"5000148700","county subdivision","New Haven town, Addison County, Vermont","New Haven","4.7","2.7","2","8.2","6.3","1.9"
-"5000153725","county subdivision","Orwell town, Addison County, Vermont","Orwell","7.3","3.5","3.8","8.7","2.4","6.3"
-"5000153950","county subdivision","Panton town, Addison County, Vermont","Panton","2.9","2","0.9","","",""
-"5000159650","county subdivision","Ripton town, Addison County, Vermont","Ripton","12.7","1.7","11","8.9","","8.9"
-"5000162575","county subdivision","Salisbury town, Addison County, Vermont","Salisbury","8.2","4.5","3.7","5.4","5.4",""
-"5000165050","county subdivision","Shoreham town, Addison County, Vermont","Shoreham","10.1","6.2","3.9","15","9.3","5.7"
-"5000170075","county subdivision","Starksboro town, Addison County, Vermont","Starksboro","12.2","6.9","5.3","19.5","14.2","5.3"
-"5000174650","county subdivision","Vergennes city, Addison County, Vermont","Vergennes","9.9","4.8","5.1","11.8","9.4","2.4"
-"5000176075","county subdivision","Waltham town, Addison County, Vermont","Waltham","7.1","2.9","4.2","9.7","9.7",""
-"5000183275","county subdivision","Weybridge town, Addison County, Vermont","Weybridge","4.6","3.5","1.2","","",""
-"5000183800","county subdivision","Whiting town, Addison County, Vermont","Whiting","18.3","5.2","13.1","42.2","8.9","33.3"
-"5000301450","county subdivision","Arlington town, Bennington County, Vermont","Arlington","6.9","4.3","2.6","1.7","","1.7"
-"5000304825","county subdivision","Bennington town, Bennington County, Vermont","Bennington","16.2","5.3","10.9","26.7","8.5","18.2"
-"5000317725","county subdivision","Dorset town, Bennington County, Vermont","Dorset","7.4","5.1","2.2","11.1","11.1",""
-"5000327962","county subdivision","Glastenbury town, Bennington County, Vermont","Glastenbury","","","","","",""
-"5000339025","county subdivision","Landgrove town, Bennington County, Vermont","Landgrove","5.4","","5.4","","",""
-"5000342850","county subdivision","Manchester town, Bennington County, Vermont","Manchester","6.1","2.7","3.4","","",""
-"5000355000","county subdivision","Peru town, Bennington County, Vermont","Peru","5.3","4.1","1.2","9.8","9.8",""
-"5000357025","county subdivision","Pownal town, Bennington County, Vermont","Pownal","9.4","2.2","7.1","10.6","3.1","7.5"
-"5000358600","county subdivision","Readsboro town, Bennington County, Vermont","Readsboro","11.1","9.1","1.9","14.8","14.8",""
-"5000361000","county subdivision","Rupert town, Bennington County, Vermont","Rupert","4.8","3.9","0.8","","",""
-"5000362875","county subdivision","Sandgate town, Bennington County, Vermont","Sandgate","15.7","13","2.8","16.7","16.7",""
-"5000363175","county subdivision","Searsburg town, Bennington County, Vermont","Searsburg","33","9.7","23.3","41.2","11.8","29.4"
-"5000363550","county subdivision","Shaftsbury town, Bennington County, Vermont","Shaftsbury","10.7","4.7","6","19.9","7.7","12.2"
-"5000369775","county subdivision","Stamford town, Bennington County, Vermont","Stamford","9.4","3.1","6.3","13.3","1","12.4"
-"5000371425","county subdivision","Sunderland town, Bennington County, Vermont","Sunderland","3.5","1.3","2.2","","",""
-"5000385075","county subdivision","Winhall town, Bennington County, Vermont","Winhall","1","0.3","0.7","","",""
-"5000385675","county subdivision","Woodford town, Bennington County, Vermont","Woodford","11.6","5.3","6.3","9.5","","9.5"
-"5000502875","county subdivision","Barnet town, Caledonia County, Vermont","Barnet","10.3","2.8","7.4","7.1","","7.1"
-"5000510450","county subdivision","Burke town, Caledonia County, Vermont","Burke","16.2","6","10.2","23.5","8.6","14.9"
-"5000517125","county subdivision","Danville town, Caledonia County, Vermont","Danville","6.1","1.8","4.3","12.3","4.1","8.2"
-"5000530550","county subdivision","Groton town, Caledonia County, Vermont","Groton","7.9","3.1","4.8","7.9","3.7","4.2"
-"5000531825","county subdivision","Hardwick town, Caledonia County, Vermont","Hardwick","8.3","3.5","4.8","7.2","1.7","5.5"
-"5000537900","county subdivision","Kirby town, Caledonia County, Vermont","Kirby","6.7","3.1","3.6","","",""
-"5000541725","county subdivision","Lyndon town, Caledonia County, Vermont","Lyndon","17.8","11.4","6.4","19","17.2","1.8"
-"5000547725","county subdivision","Newark town, Caledonia County, Vermont","Newark","19.1","7.4","11.7","33.3","10.8","22.6"
-"5000554400","county subdivision","Peacham town, Caledonia County, Vermont","Peacham","9.8","3.4","6.4","11.9","","11.9"
-"5000561525","county subdivision","Ryegate town, Caledonia County, Vermont","Ryegate","18.2","2.4","15.8","39.4","","39.4"
-"5000562200","county subdivision","St. Johnsbury town, Caledonia County, Vermont","St. Johnsbury","14.7","5","9.7","23.4","9.6","13.8"
-"5000564075","county subdivision","Sheffield town, Caledonia County, Vermont","Sheffield","10.3","0.4","9.8","6.1","","6.1"
-"5000569925","county subdivision","Stannard town, Caledonia County, Vermont","Stannard","15.2","","15.2","36.2","","36.2"
-"5000571575","county subdivision","Sutton town, Caledonia County, Vermont","Sutton","9","2.4","6.7","15","3.5","11.5"
-"5000575700","county subdivision","Walden town, Caledonia County, Vermont","Walden","8.2","6.1","2.1","13.1","13.1",""
-"5000577125","county subdivision","Waterford town, Caledonia County, Vermont","Waterford","3.6","0.7","2.9","5","2.2","2.8"
-"5000583500","county subdivision","Wheelock town, Caledonia County, Vermont","Wheelock","9.2","1.8","7.4","9.8","","9.8"
-"5000706550","county subdivision","Bolton town, Chittenden County, Vermont","Bolton","3.3","0.2","3","1.6","","1.6"
-"5000710300","county subdivision","Buels gore, Chittenden County, Vermont","Buels gore, Chittenden","","","","","",""
-"5000710675","county subdivision","Burlington city, Chittenden County, Vermont","Burlington","24.7","13.2","11.6","25.6","9.5","16.1"
-"5000713300","county subdivision","Charlotte town, Chittenden County, Vermont","Charlotte","1.6","0.3","1.3","","",""
-"5000714875","county subdivision","Colchester town, Chittenden County, Vermont","Colchester","11.8","5.5","6.3","18.7","6.7","12.1"
-"5000724175","county subdivision","Essex town, Chittenden County, Vermont","Essex","6.7","3","3.7","10.4","2.8","7.6"
-"5000733475","county subdivision","Hinesburg town, Chittenden County, Vermont","Hinesburg","12.3","1.2","11.1","20.8","","20.8"
-"5000734600","county subdivision","Huntington town, Chittenden County, Vermont","Huntington","4.7","2.1","2.5","7","5.6","1.4"
-"5000736700","county subdivision","Jericho town, Chittenden County, Vermont","Jericho","5","2.6","2.4","4.4","2.5","1.9"
-"5000745250","county subdivision","Milton town, Chittenden County, Vermont","Milton","2.7","0.7","1.9","","",""
-"5000759275","county subdivision","Richmond town, Chittenden County, Vermont","Richmond","3.8","0.6","3.2","1.7","","1.7"
-"5000762050","county subdivision","St. George town, Chittenden County, Vermont","St. George","13","5.2","7.8","26.1","15.7","10.4"
-"5000764300","county subdivision","Shelburne town, Chittenden County, Vermont","Shelburne","4.3","1.8","2.6","2.9","1.2","1.8"
-"5000766175","county subdivision","South Burlington city, Chittenden County, Vermont","South Burlington","5.9","3.1","2.8","7.7","5.5","2.3"
-"5000773975","county subdivision","Underhill town, Chittenden County, Vermont","Underhill","2.1","0.9","1.2","1.2","0.5","0.7"
-"5000780350","county subdivision","Westford town, Chittenden County, Vermont","Westford","2.5","0.2","2.3","1.1","","1.1"
-"5000784475","county subdivision","Williston town, Chittenden County, Vermont","Williston","6.1","2.7","3.3","6.2","3.6","2.5"
-"5000785150","county subdivision","Winooski city, Chittenden County, Vermont","Winooski","31","16.2","14.8","50.4","33.5","16.8"
-"5000902125","county subdivision","Averill town, Essex County, Vermont","Averill","","","","","",""
-"5000902162","county subdivision","Avery's gore, Essex County, Vermont","Avery's gore, Essex","","","","","",""
-"5000906325","county subdivision","Bloomfield town, Essex County, Vermont","Bloomfield","10.6","2.5","8.1","17.9","","17.9"
-"5000908725","county subdivision","Brighton town, Essex County, Vermont","Brighton","11.4","4.6","6.9","9.2","","9.2"
-"5000910075","county subdivision","Brunswick town, Essex County, Vermont","Brunswick","19.8","18.6","1.2","84.6","84.6",""
-"5000911800","county subdivision","Canaan town, Essex County, Vermont","Canaan","23.1","7.1","16","26.4","6.4","20"
-"5000915250","county subdivision","Concord town, Essex County, Vermont","Concord","11.1","1.4","9.8","8.3","","8.3"
-"5000921250","county subdivision","East Haven town, Essex County, Vermont","East Haven","16.5","7.2","9.4","14","14",""
-"5000925975","county subdivision","Ferdinand town, Essex County, Vermont","Ferdinand","","","","","",""
-"5000929125","county subdivision","Granby town, Essex County, Vermont","Granby","10.9","6.4","4.5","","",""
-"5000930775","county subdivision","Guildhall town, Essex County, Vermont","Guildhall","3.4","1","2.4","","",""
-"5000939700","county subdivision","Lemington town, Essex County, Vermont","Lemington","10.8","","10.8","","",""
-"5000939775","county subdivision","Lewis town, Essex County, Vermont","Lewis","","","","","",""
-"5000941425","county subdivision","Lunenburg town, Essex County, Vermont","Lunenburg","18.8","8.9","9.9","36.3","25.4","10.9"
-"5000942475","county subdivision","Maidstone town, Essex County, Vermont","Maidstone","10.3","2.1","8.2","17.6","","17.6"
-"5000952750","county subdivision","Norton town, Essex County, Vermont","Norton","3.5","2.8","0.7","","",""
-"5000975175","county subdivision","Victory town, Essex County, Vermont","Victory","7.4","","7.4","","",""
-"5000976337","county subdivision","Warner's grant, Essex County, Vermont","Warner's grant, Essex","","","","","",""
-"5000976562","county subdivision","Warren's gore, Essex County, Vermont","Warren's gore, Essex","","","","","",""
-"5001102500","county subdivision","Bakersfield town, Franklin County, Vermont","Bakersfield","2.2","0.6","1.6","3.4","","3.4"
-"5001105425","county subdivision","Berkshire town, Franklin County, Vermont","Berkshire","10.3","1.7","8.6","9.7","","9.7"
-"5001124050","county subdivision","Enosburgh town, Franklin County, Vermont","Enosburgh","12.1","5.1","7","10.6","8.3","2.3"
-"5001124925","county subdivision","Fairfax town, Franklin County, Vermont","Fairfax","1.9","1.5","0.4","0.9","0.9",""
-"5001125225","county subdivision","Fairfield town, Franklin County, Vermont","Fairfield","5.2","1","4.2","0.8","","0.8"
-"5001126500","county subdivision","Fletcher town, Franklin County, Vermont","Fletcher","7.9","2.2","5.7","10.4","1.9","8.5"
-"5001127100","county subdivision","Franklin town, Franklin County, Vermont","Franklin","2","1.4","0.6","","",""
-"5001127700","county subdivision","Georgia town, Franklin County, Vermont","Georgia","2.1","1","1","0.8","","0.8"
-"5001133025","county subdivision","Highgate town, Franklin County, Vermont","Highgate","6.9","3.1","3.9","11.4","3","8.4"
-"5001145850","county subdivision","Montgomery town, Franklin County, Vermont","Montgomery","7.4","4.1","3.3","","",""
-"5001159125","county subdivision","Richford town, Franklin County, Vermont","Richford","15.1","6.1","9","24.6","11.1","13.5"
-"5001161675","county subdivision","St. Albans city, Franklin County, Vermont","St. Albans","8.5","5.2","3.3","11.1","11.1",""
-"5001161750","county subdivision","St. Albans town, Franklin County, Vermont","St. Albans","10.6","2.8","7.8","6","","6"
-"5001164600","county subdivision","Sheldon town, Franklin County, Vermont","Sheldon","7.7","2.2","5.5","8.5","1","7.5"
-"5001171725","county subdivision","Swanton town, Franklin County, Vermont","Swanton","10.5","4.6","5.9","9","3.7","5.3"
-"5001300860","county subdivision","Alburgh town, Grand Isle County, Vermont","Alburgh","8.5","3.2","5.3","21.6","7.3","14.2"
-"5001329275","county subdivision","Grand Isle town, Grand Isle County, Vermont","Grand Isle","6.2","2.6","3.6","2.9","2.9",""
-"5001335875","county subdivision","Isle La Motte town, Grand Isle County, Vermont","Isle La Motte","14.8","4.8","10","45.5","18.2","27.3"
-"5001350650","county subdivision","North Hero town, Grand Isle County, Vermont","North Hero","6.9","4.6","2.3","2.6","","2.6"
-"5001367000","county subdivision","South Hero town, Grand Isle County, Vermont","South Hero","7.1","4.2","2.9","8.9","8.9",""
-"5001504375","county subdivision","Belvidere town, Lamoille County, Vermont","Belvidere","11.7","7.7","4","19.5","19.5",""
-"5001511500","county subdivision","Cambridge town, Lamoille County, Vermont","Cambridge","14.7","7.3","7.4","29.4","19","10.4"
-"5001523500","county subdivision","Eden town, Lamoille County, Vermont","Eden","10.1","3.7","6.4","8.8","1.3","7.5"
-"5001523725","county subdivision","Elmore town, Lamoille County, Vermont","Elmore","8.3","3.6","4.7","1.7","","1.7"
-"5001535050","county subdivision","Hyde Park town, Lamoille County, Vermont","Hyde Park","10.3","6.5","3.8","15.4","11.5","3.9"
-"5001537075","county subdivision","Johnson town, Lamoille County, Vermont","Johnson","26.7","11","15.7","26.4","3.9","22.5"
-"5001546675","county subdivision","Morristown town, Lamoille County, Vermont","Morristown","14.9","4.5","10.4","22.3","7.1","15.1"
-"5001570525","county subdivision","Stowe town, Lamoille County, Vermont","Stowe","13.9","10.8","3.1","27.5","22.7","4.9"
-"5001577425","county subdivision","Waterville town, Lamoille County, Vermont","Waterville","8.5","2.5","6","8.6","2.1","6.4"
-"5001585375","county subdivision","Wolcott town, Lamoille County, Vermont","Wolcott","8.9","8.1","0.8","16.2","16.2",""
-"5001707375","county subdivision","Bradford town, Orange County, Vermont","Bradford","11.6","6.5","5.1","9.6","8.7","0.9"
-"5001707600","county subdivision","Braintree town, Orange County, Vermont","Braintree","6.6","1.3","5.3","14.6","","14.6"
-"5001709325","county subdivision","Brookfield town, Orange County, Vermont","Brookfield","11.8","3.6","8.2","28.5","9.3","19.3"
-"5001713525","county subdivision","Chelsea town, Orange County, Vermont","Chelsea","14.7","6.8","7.9","17.9","7.6","10.3"
-"5001715700","county subdivision","Corinth town, Orange County, Vermont","Corinth","16.9","7.6","9.3","28.1","16","12.1"
-"5001725675","county subdivision","Fairlee town, Orange County, Vermont","Fairlee","12.1","6.5","5.6","24","20.7","3.4"
-"5001748175","county subdivision","Newbury town, Orange County, Vermont","Newbury","15.1","2.1","13","28.3","2.4","25.9"
-"5001753425","county subdivision","Orange town, Orange County, Vermont","Orange","6.4","1.9","4.5","4.4","2.2","2.2"
-"5001758075","county subdivision","Randolph town, Orange County, Vermont","Randolph","10.1","5.6","4.5","13.1","8.4","4.7"
-"5001770675","county subdivision","Strafford town, Orange County, Vermont","Strafford","5.4","0.4","5.1","","",""
-"5001772400","county subdivision","Thetford town, Orange County, Vermont","Thetford","6.7","1.5","5.2","11.2","1.6","9.6"
-"5001773075","county subdivision","Topsham town, Orange County, Vermont","Topsham","15.5","5.6","9.9","24.4","12.7","11.7"
-"5001773675","county subdivision","Tunbridge town, Orange County, Vermont","Tunbridge","6.9","3.6","3.3","9.8","9.8",""
-"5001774950","county subdivision","Vershire town, Orange County, Vermont","Vershire","13","6.9","6.1","11","5.1","5.9"
-"5001776750","county subdivision","Washington town, Orange County, Vermont","Washington","11.6","4.8","6.7","3","3",""
-"5001779975","county subdivision","West Fairlee town, Orange County, Vermont","West Fairlee","10.7","5.9","4.8","14.2","10.9","3.3"
-"5001784175","county subdivision","Williamstown town, Orange County, Vermont","Williamstown","10","2.3","7.7","8.9","","8.9"
-"5001900475","county subdivision","Albany town, Orleans County, Vermont","Albany","22.9","4","18.9","32.5","","32.5"
-"5001903550","county subdivision","Barton town, Orleans County, Vermont","Barton","16.8","7.1","9.8","20.1","6.9","13.3"
-"5001909850","county subdivision","Brownington town, Orleans County, Vermont","Brownington","23.1","7.6","15.5","33.9","13.1","20.7"
-"5001913150","county subdivision","Charleston town, Orleans County, Vermont","Charleston","10.6","3.9","6.6","4.8","","4.8"
-"5001916150","county subdivision","Coventry town, Orleans County, Vermont","Coventry","15","3.8","11.3","28.1","","28.1"
-"5001916300","county subdivision","Craftsbury town, Orleans County, Vermont","Craftsbury","9.7","5","4.7","7.4","3.7","3.7"
-"5001917350","county subdivision","Derby town, Orleans County, Vermont","Derby","9.4","4.8","4.5","6.3","2.9","3.4"
-"5001928075","county subdivision","Glover town, Orleans County, Vermont","Glover","25.6","4.7","20.9","33.2","4.6","28.6"
-"5001930175","county subdivision","Greensboro town, Orleans County, Vermont","Greensboro","6.2","2.2","3.9","3.5","","3.5"
-"5001933775","county subdivision","Holland town, Orleans County, Vermont","Holland","13.7","8.6","5.1","10.2","10.2",""
-"5001935575","county subdivision","Irasburg town, Orleans County, Vermont","Irasburg","10","1.3","8.6","10.1","","10.1"
-"5001936325","county subdivision","Jay town, Orleans County, Vermont","Jay","10.7","7.5","3.1","14.3","14.3",""
-"5001940525","county subdivision","Lowell town, Orleans County, Vermont","Lowell","11.1","3.7","7.4","3.4","","3.4"
-"5001946450","county subdivision","Morgan town, Orleans County, Vermont","Morgan","12.3","5.7","6.6","","",""
-"5001948850","county subdivision","Newport city, Orleans County, Vermont","Newport","17.2","4.4","12.7","9.4","2.8","6.6"
-"5001948925","county subdivision","Newport town, Orleans County, Vermont","Newport","8.8","3.4","5.4","5.8","2.7","3.2"
-"5001973525","county subdivision","Troy town, Orleans County, Vermont","Troy","17.7","6.3","11.4","30.1","13.3","16.8"
-"5001980200","county subdivision","Westfield town, Orleans County, Vermont","Westfield","11.2","6.1","5.1","9.9","9.9",""
-"5001981700","county subdivision","Westmore town, Orleans County, Vermont","Westmore","20.4","3.6","16.9","54.2","","54.2"
-"5002105200","county subdivision","Benson town, Rutland County, Vermont","Benson","15.3","3.6","11.7","22.7","","22.7"
-"5002107750","county subdivision","Brandon town, Rutland County, Vermont","Brandon","9.1","2","7.1","","",""
-"5002111950","county subdivision","Castleton town, Rutland County, Vermont","Castleton","12.8","6.1","6.7","7.9","","7.9"
-"5002114350","county subdivision","Chittenden town, Rutland County, Vermont","Chittenden","6.2","1.9","4.3","11.6","2.2","9.4"
-"5002114500","county subdivision","Clarendon town, Rutland County, Vermont","Clarendon","8.8","3","5.8","12.4","5.2","7.2"
-"5002116825","county subdivision","Danby town, Rutland County, Vermont","Danby","10.6","2.8","7.9","17.9","1.7","16.2"
-"5002125375","county subdivision","Fair Haven town, Rutland County, Vermont","Fair Haven","14.7","6","8.7","12.9","4.1","8.8"
-"5002134450","county subdivision","Hubbardton town, Rutland County, Vermont","Hubbardton","7.8","5.3","2.5","4.2","4.2",""
-"5002135425","county subdivision","Ira town, Rutland County, Vermont","Ira","9.8","3.4","6.3","16.1","3.2","12.9"
-"5002137685","county subdivision","Killington town, Rutland County, Vermont","Killington","4.8","3","1.7","5.5","3.7","1.8"
-"5002144125","county subdivision","Mendon town, Rutland County, Vermont","Mendon","3.5","1.1","2.4","","",""
-"5002144800","county subdivision","Middletown Springs town, Rutland County, Vermont","Middletown Springs","9.3","2.2","7.1","11.4","","11.4"
-"5002147200","county subdivision","Mount Holly town, Rutland County, Vermont","Mount Holly","6.4","1.7","4.8","15.1","","15.1"
-"5002147425","county subdivision","Mount Tabor town, Rutland County, Vermont","Mount Tabor","12.5","7.9","4.6","8.5","6.8","1.7"
-"5002154250","county subdivision","Pawlet town, Rutland County, Vermont","Pawlet","12.7","4.7","8","15.2","6.1","9.1"
-"5002155450","county subdivision","Pittsfield town, Rutland County, Vermont","Pittsfield","1.9","","1.9","2.9","","2.9"
-"5002155600","county subdivision","Pittsford town, Rutland County, Vermont","Pittsford","17.4","4.1","13.3","31","3.1","27.9"
-"5002156875","county subdivision","Poultney town, Rutland County, Vermont","Poultney","12","4.4","7.6","15","","15"
-"5002157250","county subdivision","Proctor town, Rutland County, Vermont","Proctor","3.8","0.3","3.5","","",""
-"5002161225","county subdivision","Rutland city, Rutland County, Vermont","Rutland","14.1","5.2","9","25.9","10.3","15.6"
-"5002161300","county subdivision","Rutland town, Rutland County, Vermont","Rutland","7","4.5","2.5","6","5.4","0.6"
-"5002165275","county subdivision","Shrewsbury town, Rutland County, Vermont","Shrewsbury","7.5","3.4","4.1","11.3","","11.3"
-"5002171050","county subdivision","Sudbury town, Rutland County, Vermont","Sudbury","3.3","0.9","2.3","","",""
-"5002172925","county subdivision","Tinmouth town, Rutland County, Vermont","Tinmouth","12.7","7.5","5.2","23.2","17.4","5.8"
-"5002175925","county subdivision","Wallingford town, Rutland County, Vermont","Wallingford","7","3.9","3.1","5.3","5.3",""
-"5002177950","county subdivision","Wells town, Rutland County, Vermont","Wells","5.1","3.1","2","","",""
-"5002180875","county subdivision","West Haven town, Rutland County, Vermont","West Haven","19.4","5.9","13.4","25.8","4.5","21.2"
-"5002182300","county subdivision","West Rutland town, Rutland County, Vermont","West Rutland","3.7","0.9","2.8","3.2","","3.2"
-"5002303175","county subdivision","Barre city, Washington County, Vermont","Barre","26.6","15.5","11.1","47.3","28.7","18.6"
-"5002303250","county subdivision","Barre town, Washington County, Vermont","Barre","9.1","2.7","6.4","11","0.6","10.3"
-"5002305650","county subdivision","Berlin town, Washington County, Vermont","Berlin","9.1","5.4","3.8","8.9","6.9","2"
-"5002311125","county subdivision","Cabot town, Washington County, Vermont","Cabot","19.1","5.4","13.7","32.4","13","19.4"
-"5002311350","county subdivision","Calais town, Washington County, Vermont","Calais","9.9","4.2","5.7","13.9","5.7","8.2"
-"5002318550","county subdivision","Duxbury town, Washington County, Vermont","Duxbury","6.7","1.9","4.8","2.5","","2.5"
-"5002321925","county subdivision","East Montpelier town, Washington County, Vermont","East Montpelier","4","1.5","2.4","2.7","0.9","1.8"
-"5002325825","county subdivision","Fayston town, Washington County, Vermont","Fayston","6.1","3.3","2.8","3.8","1.3","2.5"
-"5002343600","county subdivision","Marshfield town, Washington County, Vermont","Marshfield","8.2","2.7","5.5","21.4","6.2","15.1"
-"5002344500","county subdivision","Middlesex town, Washington County, Vermont","Middlesex","4.9","1.4","3.5","2.6","","2.6"
-"5002346000","county subdivision","Montpelier city, Washington County, Vermont","Montpelier","10.3","2.9","7.4","17.1","3.7","13.5"
-"5002346225","county subdivision","Moretown town, Washington County, Vermont","Moretown","5.5","1.6","4","6.5","1.2","5.3"
-"5002350275","county subdivision","Northfield town, Washington County, Vermont","Northfield","7","2.5","4.6","4.4","3.1","1.3"
-"5002355825","county subdivision","Plainfield town, Washington County, Vermont","Plainfield","12","7.1","4.9","4.4","","4.4"
-"5002360625","county subdivision","Roxbury town, Washington County, Vermont","Roxbury","8","1.9","6.1","5.7","","5.7"
-"5002375325","county subdivision","Waitsfield town, Washington County, Vermont","Waitsfield","4","0.3","3.7","7.4","","7.4"
-"5002376525","county subdivision","Warren town, Washington County, Vermont","Warren","7.8","2.6","5.2","9.6","3.5","6.1"
-"5002376975","county subdivision","Waterbury town, Washington County, Vermont","Waterbury","10.9","6.8","4.1","20.1","20.1",""
-"5002385525","county subdivision","Woodbury town, Washington County, Vermont","Woodbury","7.5","3.9","3.6","8.9","4.7","4.2"
-"5002386125","county subdivision","Worcester town, Washington County, Vermont","Worcester","10.6","6.4","4.2","20.8","13.7","7.1"
-"5002501900","county subdivision","Athens town, Windham County, Vermont","Athens","27.2","22.5","4.8","57","50.6","6.3"
-"5002507900","county subdivision","Brattleboro town, Windham County, Vermont","Brattleboro","19.2","8","11.2","24.3","11.6","12.7"
-"5002509475","county subdivision","Brookline town, Windham County, Vermont","Brookline","4.1","3.6","0.5","2.9","2.9",""
-"5002517875","county subdivision","Dover town, Windham County, Vermont","Dover","6.7","1.8","5","","",""
-"5002518325","county subdivision","Dummerston town, Windham County, Vermont","Dummerston","6.2","4.6","1.6","9.9","9.9",""
-"5002528900","county subdivision","Grafton town, Windham County, Vermont","Grafton","9.9","4.8","5.1","20.2","14.7","5.4"
-"5002530925","county subdivision","Guilford town, Windham County, Vermont","Guilford","8.3","4.6","3.7","8.3","8.3",""
-"5002531150","county subdivision","Halifax town, Windham County, Vermont","Halifax","10.4","4.2","6.2","17.6","13.5","4.1"
-"5002536175","county subdivision","Jamaica town, Windham County, Vermont","Jamaica","14.8","10.7","4.1","28.2","26.1","2.1"
-"5002540225","county subdivision","Londonderry town, Windham County, Vermont","Londonderry","4.5","","4.5","7.9","","7.9"
-"5002543375","county subdivision","Marlboro town, Windham County, Vermont","Marlboro","9.3","3.8","5.4","2.2","","2.2"
-"5002548400","county subdivision","Newfane town, Windham County, Vermont","Newfane","9.3","3.7","5.5","6.2","2.7","3.6"
-"5002557700","county subdivision","Putney town, Windham County, Vermont","Putney","14","6.6","7.3","19.3","16.7","2.6"
-"5002560250","county subdivision","Rockingham town, Windham County, Vermont","Rockingham","20.2","7.7","12.4","25.6","11.6","14"
-"5002565762","county subdivision","Somerset town, Windham County, Vermont","Somerset","","","","","",""
-"5002570750","county subdivision","Stratton town, Windham County, Vermont","Stratton","4.3","0.9","3.5","9.5","","9.5"
-"5002573300","county subdivision","Townshend town, Windham County, Vermont","Townshend","8.5","3.4","5.1","16.3","","16.3"
-"5002574800","county subdivision","Vernon town, Windham County, Vermont","Vernon","9.8","5.5","4.3","14.1","11","3.1"
-"5002576225","county subdivision","Wardsboro town, Windham County, Vermont","Wardsboro","12.3","2","10.3","25.9","","25.9"
-"5002581400","county subdivision","Westminster town, Windham County, Vermont","Westminster","12","6.2","5.8","23.3","10.9","12.4"
-"5002583950","county subdivision","Whitingham town, Windham County, Vermont","Whitingham","7.6","4.6","3.1","9.9","5.9","3.9"
-"5002584700","county subdivision","Wilmington town, Windham County, Vermont","Wilmington","7.8","4","3.8","3.7","3.7",""
-"5002584850","county subdivision","Windham town, Windham County, Vermont","Windham","12.7","4.5","8.2","17.5","","17.5"
-"5002701300","county subdivision","Andover town, Windsor County, Vermont","Andover","9.6","2.9","6.7","12.4","","12.4"
-"5002702575","county subdivision","Baltimore town, Windsor County, Vermont","Baltimore","11.2","9.7","1.5","17.8","17.8",""
-"5002702725","county subdivision","Barnard town, Windsor County, Vermont","Barnard","3.8","3.8","","","",""
-"5002705800","county subdivision","Bethel town, Windsor County, Vermont","Bethel","12","7.6","4.4","14.7","12.8","1.9"
-"5002708275","county subdivision","Bridgewater town, Windsor County, Vermont","Bridgewater","8.4","3.2","5.1","","",""
-"5002712250","county subdivision","Cavendish town, Windsor County, Vermont","Cavendish","13.6","7.5","6.1","10.1","5.6","4.5"
-"5002713675","county subdivision","Chester town, Windsor County, Vermont","Chester","7.3","4","3.3","5.9","2.1","3.8"
-"5002732275","county subdivision","Hartford town, Windsor County, Vermont","Hartford","6.4","1.9","4.4","5.6","0.8","4.9"
-"5002732425","county subdivision","Hartland town, Windsor County, Vermont","Hartland","3.6","1.2","2.3","","",""
-"5002741275","county subdivision","Ludlow town, Windsor County, Vermont","Ludlow","15.9","2.2","13.7","30.4","","30.4"
-"5002752900","county subdivision","Norwich town, Windsor County, Vermont","Norwich","4.3","1.5","2.8","2.9","1.6","1.3"
-"5002756050","county subdivision","Plymouth town, Windsor County, Vermont","Plymouth","11.6","4.9","6.8","13.6","10.2","3.4"
-"5002756350","county subdivision","Pomfret town, Windsor County, Vermont","Pomfret","2.4","0.8","1.6","","",""
-"5002758375","county subdivision","Reading town, Windsor County, Vermont","Reading","10.2","3.5","6.7","13.3","","13.3"
-"5002760100","county subdivision","Rochester town, Windsor County, Vermont","Rochester","12.3","2.4","10","24.1","2.9","21.2"
-"5002760850","county subdivision","Royalton town, Windsor County, Vermont","Royalton","16.1","11","5.2","22.2","20.4","1.8"
-"5002763775","county subdivision","Sharon town, Windsor County, Vermont","Sharon","15.2","11.2","4","18.8","18.8",""
-"5002769550","county subdivision","Springfield town, Windsor County, Vermont","Springfield","17.4","9.8","7.6","28.8","15.2","13.5"
-"5002770375","county subdivision","Stockbridge town, Windsor County, Vermont","Stockbridge","6.2","2.5","3.6","7.9","7.9",""
-"5002777500","county subdivision","Weathersfield town, Windsor County, Vermont","Weathersfield","5.3","3.1","2.2","3.5","","3.5"
-"5002782000","county subdivision","Weston town, Windsor County, Vermont","Weston","10.4","5.1","5.3","13.1","3","10.1"
-"5002783050","county subdivision","West Windsor town, Windsor County, Vermont","West Windsor","7.8","5.9","1.9","9.6","9.6",""
-"5002784925","county subdivision","Windsor town, Windsor County, Vermont","Windsor","11.9","5.2","6.7","25.3","11.4","13.8"
-"5002785975","county subdivision","Woodstock town, Windsor County, Vermont","Woodstock","9.2","2.9","6.4","27.2","8.9","18.3"
+geoid,geography,short_name,county,poverty_rate_total,poverty_rate_deep,poverty_rate_notdeep,child_poverty_rate_total,child_poverty_rate_deep,child_poverty_rate_notdeep
+5000363175,county subdivision,Searsburg , Bennington County,33,9.7,23.3,41.2,11.8,29.4
+5000785150,county subdivision,Winooski , Chittenden County,31,16.2,14.8,50.4,33.5,16.8
+5002501900,county subdivision,Athens , Windham County,27.2,22.5,4.8,57,50.6,6.3
+5001537075,county subdivision,Johnson , Lamoille County,26.7,11,15.7,26.4,3.9,22.5
+5002303175,county subdivision,Barre , Washington County,26.6,15.5,11.1,47.3,28.7,18.6
+5001928075,county subdivision,Glover , Orleans County,25.6,4.7,20.9,33.2,4.6,28.6
+5000710675,county subdivision,Burlington , Chittenden County,24.7,13.2,11.6,25.6,9.5,16.1
+5000911800,county subdivision,Canaan , Essex County,23.1,7.1,16,26.4,6.4,20
+5001909850,county subdivision,Brownington , Orleans County,23.1,7.6,15.5,33.9,13.1,20.7
+5001900475,county subdivision,Albany , Orleans County,22.9,4,18.9,32.5,,32.5
+5001981700,county subdivision,Westmore , Orleans County,20.4,3.6,16.9,54.2,,54.2
+5002560250,county subdivision,Rockingham , Windham County,20.2,7.7,12.4,25.6,11.6,14
+5000910075,county subdivision,Brunswick , Essex County,19.8,18.6,1.2,84.6,84.6,
+5002180875,county subdivision,West Haven , Rutland County,19.4,5.9,13.4,25.8,4.5,21.2
+5002507900,county subdivision,Brattleboro , Windham County,19.2,8,11.2,24.3,11.6,12.7
+5000547725,county subdivision,Newark , Caledonia County,19.1,7.4,11.7,33.3,10.8,22.6
+5002311125,county subdivision,Cabot , Washington County,19.1,5.4,13.7,32.4,13,19.4
+5000941425,county subdivision,Lunenburg , Essex County,18.8,8.9,9.9,36.3,25.4,10.9
+5000183800,county subdivision,Whiting , Addison County,18.3,5.2,13.1,42.2,8.9,33.3
+5000561525,county subdivision,Ryegate , Caledonia County,18.2,2.4,15.8,39.4,,39.4
+5000541725,county subdivision,Lyndon , Caledonia County,17.8,11.4,6.4,19,17.2,1.8
+5001973525,county subdivision,Troy , Orleans County,17.7,6.3,11.4,30.1,13.3,16.8
+5002155600,county subdivision,Pittsford , Rutland County,17.4,4.1,13.3,31,3.1,27.9
+5002769550,county subdivision,Springfield , Windsor County,17.4,9.8,7.6,28.8,15.2,13.5
+5001948850,county subdivision,Newport , Orleans County,17.2,4.4,12.7,9.4,2.8,6.6
+5001715700,county subdivision,Corinth , Orange County,16.9,7.6,9.3,28.1,16,12.1
+5001903550,county subdivision,Barton , Orleans County,16.8,7.1,9.8,20.1,6.9,13.3
+5000921250,county subdivision,East Haven , Essex County,16.5,7.2,9.4,14,14,
+5000304825,county subdivision,Bennington , Bennington County,16.2,5.3,10.9,26.7,8.5,18.2
+5000510450,county subdivision,Burke , Caledonia County,16.2,6,10.2,23.5,8.6,14.9
+5002760850,county subdivision,Royalton , Windsor County,16.1,11,5.2,22.2,20.4,1.8
+5002741275,county subdivision,Ludlow , Windsor County,15.9,2.2,13.7,30.4,,30.4
+5000362875,county subdivision,Sandgate , Bennington County,15.7,13,2.8,16.7,16.7,
+5001773075,county subdivision,Topsham , Orange County,15.5,5.6,9.9,24.4,12.7,11.7
+5002105200,county subdivision,Benson , Rutland County,15.3,3.6,11.7,22.7,,22.7
+5000569925,county subdivision,Stannard , Caledonia County,15.2,,15.2,36.2,,36.2
+5002763775,county subdivision,Sharon , Windsor County,15.2,11.2,4,18.8,18.8,
+5001159125,county subdivision,Richford , Franklin County,15.1,6.1,9,24.6,11.1,13.5
+5001748175,county subdivision,Newbury , Orange County,15.1,2.1,13,28.3,2.4,25.9
+5001916150,county subdivision,Coventry , Orleans County,15,3.8,11.3,28.1,,28.1
+5001546675,county subdivision,Morris, Lamoille County,14.9,4.5,10.4,22.3,7.1,15.1
+5001335875,county subdivision,Isle La Motte , Grand Isle County,14.8,4.8,10,45.5,18.2,27.3
+5002536175,county subdivision,Jamaica , Windham County,14.8,10.7,4.1,28.2,26.1,2.1
+5000562200,county subdivision,St. Johnsbury , Caledonia County,14.7,5,9.7,23.4,9.6,13.8
+5001511500,county subdivision,Cambridge , Lamoille County,14.7,7.3,7.4,29.4,19,10.4
+5001713525,county subdivision,Chelsea , Orange County,14.7,6.8,7.9,17.9,7.6,10.3
+5002125375,county subdivision,Fair Haven , Rutland County,14.7,6,8.7,12.9,4.1,8.8
+5002161225,county subdivision,Rutland , Rutland County,14.1,5.2,9,25.9,10.3,15.6
+5002557700,county subdivision,Putney , Windham County,14,6.6,7.3,19.3,16.7,2.6
+5001570525,county subdivision,Stowe , Lamoille County,13.9,10.8,3.1,27.5,22.7,4.9
+5001933775,county subdivision,Holland , Orleans County,13.7,8.6,5.1,10.2,10.2,
+5000129575,county subdivision,Granville , Addison County,13.6,8,5.7,18.1,12.5,5.6
+5002712250,county subdivision,Cavendish , Windsor County,13.6,7.5,6.1,10.1,5.6,4.5
+5000762050,county subdivision,St. George , Chittenden County,13,5.2,7.8,26.1,15.7,10.4
+5001774950,county subdivision,Vershire , Orange County,13,6.9,6.1,11,5.1,5.9
+5002111950,county subdivision,Castleton , Rutland County,12.8,6.1,6.7,7.9,,7.9
+5000159650,county subdivision,Ripton , Addison County,12.7,1.7,11,8.9,,8.9
+5002154250,county subdivision,Pawlet , Rutland County,12.7,4.7,8,15.2,6.1,9.1
+5002172925,county subdivision,Tinmouth , Rutland County,12.7,7.5,5.2,23.2,17.4,5.8
+5002584850,county subdivision,Windham , Windham County,12.7,4.5,8.2,17.5,,17.5
+5002147425,county subdivision,Mount Tabor , Rutland County,12.5,7.9,4.6,8.5,6.8,1.7
+5000733475,county subdivision,Hinesburg , Chittenden County,12.3,1.2,11.1,20.8,,20.8
+5001946450,county subdivision,Morgan , Orleans County,12.3,5.7,6.6,,,
+5002576225,county subdivision,Wardsboro , Windham County,12.3,2,10.3,25.9,,25.9
+5002760100,county subdivision,Rochester , Windsor County,12.3,2.4,10,24.1,2.9,21.2
+5000170075,county subdivision,Starksboro , Addison County,12.2,6.9,5.3,19.5,14.2,5.3
+5001124050,county subdivision,Enosburgh , Franklin County,12.1,5.1,7,10.6,8.3,2.3
+5001725675,county subdivision,Fairlee , Orange County,12.1,6.5,5.6,24,20.7,3.4
+5002156875,county subdivision,Poultney , Rutland County,12,4.4,7.6,15,,15
+5002355825,county subdivision,Plainfield , Washington County,12,7.1,4.9,4.4,,4.4
+5002581400,county subdivision,Westminster , Windham County,12,6.2,5.8,23.3,10.9,12.4
+5002705800,county subdivision,Bethel , Windsor County,12,7.6,4.4,14.7,12.8,1.9
+5002784925,county subdivision,Windsor , Windsor County,11.9,5.2,6.7,25.3,11.4,13.8
+5000714875,county subdivision,Colchester , Chittenden County,11.8,5.5,6.3,18.7,6.7,12.1
+5001709325,county subdivision,Brookfield , Orange County,11.8,3.6,8.2,28.5,9.3,19.3
+5001504375,county subdivision,Belvidere , Lamoille County,11.7,7.7,4,19.5,19.5,
+5000385675,county subdivision,Woodford , Bennington County,11.6,5.3,6.3,9.5,,9.5
+5001707375,county subdivision,Bradford , Orange County,11.6,6.5,5.1,9.6,8.7,0.9
+5001776750,county subdivision,Washington , Orange County,11.6,4.8,6.7,3,3,
+5002756050,county subdivision,Plymouth , Windsor County,11.6,4.9,6.8,13.6,10.2,3.4
+5000908725,county subdivision,Brighton , Essex County,11.4,4.6,6.9,9.2,,9.2
+5001980200,county subdivision,Westfield , Orleans County,11.2,6.1,5.1,9.9,9.9,
+5002702575,county subdivision,Baltimore , Windsor County,11.2,9.7,1.5,17.8,17.8,
+5000358600,county subdivision,Readsboro , Bennington County,11.1,9.1,1.9,14.8,14.8,
+5000915250,county subdivision,Concord , Essex County,11.1,1.4,9.8,8.3,,8.3
+5001940525,county subdivision,Lowell , Orleans County,11.1,3.7,7.4,3.4,,3.4
+5000929125,county subdivision,Granby , Essex County,10.9,6.4,4.5,,,
+5002376975,county subdivision,Waterbury , Washington County,10.9,6.8,4.1,20.1,20.1,
+5000131525,county subdivision,Hancock , Addison County,10.8,5,5.9,17,11.3,5.7
+5000939700,county subdivision,Lemington , Essex County,10.8,,10.8,,,
+5000363550,county subdivision,Shaftsbury , Bennington County,10.7,4.7,6,19.9,7.7,12.2
+5001779975,county subdivision,West Fairlee , Orange County,10.7,5.9,4.8,14.2,10.9,3.3
+5001936325,county subdivision,Jay , Orleans County,10.7,7.5,3.1,14.3,14.3,
+5000906325,county subdivision,Bloomfield , Essex County,10.6,2.5,8.1,17.9,,17.9
+5001161750,county subdivision,St. Albans , Franklin County,10.6,2.8,7.8,6,,6
+5001913150,county subdivision,Charleston , Orleans County,10.6,3.9,6.6,4.8,,4.8
+5002116825,county subdivision,Danby , Rutland County,10.6,2.8,7.9,17.9,1.7,16.2
+5002386125,county subdivision,Worcester , Washington County,10.6,6.4,4.2,20.8,13.7,7.1
+5001171725,county subdivision,Swanton , Franklin County,10.5,4.6,5.9,9,3.7,5.3
+5002531150,county subdivision,Halifax , Windham County,10.4,4.2,6.2,17.6,13.5,4.1
+5002782000,county subdivision,Weston , Windsor County,10.4,5.1,5.3,13.1,3,10.1
+5000144350,county subdivision,Middlebury , Addison County,10.3,4.4,5.9,10.8,4.7,6.1
+5000502875,county subdivision,Barnet , Caledonia County,10.3,2.8,7.4,7.1,,7.1
+5000564075,county subdivision,Sheffield , Caledonia County,10.3,0.4,9.8,6.1,,6.1
+5000942475,county subdivision,Maidstone , Essex County,10.3,2.1,8.2,17.6,,17.6
+5001105425,county subdivision,Berkshire , Franklin County,10.3,1.7,8.6,9.7,,9.7
+5001535050,county subdivision,Hyde Park , Lamoille County,10.3,6.5,3.8,15.4,11.5,3.9
+5002346000,county subdivision,Montpelier , Washington County,10.3,2.9,7.4,17.1,3.7,13.5
+5002758375,county subdivision,Reading , Windsor County,10.2,3.5,6.7,13.3,,13.3
+5000165050,county subdivision,Shoreham , Addison County,10.1,6.2,3.9,15,9.3,5.7
+5001523500,county subdivision,Eden , Lamoille County,10.1,3.7,6.4,8.8,1.3,7.5
+5001758075,county subdivision,Randolph , Orange County,10.1,5.6,4.5,13.1,8.4,4.7
+5001784175,county subdivision,Williams, Orange County,10,2.3,7.7,8.9,,8.9
+5001935575,county subdivision,Irasburg , Orleans County,10,1.3,8.6,10.1,,10.1
+5000174650,county subdivision,Vergennes , Addison County,9.9,4.8,5.1,11.8,9.4,2.4
+5002311350,county subdivision,Calais , Washington County,9.9,4.2,5.7,13.9,5.7,8.2
+5002528900,county subdivision,Grafton , Windham County,9.9,4.8,5.1,20.2,14.7,5.4
+5000554400,county subdivision,Peacham , Caledonia County,9.8,3.4,6.4,11.9,,11.9
+5002135425,county subdivision,Ira , Rutland County,9.8,3.4,6.3,16.1,3.2,12.9
+5002574800,county subdivision,Vernon , Windham County,9.8,5.5,4.3,14.1,11,3.1
+5001916300,county subdivision,Craftsbury , Orleans County,9.7,5,4.7,7.4,3.7,3.7
+5002701300,county subdivision,Andover , Windsor County,9.6,2.9,6.7,12.4,,12.4
+5000108575,county subdivision,Bridport , Addison County,9.4,3,6.4,12.3,7.5,4.8
+5000357025,county subdivision,Pownal , Bennington County,9.4,2.2,7.1,10.6,3.1,7.5
+5000369775,county subdivision,Stamford , Bennington County,9.4,3.1,6.3,13.3,1,12.4
+5001917350,county subdivision,Derby , Orleans County,9.4,4.8,4.5,6.3,2.9,3.4
+5002144800,county subdivision,Middle, Rutland County,9.3,2.2,7.1,11.4,,11.4
+5002543375,county subdivision,Marlboro , Windham County,9.3,3.8,5.4,2.2,,2.2
+5002548400,county subdivision,Newfane , Windham County,9.3,3.7,5.5,6.2,2.7,3.6
+5000583500,county subdivision,Wheelock , Caledonia County,9.2,1.8,7.4,9.8,,9.8
+5002785975,county subdivision,Woodstock , Windsor County,9.2,2.9,6.4,27.2,8.9,18.3
+5000140075,county subdivision,Lincoln , Addison County,9.1,3,6.1,4.5,2.6,1.9
+5002107750,county subdivision,Brandon , Rutland County,9.1,2,7.1,,,
+5002303250,county subdivision,Barre , Washington County,9.1,2.7,6.4,11,0.6,10.3
+5002305650,county subdivision,Berlin , Washington County,9.1,5.4,3.8,8.9,6.9,2
+5000571575,county subdivision,Sutton , Caledonia County,9,2.4,6.7,15,3.5,11.5
+5001585375,county subdivision,Wolcott , Lamoille County,8.9,8.1,0.8,16.2,16.2,
+5001948925,county subdivision,Newport , Orleans County,8.8,3.4,5.4,5.8,2.7,3.2
+5002114500,county subdivision,Clarendon , Rutland County,8.8,3,5.8,12.4,5.2,7.2
+5001161675,county subdivision,St. Albans , Franklin County,8.5,5.2,3.3,11.1,11.1,
+5001300860,county subdivision,Alburgh , Grand Isle County,8.5,3.2,5.3,21.6,7.3,14.2
+5001577425,county subdivision,Waterville , Lamoille County,8.5,2.5,6,8.6,2.1,6.4
+5002573300,county subdivision,Townshend , Windham County,8.5,3.4,5.1,16.3,,16.3
+5002708275,county subdivision,Bridgewater , Windsor County,8.4,3.2,5.1,,,
+5000139325,county subdivision,Leicester , Addison County,8.3,3.7,4.6,17.9,10.7,7.1
+5000531825,county subdivision,Hardwick , Caledonia County,8.3,3.5,4.8,7.2,1.7,5.5
+5001523725,county subdivision,Elmore , Lamoille County,8.3,3.6,4.7,1.7,,1.7
+5002530925,county subdivision,Guilford , Windham County,8.3,4.6,3.7,8.3,8.3,
+5000162575,county subdivision,Salisbury , Addison County,8.2,4.5,3.7,5.4,5.4,
+5000575700,county subdivision,Walden , Caledonia County,8.2,6.1,2.1,13.1,13.1,
+5002343600,county subdivision,Marshfield , Washington County,8.2,2.7,5.5,21.4,6.2,15.1
+5000109025,county subdivision,Bristol , Addison County,8.1,6.4,1.8,10.2,8.4,1.8
+5002360625,county subdivision,Roxbury , Washington County,8,1.9,6.1,5.7,,5.7
+5000530550,county subdivision,Groton , Caledonia County,7.9,3.1,4.8,7.9,3.7,4.2
+5001126500,county subdivision,Fletcher , Franklin County,7.9,2.2,5.7,10.4,1.9,8.5
+5002134450,county subdivision,Hubbardton , Rutland County,7.8,5.3,2.5,4.2,4.2,
+5002376525,county subdivision,Warren , Washington County,7.8,2.6,5.2,9.6,3.5,6.1
+5002584700,county subdivision,Wilmington , Windham County,7.8,4,3.8,3.7,3.7,
+5002783050,county subdivision,West Windsor , Windsor County,7.8,5.9,1.9,9.6,9.6,
+5001164600,county subdivision,Sheldon , Franklin County,7.7,2.2,5.5,8.5,1,7.5
+5002583950,county subdivision,Whitingham , Windham County,7.6,4.6,3.1,9.9,5.9,3.9
+5002165275,county subdivision,Shrewsbury , Rutland County,7.5,3.4,4.1,11.3,,11.3
+5002385525,county subdivision,Woodbury , Washington County,7.5,3.9,3.6,8.9,4.7,4.2
+5000317725,county subdivision,Dorset , Bennington County,7.4,5.1,2.2,11.1,11.1,
+5000975175,county subdivision,Victory , Essex County,7.4,,7.4,,,
+5001145850,county subdivision,Montgomery , Franklin County,7.4,4.1,3.3,,,
+5000153725,county subdivision,Orwell , Addison County,7.3,3.5,3.8,8.7,2.4,6.3
+5002713675,county subdivision,Chester , Windsor County,7.3,4,3.3,5.9,2.1,3.8
+5000176075,county subdivision,Waltham , Addison County,7.1,2.9,4.2,9.7,9.7,
+5001367000,county subdivision,South Hero , Grand Isle County,7.1,4.2,2.9,8.9,8.9,
+5002161300,county subdivision,Rutland , Rutland County,7,4.5,2.5,6,5.4,0.6
+5002175925,county subdivision,Wallingford , Rutland County,7,3.9,3.1,5.3,5.3,
+5002350275,county subdivision,Northfield , Washington County,7,2.5,4.6,4.4,3.1,1.3
+5000301450,county subdivision,Arlington , Bennington County,6.9,4.3,2.6,1.7,,1.7
+5001133025,county subdivision,Highgate , Franklin County,6.9,3.1,3.9,11.4,3,8.4
+5001350650,county subdivision,North Hero , Grand Isle County,6.9,4.6,2.3,2.6,,2.6
+5001773675,county subdivision,Tunbridge , Orange County,6.9,3.6,3.3,9.8,9.8,
+5000537900,county subdivision,Kirby , Caledonia County,6.7,3.1,3.6,,,
+5000724175,county subdivision,Essex , Chittenden County,6.7,3,3.7,10.4,2.8,7.6
+5001772400,county subdivision,Thetford , Orange County,6.7,1.5,5.2,11.2,1.6,9.6
+5002318550,county subdivision,Duxbury , Washington County,6.7,1.9,4.8,2.5,,2.5
+5002517875,county subdivision,Dover , Windham County,6.7,1.8,5,,,
+5001707600,county subdivision,Braintree , Orange County,6.6,1.3,5.3,14.6,,14.6
+5001753425,county subdivision,Orange , Orange County,6.4,1.9,4.5,4.4,2.2,2.2
+5002147200,county subdivision,Mount Holly , Rutland County,6.4,1.7,4.8,15.1,,15.1
+5002732275,county subdivision,Hartford , Windsor County,6.4,1.9,4.4,5.6,0.8,4.9
+5001329275,county subdivision,Grand Isle , Grand Isle County,6.2,2.6,3.6,2.9,2.9,
+5001930175,county subdivision,Greensboro , Orleans County,6.2,2.2,3.9,3.5,,3.5
+5002114350,county subdivision,Chittenden , Rutland County,6.2,1.9,4.3,11.6,2.2,9.4
+5002518325,county subdivision,Dummerston , Windham County,6.2,4.6,1.6,9.9,9.9,
+5002770375,county subdivision,Stockbridge , Windsor County,6.2,2.5,3.6,7.9,7.9,
+5000342850,county subdivision,Manchester , Bennington County,6.1,2.7,3.4,,,
+5000517125,county subdivision,Danville , Caledonia County,6.1,1.8,4.3,12.3,4.1,8.2
+5000784475,county subdivision,Williston , Chittenden County,6.1,2.7,3.3,6.2,3.6,2.5
+5002325825,county subdivision,Fayston , Washington County,6.1,3.3,2.8,3.8,1.3,2.5
+5000766175,county subdivision,South Burlington , Chittenden County,5.9,3.1,2.8,7.7,5.5,2.3
+5002346225,county subdivision,More, Washington County,5.5,1.6,4,6.5,1.2,5.3
+5000339025,county subdivision,Landgrove , Bennington County,5.4,,5.4,,,
+5001770675,county subdivision,Strafford , Orange County,5.4,0.4,5.1,,,
+5000355000,county subdivision,Peru , Bennington County,5.3,4.1,1.2,9.8,9.8,
+5002777500,county subdivision,Weathersfield , Windsor County,5.3,3.1,2.2,3.5,,3.5
+5000128600,county subdivision,Goshen , Addison County,5.2,,5.2,,,
+5001125225,county subdivision,Fairfield , Franklin County,5.2,1,4.2,0.8,,0.8
+5002177950,county subdivision,Wells , Rutland County,5.1,3.1,2,,,
+5000736700,county subdivision,Jericho , Chittenden County,5,2.6,2.4,4.4,2.5,1.9
+5002344500,county subdivision,Middlesex , Washington County,4.9,1.4,3.5,2.6,,2.6
+5000361000,county subdivision,Rupert , Bennington County,4.8,3.9,0.8,,,
+5002137685,county subdivision,Killington , Rutland County,4.8,3,1.7,5.5,3.7,1.8
+5000148700,county subdivision,New Haven , Addison County,4.7,2.7,2,8.2,6.3,1.9
+5000734600,county subdivision,Huntington , Chittenden County,4.7,2.1,2.5,7,5.6,1.4
+5000183275,county subdivision,Weybridge , Addison County,4.6,3.5,1.2,,,
+5002540225,county subdivision,Londonderry , Windham County,4.5,,4.5,7.9,,7.9
+5000764300,county subdivision,Shelburne , Chittenden County,4.3,1.8,2.6,2.9,1.2,1.8
+5002570750,county subdivision,Stratton , Windham County,4.3,0.9,3.5,9.5,,9.5
+5002752900,county subdivision,Norwich , Windsor County,4.3,1.5,2.8,2.9,1.6,1.3
+5002509475,county subdivision,Brookline , Windham County,4.1,3.6,0.5,2.9,2.9,
+5002321925,county subdivision,East Montpelier , Washington County,4,1.5,2.4,2.7,0.9,1.8
+5002375325,county subdivision,Waitsfield , Washington County,4,0.3,3.7,7.4,,7.4
+5000759275,county subdivision,Richmond , Chittenden County,3.8,0.6,3.2,1.7,,1.7
+5002157250,county subdivision,Proctor , Rutland County,3.8,0.3,3.5,,,
+5002702725,county subdivision,Barnard , Windsor County,3.8,3.8,,,,
+5002182300,county subdivision,West Rutland , Rutland County,3.7,0.9,2.8,3.2,,3.2
+5000577125,county subdivision,Waterford , Caledonia County,3.6,0.7,2.9,5,2.2,2.8
+5002732425,county subdivision,Hartland , Windsor County,3.6,1.2,2.3,,,
+5000371425,county subdivision,Sunderland , Bennington County,3.5,1.3,2.2,,,
+5000952750,county subdivision,Norton , Essex County,3.5,2.8,0.7,,,
+5002144125,county subdivision,Mendon , Rutland County,3.5,1.1,2.4,,,
+5000930775,county subdivision,Guildhall , Essex County,3.4,1,2.4,,,
+5000100325,county subdivision,Addison , Addison County,3.3,0.5,2.8,,,
+5000706550,county subdivision,Bolton , Chittenden County,3.3,0.2,3,1.6,,1.6
+5002171050,county subdivision,Sudbury , Rutland County,3.3,0.9,2.3,,,
+5000126300,county subdivision,Ferrisburgh , Addison County,3,0.6,2.3,,,
+5000116000,county subdivision,Cornwall , Addison County,2.9,1.7,1.2,,,
+5000153950,county subdivision,Panton , Addison County,2.9,2,0.9,,,
+5000745250,county subdivision,Milton , Chittenden County,2.7,0.7,1.9,,,
+5000780350,county subdivision,Westford , Chittenden County,2.5,0.2,2.3,1.1,,1.1
+5002756350,county subdivision,Pomfret , Windsor County,2.4,0.8,1.6,,,
+5001102500,county subdivision,Bakersfield , Franklin County,2.2,0.6,1.6,3.4,,3.4
+5000773975,county subdivision,Underhill , Chittenden County,2.1,0.9,1.2,1.2,0.5,0.7
+5001127700,county subdivision,Georgia , Franklin County,2.1,1,1,0.8,,0.8
+5001127100,county subdivision,Franklin , Franklin County,2,1.4,0.6,,,
+5001124925,county subdivision,Fairfax , Franklin County,1.9,1.5,0.4,0.9,0.9,
+5002155450,county subdivision,Pittsfield , Rutland County,1.9,,1.9,2.9,,2.9
+5000145550,county subdivision,Monkton , Addison County,1.7,0.8,0.9,0.7,,0.7
+5000713300,county subdivision,Charlotte , Chittenden County,1.6,0.3,1.3,,,
+5000385075,county subdivision,Winhall , Bennington County,1,0.3,0.7,,,
