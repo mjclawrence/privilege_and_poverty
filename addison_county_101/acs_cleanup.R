@@ -198,7 +198,13 @@ country <- get_acs(geography = "us",
                                        "commute_time_total" = "B08303_001",
                                        "commute_time_05" = "B08303_002",
                                        "commute_time_09" = "B08303_003",
-                                       "commute_time_14" = "B08303_004"),
+                                       "commute_time_14" = "B08303_004",
+                                       "earnings_educ_total" = "B20004_001",
+                                       "earnings_educ_lessthanhs" = "B20004_002",
+                                       "earnings_educ_hs_ged" = "B20004_003",
+                                       "earnings_educ_somecoll" = "B20004_004",
+                                       "earnings_educ_bachelors" = "B20004_005",
+                                       "earnings_educ_gradprof" = "B20004_006"),
                          output = "wide") %>%
   mutate(geography = "us")
 
@@ -377,7 +383,13 @@ states_all <- get_acs(geography = "state",
                                     "commute_time_total" = "B08303_001",
                                     "commute_time_05" = "B08303_002",
                                     "commute_time_09" = "B08303_003",
-                                    "commute_time_14" = "B08303_004"),
+                                    "commute_time_14" = "B08303_004",
+                                    "earnings_educ_total" = "B20004_001",
+                                    "earnings_educ_lessthanhs" = "B20004_002",
+                                    "earnings_educ_hs_ged" = "B20004_003",
+                                    "earnings_educ_somecoll" = "B20004_004",
+                                    "earnings_educ_bachelors" = "B20004_005",
+                                    "earnings_educ_gradprof" = "B20004_006"),
                       output = "wide") %>%
   mutate(geography = "state")
 
@@ -430,7 +442,13 @@ states_all_acs5 <- get_acs(geography = "state",
                                     "commute_time_total" = "B08303_001",
                                     "commute_time_05" = "B08303_002",
                                     "commute_time_09" = "B08303_003",
-                                    "commute_time_14" = "B08303_004"),
+                                    "commute_time_14" = "B08303_004",
+                                    "earnings_educ_total" = "B20004_001",
+                                    "earnings_educ_lessthanhs" = "B20004_002",
+                                    "earnings_educ_hs_ged" = "B20004_003",
+                                    "earnings_educ_somecoll" = "B20004_004",
+                                    "earnings_educ_bachelors" = "B20004_005",
+                                    "earnings_educ_gradprof" = "B20004_006"),
                       output = "wide") %>%
   mutate(geography = "state")
 
@@ -616,7 +634,13 @@ vt_county <- get_acs(geography = "county",
                                    "commute_time_total" = "B08303_001",
                                    "commute_time_05" = "B08303_002",
                                    "commute_time_09" = "B08303_003",
-                                   "commute_time_14" = "B08303_004"),
+                                   "commute_time_14" = "B08303_004",
+                                   "earnings_educ_total" = "B20004_001",
+                                   "earnings_educ_lessthanhs" = "B20004_002",
+                                   "earnings_educ_hs_ged" = "B20004_003",
+                                   "earnings_educ_somecoll" = "B20004_004",
+                                   "earnings_educ_bachelors" = "B20004_005",
+                                   "earnings_educ_gradprof" = "B20004_006"),
                      output = "wide") %>%
   mutate(geography = "county")
 
@@ -796,7 +820,13 @@ vt_county_subdivisions <- get_acs(geography = "county subdivision",
                                    "commute_time_total" = "B08303_001",
                                    "commute_time_05" = "B08303_002",
                                    "commute_time_09" = "B08303_003",
-                                   "commute_time_14" = "B08303_004"),
+                                   "commute_time_14" = "B08303_004",
+                                   "earnings_educ_total" = "B20004_001",
+                                   "earnings_educ_lessthanhs" = "B20004_002",
+                                   "earnings_educ_hs_ged" = "B20004_003",
+                                   "earnings_educ_somecoll" = "B20004_004",
+                                   "earnings_educ_bachelors" = "B20004_005",
+                                   "earnings_educ_gradprof" = "B20004_006"),
                      output = "wide") %>%
   mutate(geography = "county subdivision")
 
@@ -977,7 +1007,13 @@ vt_tracts <- get_acs(geography = "tract",
                                    "commute_time_total" = "B08303_001",
                                    "commute_time_05" = "B08303_002",
                                    "commute_time_09" = "B08303_003",
-                                   "commute_time_14" = "B08303_004"),
+                                   "commute_time_14" = "B08303_004",
+                                   "earnings_educ_total" = "B20004_001",
+                                   "earnings_educ_lessthanhs" = "B20004_002",
+                                   "earnings_educ_hs_ged" = "B20004_003",
+                                   "earnings_educ_somecoll" = "B20004_004",
+                                   "earnings_educ_bachelors" = "B20004_005",
+                                   "earnings_educ_gradprof" = "B20004_006"),
                      output = "wide") %>%
   mutate(geography = "census tract")
 
@@ -1097,7 +1133,13 @@ vermont_us_nomoe <- vermont_us %>%
          median_hh_income = median_hh_incomeE,
          median_gross_rent = median_gross_rentE,
          median_gross_rent_pct = median_gross_rent_pctE,
-         median_value_owner_occupied = median_value_owner_occupiedE) %>%
+         median_value_owner_occupied = median_value_owner_occupiedE,
+         earnings_educ_total = earnings_educ_totalE,
+         earnings_educ_lessthanhs = earnings_educ_lessthanhsE,
+         earnings_educ_hs_ged = earnings_educ_hs_gedE,
+         earnings_educ_somecoll = earnings_educ_somecollE,
+         earnings_educ_bachelors = earnings_educ_bachelorsE,
+         earnings_educ_gradprof = earnings_educ_gradprofE) %>%
          mutate(short_name = NAME) %>%
   separate(short_name, c("short_name", "extra"), sep = " town") %>%
   separate(short_name, c("short_name", "extra"), sep = " city") %>%
@@ -1128,8 +1170,9 @@ vermont_us_nomoe <- vermont_us %>%
          poverty_belowE, poverty_level_050E, poverty_rate_race_notwhite, poverty_rate_notwhite_vs_white,
          median_gross_rent, median_gross_rent_pct, median_value_owner_occupied,
          housing_type_owner_occupied, housing_type_renter_occupied,
-         commute_15minutes_or_less, educ_lessthanhs, educ_hs_ged, educ_somecoll,
-         educ_ba, educ_gradprof) %>%
+         commute_15minutes_or_less, 
+         educ_lessthanhs, educ_hs_ged, educ_somecoll, educ_ba, educ_gradprof,
+         earnings_educ_total:earnings_educ_gradprof) %>%
   arrange(desc(geography), datawrapper_id) %>%
   filter(short_name != "East Middlebury")
 
@@ -1284,7 +1327,9 @@ write.csv(population_age_us_vt_counties,
 # Race for US, Vermont, Counties
 race_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
-  select(all_of(geography_variables), race_white:race_hispanic) %>%
+  select(all_of(geography_variables),
+         race_white, race_asian, race_black, race_hispanic, race_nhpi_amind,
+         race_other, race_twoplus) %>%
   arrange(race_white)
 
 write.csv(race_us_vt_counties, 
@@ -1295,7 +1340,10 @@ write.csv(race_us_vt_counties,
 race_us_vt_middlebury <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt") |
            (geography == "county" & grepl("Addison County", name)) | short_name=="Middlebury") %>% 
-  select(all_of(geography_variables), race_white:race_hispanic)
+  select(all_of(geography_variables),
+         race_white, race_asian, race_black, race_hispanic, race_nhpi_amind,
+         race_other, race_twoplus) %>%
+  arrange(race_white)
 
 write.csv(race_us_vt_middlebury, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/race_us_vt_middlebury.csv",
@@ -1378,6 +1426,24 @@ write.csv(education_us_vt_counties,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_us_vt_counties.csv",
           row.names = FALSE)
 
+# Education Wide for US, Vermont, Counties
+education_wide_us_vt_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>% 
+  select(short_name, 
+         educ_lessthanhs, educ_hs_ged, educ_somecoll, educ_ba, educ_gradprof)
+
+n <- education_wide_us_vt_counties$short_name
+education_wide_us_vt_counties <- as.data.frame(t(education_wide_us_vt_counties[, -1]))
+colnames(education_wide_us_vt_counties) <- n
+education_wide_us_vt_counties$educ_levels <- factor(row.names(education_wide_us_vt_counties))
+
+education_wide_us_vt_counties <- education_wide_us_vt_counties %>%
+  select(educ_levels, 1:16)
+
+write.csv(education_wide_us_vt_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_wide_us_vt_counties.csv",
+          row.names = FALSE)
+
 # Owner Occupied Housing for US, Vermont, Counties
 housing_owner_occupied_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
@@ -1441,6 +1507,17 @@ homeless_counties <- vermont_us_nomoe %>%
 
 write.csv(homeless_counties, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/homeless_counties.csv",
+          row.names = FALSE)
+
+# Earnings by Education for Counties
+
+earnings_educ_counties <- vermont_us_nomoe %>%
+  filter(geography %in% c("us", "state_vt", "county")) %>%
+  select(all_of(geography_variables), earnings_educ_total:earnings_educ_gradprof) %>%
+  arrange(desc(earnings_educ_gradprof - earnings_educ_lessthanhs))
+
+write.csv(earnings_educ_counties, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/earnings_educ_counties.csv",
           row.names = FALSE)
 
 # Population for Towns
@@ -1574,6 +1651,25 @@ write.csv(education_towns,
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_towns.csv",
           row.names = FALSE)
 
+# Education Wide for Towns
+education_wide_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>% 
+  select(short_name, 
+         educ_lessthanhs, educ_hs_ged, educ_somecoll, educ_ba, educ_gradprof)
+
+n <- education_wide_towns$short_name
+education_wide_towns <- as.data.frame(t(education_wide_towns[, -1]))
+colnames(education_wide_towns) <- n
+education_wide_towns$educ_levels <- factor(row.names(education_wide_towns))
+
+education_wide_towns <- education_wide_towns %>%
+  select(educ_levels, 1:23)
+
+write.csv(education_wide_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/education_wide_towns.csv",
+          row.names = FALSE)
+
+
 # Owner Occupied Housing for towns
 housing_owner_occupied_towns <- vermont_us_nomoe %>%
   filter(geography == "county subdivision") %>% 
@@ -1617,6 +1713,18 @@ health_insurance_towns <- vermont_us_nomoe %>%
 write.csv(health_insurance_towns, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/health_insurance_towns.csv",
           row.names = FALSE)
+
+# Earnings by Education for Towns
+
+earnings_educ_towns <- vermont_us_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  select(all_of(geography_variables), earnings_educ_total:earnings_educ_gradprof) %>%
+  arrange(desc(earnings_educ_gradprof - earnings_educ_lessthanhs))
+
+write.csv(earnings_educ_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/earnings_educ_towns.csv",
+          row.names = FALSE)
+
 
 
 # Summary of poverty, deep poverty, child poverty, and child deep poverty for towns
