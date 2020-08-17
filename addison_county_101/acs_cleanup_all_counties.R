@@ -672,7 +672,14 @@ poverty_all_towns <- all_counties_states_nomoe %>%
   filter(geography == "county subdivision") %>%
   select(all_of(geography_variables), short_name,
          poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep,
-         child_poverty_rate_total, child_poverty_rate_deep, child_poverty_rate_notdeep)
+         child_poverty_rate_total, child_poverty_rate_deep, child_poverty_rate_notdeep) %>%
+  mutate(poverty_rate_total = ifelse(is.na(poverty_rate_total) | poverty_rate_total==0, "", poverty_rate_total),
+         poverty_rate_deep = ifelse(is.na(poverty_rate_deep) | poverty_rate_deep==0, "", poverty_rate_deep),
+         poverty_rate_notdeep = ifelse(is.na(poverty_rate_notdeep) | poverty_rate_notdeep==0, "", poverty_rate_notdeep),
+         child_poverty_rate_total = ifelse(is.na(child_poverty_rate_total) | child_poverty_rate_total==0, "", child_poverty_rate_total),
+         child_poverty_rate_deep = ifelse(is.na(child_poverty_rate_deep) | child_poverty_rate_deep==0, "", child_poverty_rate_deep),
+         child_poverty_rate_notdeep = ifelse(is.na(child_poverty_rate_notdeep) | child_poverty_rate_notdeep==0, "", child_poverty_rate_notdeep),
+         )
 
 
 write.csv(poverty_all_towns, 
