@@ -1,17 +1,17 @@
 "geoid","geography","name","short_name","latitude","longitude","earnings_educ_total","earnings_educ_lessthanhs","earnings_educ_hs_ged","earnings_educ_somecoll","earnings_educ_bachelors","earnings_educ_gradprof"
+"50013","county","Grand Isle County, Vermont","Grand Isle",44.801788,-73.300758,41619,17500,40052,36773,42359,75603
 "1","us","United States","United States",NA,NA,40867,24530,31269,36854,54628,72492
-"50","state_vt","Vermont","Vermont",NA,NA,39521,29376,31453,36907,43198,60524
-"50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,40098,31394,31397,39337,43750,63750
-"50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,34512,29608,30355,32226,39140,52242
-"50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,34054,22083,31522,31150,40182,51069
+"50011","county","Franklin County, Vermont","Franklin",44.858964,-72.909402,41005,25878,35530,40868,48845,65250
 "50007","county","Chittenden County, Vermont","Chittenden",44.460676,-73.070525,44765,25000,33441,40520,49049,63907
 "50009","county","Essex County, Vermont","Essex",44.724021,-71.732736,28848,17083,25932,29962,34000,52500
-"50011","county","Franklin County, Vermont","Franklin",44.858964,-72.909402,41005,25878,35530,40868,48845,65250
-"50013","county","Grand Isle County, Vermont","Grand Isle",44.801788,-73.300758,41619,17500,40052,36773,42359,75603
-"50015","county","Lamoille County, Vermont","Lamoille",44.603504,-72.638356,36325,32115,32048,34358,36015,57462
-"50017","county","Orange County, Vermont","Orange",44.003392,-72.369687,36935,27394,31442,36728,43398,54721
-"50019","county","Orleans County, Vermont","Orleans",44.828442,-72.25163,31730,26203,29933,31116,36406,49476
-"50021","county","Rutland County, Vermont","Rutland",43.580844,-73.038196,35491,23550,30687,33401,42189,54463
-"50023","county","Washington County, Vermont","Washington",44.274953,-72.609475,40441,30613,32163,36411,44489,58074
-"50025","county","Windham County, Vermont","Windham",42.999143,-72.716335,33707,30063,29675,31206,36220,50847
+"50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,40098,31394,31397,39337,43750,63750
 "50027","county","Windsor County, Vermont","Windsor",43.588143,-72.591515,36981,27292,31957,34145,40223,58714
+"50","state_vt","Vermont","Vermont",NA,NA,39521,29376,31453,36907,43198,60524
+"50021","county","Rutland County, Vermont","Rutland",43.580844,-73.038196,35491,23550,30687,33401,42189,54463
+"50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,34054,22083,31522,31150,40182,51069
+"50023","county","Washington County, Vermont","Washington",44.274953,-72.609475,40441,30613,32163,36411,44489,58074
+"50017","county","Orange County, Vermont","Orange",44.003392,-72.369687,36935,27394,31442,36728,43398,54721
+"50015","county","Lamoille County, Vermont","Lamoille",44.603504,-72.638356,36325,32115,32048,34358,36015,57462
+"50019","county","Orleans County, Vermont","Orleans",44.828442,-72.25163,31730,26203,29933,31116,36406,49476
+"50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,34512,29608,30355,32226,39140,52242
+"50025","county","Windham County, Vermont","Windham",42.999143,-72.716335,33707,30063,29675,31206,36220,50847

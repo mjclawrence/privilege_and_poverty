@@ -1,24 +1,24 @@
 "geoid","geography","name","short_name","latitude","longitude","earnings_educ_total","earnings_educ_lessthanhs","earnings_educ_hs_ged","earnings_educ_somecoll","earnings_educ_bachelors","earnings_educ_gradprof"
+"5000144350","county subdivision","Middlebury town, Addison County, Vermont","Middlebury",44.0018997,-73.1190475,41354,16546,29241,37188,42571,81107
 "5000100325","county subdivision","Addison town, Addison County, Vermont","Addison",44.0585392,-73.3323146,45000,21250,42424,42000,44167,69167
-"5000108575","county subdivision","Bridport town, Addison County, Vermont","Bridport",43.9817242,-73.3319365,31705,34722,28981,32500,30313,58750
-"5000109025","county subdivision","Bristol town, Addison County, Vermont","Bristol",44.0978095,-73.0485314,39472,76696,31490,40385,34554,66875
-"5000116000","county subdivision","Cornwall town, Addison County, Vermont","Cornwall",43.9629183,-73.2177012,44519,30833,30000,37386,56071,62188
 "5000126300","county subdivision","Ferrisburgh town, Addison County, Vermont","Ferrisburgh",44.2031331,-73.2791964,47356,27125,30403,45074,57679,63387
+"5000170075","county subdivision","Starksboro town, Addison County, Vermont","Starksboro",44.2102844,-72.9934529,34795,30000,28571,34598,40536,62222
+"5000116000","county subdivision","Cornwall town, Addison County, Vermont","Cornwall",43.9629183,-73.2177012,44519,30833,30000,37386,56071,62188
+"5000145550","county subdivision","Monkton town, Addison County, Vermont","Monkton",44.2270403,-73.1317208,43333,27500,31900,52083,50528,52045
+"5000108575","county subdivision","Bridport town, Addison County, Vermont","Bridport",43.9817242,-73.3319365,31705,34722,28981,32500,30313,58750
+"5000139325","county subdivision","Leicester town, Addison County, Vermont","Leicester",43.8745281,-73.0997492,36026,32500,31944,39375,45313,55833
+"5000165050","county subdivision","Shoreham town, Addison County, Vermont","Shoreham",43.8992426,-73.3153144,36715,28125,37500,34750,37375,51250
+"5000140075","county subdivision","Lincoln town, Addison County, Vermont","Lincoln",44.0929248,-72.9735212,41375,35313,22313,42841,44813,57813
+"5000153725","county subdivision","Orwell town, Addison County, Vermont","Orwell",43.8090987,-73.2779922,33917,30417,33026,35833,32969,51667
+"5000148700","county subdivision","New Haven town, Addison County, Vermont","New Haven",44.1049674,-73.1657672,39219,38750,31602,33846,50208,58333
+"5000183275","county subdivision","Weybridge town, Addison County, Vermont","Weybridge",44.0403287,-73.2227845,45278,59167,23438,38125,43438,64583
+"5000109025","county subdivision","Bristol town, Addison County, Vermont","Bristol",44.0978095,-73.0485314,39472,76696,31490,40385,34554,66875
 "5000128600","county subdivision","Goshen town, Addison County, Vermont","Goshen",43.864713,-72.9901335,34107,NA,24063,36250,33438,45938
 "5000129575","county subdivision","Granville town, Addison County, Vermont","Granville",44.0052914,-72.8413144,32031,NA,35625,32250,31250,NA
 "5000131525","county subdivision","Hancock town, Addison County, Vermont","Hancock",43.9053287,-72.918171,33750,10893,27917,39167,45000,NA
-"5000139325","county subdivision","Leicester town, Addison County, Vermont","Leicester",43.8745281,-73.0997492,36026,32500,31944,39375,45313,55833
-"5000140075","county subdivision","Lincoln town, Addison County, Vermont","Lincoln",44.0929248,-72.9735212,41375,35313,22313,42841,44813,57813
-"5000144350","county subdivision","Middlebury town, Addison County, Vermont","Middlebury",44.0018997,-73.1190475,41354,16546,29241,37188,42571,81107
-"5000145550","county subdivision","Monkton town, Addison County, Vermont","Monkton",44.2270403,-73.1317208,43333,27500,31900,52083,50528,52045
-"5000148700","county subdivision","New Haven town, Addison County, Vermont","New Haven",44.1049674,-73.1657672,39219,38750,31602,33846,50208,58333
-"5000153725","county subdivision","Orwell town, Addison County, Vermont","Orwell",43.8090987,-73.2779922,33917,30417,33026,35833,32969,51667
 "5000153950","county subdivision","Panton town, Addison County, Vermont","Panton",44.1304184,-73.3401912,35735,34844,31538,28438,50375,NA
 "5000159650","county subdivision","Ripton town, Addison County, Vermont","Ripton",43.9849365,-72.9967754,31034,NA,30625,36058,29917,38393
 "5000162575","county subdivision","Salisbury town, Addison County, Vermont","Salisbury",43.9254949,-73.1115282,40721,NA,34219,45000,47206,39583
-"5000165050","county subdivision","Shoreham town, Addison County, Vermont","Shoreham",43.8992426,-73.3153144,36715,28125,37500,34750,37375,51250
-"5000170075","county subdivision","Starksboro town, Addison County, Vermont","Starksboro",44.2102844,-72.9934529,34795,30000,28571,34598,40536,62222
 "5000174650","county subdivision","Vergennes city, Addison County, Vermont","Vergennes",44.1676604,-73.2553163,40068,NA,40189,36759,41250,45625
 "5000176075","county subdivision","Waltham town, Addison County, Vermont","Waltham",44.1239371,-73.2293622,43750,NA,27031,47917,38125,56250
-"5000183275","county subdivision","Weybridge town, Addison County, Vermont","Weybridge",44.0403287,-73.2227845,45278,59167,23438,38125,43438,64583
 "5000183800","county subdivision","Whiting town, Addison County, Vermont","Whiting",43.8764212,-73.2125363,36406,23750,40156,36250,40000,NA
