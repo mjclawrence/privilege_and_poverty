@@ -339,7 +339,176 @@ counties_all <- get_acs(geography = "county",
                      output = "wide") %>%
   mutate(geography = "county")
 
-all_counties_states <- rbind(states_all, counties_all)
+towns_all <- get_acs(geography = "county subdivision",
+                     state = "VT",
+                        variables = c("population" = "B01003_001",
+                                      "median_hh_income" = "B19013_001",
+                                      "poverty_total" = "B17001_001",
+                                      "poverty_below" = "B17001_002",
+                                      "poverty_level_total" = "C17002_001",
+                                      "poverty_level_050" = "C17002_002",
+                                      "poverty_level_099" = "C17002_003",
+                                      "poverty_level_124" = "C17002_004",
+                                      "poverty_level_149" = "C17002_005",
+                                      "poverty_level_184" = "C17002_006",
+                                      "poverty_level_199" = "C17002_007",
+                                      "poverty_level_200" = "C17002_008",
+                                      "snap_total" = "B22002_001",
+                                      "snap_received" = "B22002_002",
+                                      "snap_received_children" = "B22002_003",
+                                      "snap_not_received_children" = "B22002_016",
+                                      "housing_total" = "B25003_001",
+                                      "housing_owned" = "B25003_002",
+                                      "housing_rented" = "B25003_003",
+                                      "educ_total" = "B15003_001",
+                                      "educ_hs" = "B15003_017",
+                                      "educ_ged" = "B15003_018",
+                                      "educ_somecoll_less1" = "B15003_019",
+                                      "educ_somecoll_more1" = "B15003_020",
+                                      "educ_associates" = "B15003_021",
+                                      "educ_bachelors" = "B15003_022",
+                                      "educ_masters" = "B15003_023",
+                                      "educ_professional" = "B15003_024",
+                                      "educ_doctorate" = "B15003_025",
+                                      "laborforce_civilian_total" = "B23025_003",
+                                      "laborforce_civilian_employed" = "B23025_004",
+                                      "laborforce_civilian_unemployed" = "B23025_005",
+                                      "race_total" = "B03002_001",
+                                      "race_white" = "B03002_003",
+                                      "race_black" = "B03002_004",
+                                      "race_amindian" = "B03002_005",
+                                      "race_asian" = "B03002_006",
+                                      "race_nhpi" = "B03002_007",
+                                      "race_other" = "B03002_008",
+                                      "race_twoplus" = "B03002_011",
+                                      "race_hispanic" = "B03002_012",
+                                      "foreign_born_total" = "B05002_001",
+                                      "foreign_born" = "B05002_013",
+                                      "insurance_none_06_male" = "B27001_005",
+                                      "insurance_none_18_male" = "B27001_008",
+                                      "insurance_none_25_male" = "B27001_011",
+                                      "insurance_none_34_male" = "B27001_014",
+                                      "insurance_none_44_male" = "B27001_017",
+                                      "insurance_none_54_male" = "B27001_020",
+                                      "insurance_none_64_male" = "B27001_023",
+                                      "insurance_none_74_male" = "B27001_026",
+                                      "insurance_none_75_male" = "B27001_029",
+                                      "insurance_none_06_fmle" = "B27001_033",
+                                      "insurance_none_18_fmle" = "B27001_036",
+                                      "insurance_none_25_fmle" = "B27001_039",
+                                      "insurance_none_34_fmle" = "B27001_042",
+                                      "insurance_none_44_fmle" = "B27001_045",
+                                      "insurance_none_54_fmle" = "B27001_048",
+                                      "insurance_none_64_fmle" = "B27001_051",
+                                      "insurance_none_74_fmle" = "B27001_054",
+                                      "insurance_none_75_fmle" = "B27001_057",
+                                      "insurance_with_06_male" = "B27001_004",
+                                      "insurance_with_18_male" = "B27001_007",
+                                      "insurance_with_25_male" = "B27001_010",
+                                      "insurance_with_34_male" = "B27001_013",
+                                      "insurance_with_44_male" = "B27001_016",
+                                      "insurance_with_54_male" = "B27001_019",
+                                      "insurance_with_64_male" = "B27001_022",
+                                      "insurance_with_74_male" = "B27001_025",
+                                      "insurance_with_75_male" = "B27001_028",
+                                      "insurance_with_06_fmle" = "B27001_032",
+                                      "insurance_with_18_fmle" = "B27001_035",
+                                      "insurance_with_25_fmle" = "B27001_038",
+                                      "insurance_with_34_fmle" = "B27001_041",
+                                      "insurance_with_44_fmle" = "B27001_044",
+                                      "insurance_with_54_fmle" = "B27001_047",
+                                      "insurance_with_64_fmle" = "B27001_050",
+                                      "insurance_with_74_fmle" = "B27001_053",
+                                      "insurance_with_75_fmle" = "B27001_056",
+                                      "total_sex_age" = "B01001_001",
+                                      "total_sexm_age05" = "B01001_003",
+                                      "total_sexm_age09" = "B01001_004",
+                                      "total_sexm_age14" = "B01001_005",
+                                      "total_sexm_age17" = "B01001_006",
+                                      "total_sexm_age19" = "B01001_007",
+                                      "total_sexm_age20" = "B01001_008",
+                                      "total_sexm_age21" = "B01001_009",
+                                      "total_sexm_age24" = "B01001_010",
+                                      "total_sexm_age29" = "B01001_011",
+                                      "total_sexm_age34" = "B01001_012",
+                                      "total_sexm_age39" = "B01001_013",
+                                      "total_sexm_age44" = "B01001_014",
+                                      "total_sexm_age49" = "B01001_015",
+                                      "total_sexm_age54" = "B01001_016",
+                                      "total_sexm_age59" = "B01001_017",
+                                      "total_sexm_age61" = "B01001_018",
+                                      "total_sexm_age64" = "B01001_019",
+                                      "total_sexm_age66" = "B01001_020",
+                                      "total_sexm_age69" = "B01001_021",
+                                      "total_sexm_age74" = "B01001_022",
+                                      "total_sexm_age79" = "B01001_023",
+                                      "total_sexm_age84" = "B01001_024",
+                                      "total_sexm_age85" = "B01001_025",
+                                      "total_sexf_age05" = "B01001_027",
+                                      "total_sexf_age09" = "B01001_028",
+                                      "total_sexf_age14" = "B01001_029",
+                                      "total_sexf_age17" = "B01001_030",
+                                      "total_sexf_age19" = "B01001_031",
+                                      "total_sexf_age20" = "B01001_032",
+                                      "total_sexf_age21" = "B01001_033",
+                                      "total_sexf_age24" = "B01001_034",
+                                      "total_sexf_age29" = "B01001_035",
+                                      "total_sexf_age34" = "B01001_036",
+                                      "total_sexf_age39" = "B01001_037",
+                                      "total_sexf_age44" = "B01001_038",
+                                      "total_sexf_age49" = "B01001_039",
+                                      "total_sexf_age54" = "B01001_040",
+                                      "total_sexf_age59" = "B01001_041",
+                                      "total_sexf_age61" = "B01001_042",
+                                      "total_sexf_age64" = "B01001_043",
+                                      "total_sexf_age66" = "B01001_044",
+                                      "total_sexf_age69" = "B01001_045",
+                                      "total_sexf_age74" = "B01001_046",
+                                      "total_sexf_age79" = "B01001_047",
+                                      "total_sexf_age84" = "B01001_048",
+                                      "total_sexf_age85" = "B01001_049",
+                                      "poverty_level_age06_total" = "B17024_002",
+                                      "poverty_level_050_age06" = "B17024_003",
+                                      "poverty_level_074_age06" = "B17024_004",
+                                      "poverty_level_099_age06" = "B17024_005",
+                                      "poverty_level_age11_total" = "B17024_015",
+                                      "poverty_level_050_age11" = "B17024_016",
+                                      "poverty_level_074_age11" = "B17024_017",
+                                      "poverty_level_099_age11" = "B17024_018",
+                                      "poverty_level_age17_total" = "B17024_028",
+                                      "poverty_level_050_age17" = "B17024_029",
+                                      "poverty_level_074_age17" = "B17024_030",
+                                      "poverty_level_099_age17" = "B17024_031",
+                                      "poverty_race_white_total" = "B17001H_001",
+                                      "poverty_race_black_total" = "B17001B_001",
+                                      "poverty_race_amindian_total" = "B17001C_001",
+                                      "poverty_race_asian_total" = "B17001D_001",
+                                      "poverty_race_nhpi_total" = "B17001E_001",
+                                      "poverty_race_other_total" = "B17001F_001",
+                                      "poverty_race_twoplus_total" = "B17001G_001",
+                                      "poverty_race_hispanic_total" = "B17001I_001",
+                                      "poverty_race_white_below" = "B17001H_002",
+                                      "poverty_race_black_below" = "B17001B_002",
+                                      "poverty_race_amindian_below" = "B17001C_002",
+                                      "poverty_race_asian_below" = "B17001D_002",
+                                      "poverty_race_nhpi_below" = "B17001E_002",
+                                      "poverty_race_other_below" = "B17001F_002",
+                                      "poverty_race_twoplus_below" = "B17001G_002",
+                                      "poverty_race_hispanic_below" = "B17001I_002",
+                                      "poverty_below_sexm_total" = "B17001_003",
+                                      "poverty_above_sexm_total" = "B17001_032",
+                                      "poverty_below_sexf_total" = "B17001_017",
+                                      "poverty_above_sexf_total" = "B17001_046",
+                                      "poverty_below_family_related_children_married_couple" = "B17006_003",
+                                      "poverty_below_family_related_children_unmarried_male" = "B17006_008",
+                                      "poverty_below_family_related_children_unmarried_female" = "B17006_012",
+                                      "poverty_above_family_related_children_married_couple" = "B17006_017",
+                                      "poverty_above_family_related_children_unmarried_male" = "B17006_022",
+                                      "poverty_above_family_related_children_unmarried_female" = "B17006_026"),
+                        output = "wide") %>%
+  mutate(geography = "county subdivision")
+
+all_counties_states <- rbind(states_all, counties_all, towns_all)
 
 all_counties_states <- select(all_counties_states, !ends_with("M"))
 
@@ -440,6 +609,12 @@ all_counties_states_nomoe <- all_counties_states %>%
   rename(population = populationE,
          median_hh_income = median_hh_incomeE) %>%
   mutate(short_name = NAME) %>%
+  separate(short_name, c("short_name", "extra"), sep = " town") %>%
+  separate(short_name, c("short_name", "extra"), sep = " city") %>%
+  separate(short_name, c("short_name", "extra"), sep = ", Vermont") %>%
+  separate(short_name, c("short_name", "extra"), sep = ", Addison") %>%
+  separate(short_name, c("short_name", "extra"), sep = " County") %>%
+  select(-extra) %>%
   mutate(datawrapper_id = GEOID) %>%
   mutate(datawrapper_id = ifelse(geography=="county", str_sub(GEOID, 3, 6), 
                                  ifelse(geography=="census tract", str_sub(GEOID, 3, 11), GEOID))) %>%
@@ -464,7 +639,7 @@ nopr <- all_counties_states_nomoe %>%
   filter(!grepl("Puerto Rico", name),
          geography == "county")
 
-summary(nopr$poverty_rate)
+summary(nopr$poverty_rate_total)
 
 nopr %>%
   filter(grepl("Vermont", name)) %>%
@@ -489,6 +664,21 @@ vermont_gather <- vermont %>%
 ## StoryMap Data Links
 
 geography_variables <- c("geoid", "geography", "name")
+
+
+# Poverty rate for Vermont towns
+
+poverty_all_towns <- all_counties_states_nomoe %>%
+  filter(geography == "county subdivision") %>%
+  select(all_of(geography_variables), short_name,
+         poverty_rate_total, poverty_rate_deep, poverty_rate_notdeep,
+         child_poverty_rate_total, child_poverty_rate_deep, child_poverty_rate_notdeep)
+
+
+write.csv(poverty_all_towns, 
+          "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_all_towns.csv",
+          row.names = FALSE)
+
 
 # Poverty rate for US states
 poverty_all_counties <- counties_all_nomoe %>%
