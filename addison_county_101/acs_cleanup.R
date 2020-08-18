@@ -1408,6 +1408,7 @@ write.csv(poverty_levels_us_vt_counties,
 # Poverty white vs non-white for US, VT, Counties
 poverty_white_nonwhite_us_vt_counties <- vermont_us_nomoe %>%
   filter(geography %in% c("us", "state_vt", "county")) %>% 
+  filter(short_name != "Grand Isle") %>%
   select(all_of(geography_variables), 
          poverty_rate_race_white, poverty_rate_race_notwhite, poverty_rate_notwhite_vs_white)
 

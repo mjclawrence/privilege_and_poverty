@@ -1,13 +1,12 @@
 "geoid","geography","name","short_name","latitude","longitude","poverty_rate_race_white","poverty_rate_race_notwhite","poverty_rate_notwhite_vs_white"
 "1","us","United States","United States",NA,NA,9.5,18.7,9.2
-"50","state_vt","Vermont","Vermont",NA,NA,10.7,18.2,7.5
+"50","state_vt","Vermont","Vermont",NA,NA,10.5,NA,NA
 "50001","county","Addison County, Vermont","Addison",44.031248,-73.141581,7.8,7,-0.8
 "50003","county","Bennington County, Vermont","Bennington",43.035325,-73.11146,11,19.9,8.9
 "50005","county","Caledonia County, Vermont","Caledonia",44.468791,-72.112168,11.3,33.1,21.8
 "50007","county","Chittenden County, Vermont","Chittenden",44.460676,-73.070525,10.7,19.9,9.2
 "50009","county","Essex County, Vermont","Essex",44.724021,-71.732736,13.5,35.6,22.1
 "50011","county","Franklin County, Vermont","Franklin",44.858964,-72.909402,7.6,9.6,2
-"50013","county","Grand Isle County, Vermont","Grand Isle",44.801788,-73.300758,8.1,1.5,-6.6
 "50015","county","Lamoille County, Vermont","Lamoille",44.603504,-72.638356,14.2,23.9,9.7
 "50017","county","Orange County, Vermont","Orange",44.003392,-72.369687,10.7,12.8,2.1
 "50019","county","Orleans County, Vermont","Orleans",44.828442,-72.25163,14,13,-1
