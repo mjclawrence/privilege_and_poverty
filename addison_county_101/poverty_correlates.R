@@ -204,7 +204,7 @@ poverty_covid <- pov_covid %>%
   filter(case_rate_per100k > 0) %>%
   rename(gini = giniE) %>%
   select(GEOID, NAME, poverty_rate, poverty_rate_150,
-         gini, deep_poverty_rate, case_rate_per100k, total_deaths,
+         gini, deep_poverty_rate, as_of_date, case_rate_per100k, total_deaths,
          deaths_per100k,
          population, vermont)
 
