@@ -17,7 +17,16 @@ sources_df <- mutate(sources_df, topic = as.character(topic))
 sources_df$link <- paste0("<a href='",sources_df$link,"' target='_blank'>",sources_df$link,"</a>")
 
 ui <- fluidPage(theme = shinytheme("spacelab"),
-  titlePanel("Addison County Sources"),
+              
+  titlePanel("Places of Privilege & Poverty - Additional Resources"),
+  
+  h1(" "),
+
+  em(tags$a(href="http://datastudio.middcreate.net/places", "Click here to return to the homepage")),
+  
+  h4("Use this page to find articles and reports about poverty and economic inequality in and around Addison County, Vermont. Select topic names and document types to filter results. Search for keywords and click on the ⊕ in each row for a description and link to the resource, if available."),
+  
+  h1(" "),
   
 # Create a new Row in the UI for Inputs
   fluidRow(

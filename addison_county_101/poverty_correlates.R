@@ -73,8 +73,10 @@ covid_cases <- covid_cases %>%
   rename(County_Name = "County Name")
 
 covid_cases_gather <- covid_cases %>%
-  gather(date, cases, 5:204) %>%
+  select(1:4, ncol(covid_cases)) %>%
+  gather(date, cases, 5)%>%
   group_by(countyFIPS) %>%
+  mutate(date = as_date(date, format = "%m/%d/%y")) %>%
   filter(date == max(date),
          !grepl("Unallocated", County_Name)) %>%
   mutate(as_of_date = date,
@@ -90,8 +92,10 @@ covid_deaths <- covid_deaths %>%
   rename(County_Name = "County Name")
 
 covid_deaths_gather <- covid_deaths %>%
-  gather(date, deaths, 5:204) %>%
+  select(1:4, ncol(covid_deaths)) %>%
+  gather(date, deaths, 5) %>%
   group_by(countyFIPS) %>%
+  mutate(date = as_date(date, format = "%m/%d/%y")) %>%
   filter(date == max(date),
          !grepl("Unallocated", County_Name)) %>%
   mutate(as_of_date = date,
@@ -170,7 +174,7 @@ wtd.cor(pov_covid$median_hhiE, pov_covid$case_rate_per100k, weight = pov_covid$p
 
 plot(pov_covid$median_hhiE, pov_covid$case_rate_per100k)
 
-model1 <- lm(case_rate_per100k ~ poverty_ratek, data = pov_covid)
+model1 <- lm(case_rate_per100k ~ poverty_rate, data = pov_covid)
 summary(model1)
 
 pov_covid %>%

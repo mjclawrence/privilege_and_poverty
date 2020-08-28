@@ -1,0 +1,13 @@
+name: places_resources
+title: places_resources
+username:
+account: mjclawrence
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2687334
+bundleId: 3537782
+url: https://mjclawrence.shinyapps.io/places_resources/
+when: 1597930895.07948
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app_with_child_row.R|app_without_child_row.R|sources.csv
