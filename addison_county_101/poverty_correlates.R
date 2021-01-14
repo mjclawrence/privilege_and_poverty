@@ -4,8 +4,8 @@ library(weights)
 library(lubridate)
 library(gghighlight)
 
-acs_variables <- load_variables(year = 2018,
-                                dataset = "acs5")
+#acs_variables <- load_variables(year = 2018,
+#                               dataset = "acs5")
 
 pov_cor <- get_acs(year = 2018,
                    survey = "acs5",
@@ -31,7 +31,7 @@ pov_cor_clean <- pov_cor %>%
   filter(!grepl("Puerto Rico", NAME)) %>%
   mutate(commute_under15 = 
            round(((commute_04E + commute_09E + commute_14E) /
-                   commute_totalE), 3),
+                    commute_totalE), 3),
          poverty_rate = 
            round(((poverty_050E + poverty_099E) / poverty_totalE), 3),
          deep_poverty_rate = 
@@ -112,8 +112,8 @@ covid_pop <- covid_pop %>%
   rename(County_Name = "County Name")
 
 covid_cases_deaths <- left_join(covid_cases_gather, covid_deaths_gather,
-                         by = c("countyFIPS", "County_Name", "State", "as_of_date", "stateFIPS"))
-  
+                                by = c("countyFIPS", "County_Name", "State", "as_of_date", "stateFIPS"))
+
 
 covid_merge <- left_join(covid_cases_deaths, covid_pop,
                          by = c("countyFIPS", "County_Name", "State")) %>%
@@ -134,8 +134,8 @@ pov_covid <- left_join(pov_cor_clean, covid_merge, by = "GEOID")
 
 pov_covid %>%
   filter(case_rate_per100k < 8200 & poverty_rate < .5) %>%
-ggplot(aes(x = poverty_rate_150, y = case_rate_per100k,
-           size = pop_totalE)) + geom_point()
+  ggplot(aes(x = poverty_rate_150, y = case_rate_per100k,
+             size = pop_totalE)) + geom_point()
 
 pov_covid %>%
   filter(case_rate_per100k < 8200) %>%
@@ -211,5 +211,4 @@ poverty_covid <- pov_covid %>%
 write.csv(poverty_covid, 
           "/Users/lawrence/Documents/GitHub/privilege_and_poverty/addison_county_101/storymap_data/poverty_covid.csv",
           row.names = FALSE)
-
 

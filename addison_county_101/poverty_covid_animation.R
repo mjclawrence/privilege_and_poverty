@@ -4,6 +4,8 @@ library(gganimate)
 library(gapminder)
 library(lubridate)
 
+#census_api_key("0e7dd66a1aa513854915aba10617ca1ed121c5cf", overwrite = TRUE, install = TRUE)
+
 pov_cor <- get_acs(year = 2018,
                    survey = "acs5",
                    geography = "county",
@@ -58,17 +60,17 @@ covid_cases <- read_csv("https://usafactsstatic.blob.core.windows.net/public/dat
 covid_cases <- covid_cases %>%
   mutate(countyFIPS = sprintf("%05d", as.numeric(countyFIPS))) %>%
   rename(County_Name = "County Name",
-         GEOID = "countyFIPS") 
+         GEOID = "countyFIPS")
 
 covid_poverty <- left_join(pov_cor_clean, covid_cases, by = "GEOID")
 
 covid_poverty_gather <- covid_poverty %>%
   filter(pop_totalE>0) %>%
-  gather(date, cases, 37:236) %>%
+  gather(date, cases, 37:391) %>%
   mutate(date2 = mdy(date),
          case_rate = cases / pop_totalE,
          case_rate_per100k = (cases * 100000) / pop_totalE)
-         
+
 covid_poverty_gather %>%
   filter(date2 == max(date2)) %>%
   ggplot(aes(giniE, case_rate_per100k)) + geom_point()
@@ -84,6 +86,3 @@ covid_gini_animation <- covid_poverty_gather %>%
   enter_fade() + exit_shrink()
 
 animate(covid_gini_animation, renderer = gifski_renderer(loop = F))
-
-
-
